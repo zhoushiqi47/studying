@@ -1,0 +1,515 @@
+
+\documentclass[12pt]{iopart}
+\pdfoutput=1
+\usepackage{iopams}
+\usepackage{amssymb, epsfig}
+%\usepackage{amsmath, amssymb,epsfig}
+\usepackage{latexsym}
+
+%\usepackage[hypertex,hyperindex]{hyperref}
+%\usepackage{showkeys}
+\usepackage{graphicx}
+\usepackage{color}
+
+\newcommand{\pf}{\mbox{pf}}
+
+\begin{document}
+
+\bibliographystyle{plain}
+\def\debproof{\noindent {\bf Proof.} }
+\def\finproof{\hfill {\small $\Box$} \\}
+%\renewcommand{\theequation}{\arabic{section}.\arabic{equation}}
+
+\makeatletter % `@' now normal "letter"
+\@addtoreset{equation}{section}
+\makeatother  % `@' is restored as "non-letter"
+\renewcommand\theequation{{\thesection}.{\arabic{equation}}}
+\title[]{}
+
+
+
+\maketitle
+\newcommand{\eps}{\varepsilon}
+\newcommand{\RR}{\mathcal{R}}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{prop}{Proposition}[section]
+\newtheorem{cor}{Corollary}[section]
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{rem}{Remark}[section]
+\newtheorem{alg}{Algorithm}[section]
+\newtheorem{assum}{Assumption}[section]
+\newtheorem{definition}{Definition}[section]
+
+
+\newcounter{RomanNumber}
+\newcommand{\MyRoman}[1]{\rm\setcounter{RomanNumber}{#1}\Roman{RomanNumber}}
+
+\newcommand{\bL}{\mathbf{L}}
+\newcommand{\bH}{\mathbf{H}}
+\newcommand{\bW}{\mathbf{W}}
+\newcommand{\bP}{\mathbf{P}}
+\newcommand{\bQ}{\mathbf{Q}}
+\newcommand{\bp}{\mathbf{p}}
+\newcommand{\bq}{\mathbf{q}}
+\newcommand{\uL}{u_{_{\rm L}}}
+\newcommand{\vL}{v_{_{\rm L}}}
+\newcommand{\tuL}{\tilde u_{_{\rm L}}}
+\newcommand{\tvL}{\tilde v_{_{\rm L}}}
+\newcommand{\fL}{f_{_{\rm L}}}
+\newcommand{\gL}{g_{_{\rm L}}}
+\newcommand{\bpL}{\bp_{_{\rm L}}}
+\newcommand{\bqL}{\bq_{_{\rm L}}}
+\newcommand{\tbpL}{\tilde{\bp}_{_{\rm L}}}
+\newcommand{\tbqL}{\tilde{\bq}_{_{\rm L}}}
+\newcommand{\tbpLf}{\tilde{\bp}_{_{\rm L,1}}}
+\newcommand{\tbpLs}{\tilde{\bp}_{_{\rm L,2}}}
+\newcommand{\tbqLf}{\tilde{\bq}_{_{\rm L,1}}}
+\newcommand{\tbqLs}{\tilde{\bq}_{_{\rm L,2}}}
+\newcommand{\bn}{\nu}
+\newcommand{\bv}{\mathbf{v}}
+\newcommand{\om}{\omega}
+\newcommand{\pa}{\partial}
+\newcommand{\la}{\langle}
+\newcommand{\ra}{\rangle}
+\newcommand{\lla}{\la{\hskip -2pt}\la}
+\newcommand{\rra}{\ra{\hskip -2pt}\ra}
+\newcommand{\jj}{\|{\hskip -0.8pt} |}
+\newcommand{\al}{\alpha}
+\newcommand{\ze}{\zeta}
+\newcommand{\si}{\sigma}
+\newcommand{\ep}{\varepsilon}
+\newcommand{\na}{\nabla}
+\newcommand{\vp}{\varphi}
+\newcommand{\ga}{\gamma}
+\newcommand{\Ga}{\Gamma}
+\newcommand{\Om}{\Omega}
+\newcommand{\de}{\delta}
+\newcommand{\Th}{\Theta}
+\newcommand{\De}{\Delta}
+\newcommand{\Lam}{\Lambda}
+\newcommand{\lam}{\lambda}
+\newcommand{\tri}{\triangle}
+\newcommand{\lj}{[{\hskip -2pt} [}
+\newcommand{\rj}{]{\hskip -2pt} ]}
+\newcommand{\bks}{\backslash}
+%\newcommand{\diag}{\mathrm{diag}}
+\newcommand{\diam}{\mathrm{diam}}
+\newcommand{\osc}{\mathrm{osc}}
+\newcommand{\meas}{\mathrm{meas}}
+\newcommand{\dist}{\mathrm{dist}}
+
+\newcommand{\mL}{\mathscr{L}}
+\newcommand{\cT}{{\cal T}}
+\newcommand{\cM}{{\cal M}}
+\newcommand{\cE}{{\cal E}}
+\newcommand{\cL}{{\cal L}}
+\newcommand{\cF}{{\cal F}}
+\newcommand{\cB}{{\cal B}}
+\newcommand{\PML}{{\rm PML}}
+\newcommand{\FEM}{{\rm FEM}}
+\newcommand{\rd}{\,\mathrm{d}}
+
+\renewcommand{\i}{\mathbf{i}}
+\renewcommand{\v}{\mathbf{v}}
+\renewcommand{\u}{\mathbf{u}}
+\renewcommand{\r}{\mathbf{r}}
+\newcommand{\R}{{\mathbb{R}}}
+\newcommand{\Z}{{\mathbb{Z}}}
+\newcommand{\C}{{\mathbb{C}}}
+\renewcommand{\Re}{\mathrm{Re}\,}
+\renewcommand{\Im}{\mathrm{Im}\,}
+\renewcommand{\div}{\mathrm{div}}
+\newcommand{\curl}{\mathrm{curl}}
+\newcommand{\Curl}{\mathbf{curl}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\be}{\begin{eqnarray}}
+\newcommand{\ee}{\end{eqnarray}}
+\newcommand{\ben}{\begin{eqnarray*}}
+\newcommand{\een}{\end{eqnarray*}}
+\newcommand{\nn}{\nonumber}
+
+
+\section{Estimate of Dirichlet Green Tensor}
+We need the following slight generalization of Van der Corput lemma for the oscillatory integral \cite[P.152]{grafakos}.
+\begin{lem}\label{van}
+	Let $-\infty<a<b<\infty$, and $u$ is a $C^k$ function $u$ in $(a,b)$. \\
+ 1. If $|u'(t)|\ge 1$ for $t\in (a,b)$ and $u'$ is monotone in (a,b), then for any $\phi(t)$ in $(a,b)$ with integrable derivatives
+	\ben
+	\left|\int^b_a e^{\i\lambda u(t)}\phi(t)dt\right|\le
+	3\lambda^{-1}\left[|\phi(b)|+\int^b_a|\phi'(t)|dt\right].
+	\een
+ 2. For all $k\geq2$, if $|u^{(k)}(t)|\ge 1$ for $t\in (a,b)$ , then for any $\phi(t)$ in $(a,b)$ with integrable derivatives
+	\ben
+	\left|\int^b_a e^{\i\lambda u(t)}\phi(t)dt\right|\le
+	12k\lambda^{-1/k}\left[|\phi(b)|+\int^b_a|\phi'(t)|dt\right].
+	\een
+\end{lem}
+\debproof
+The assertion can be proved by extending the Van der Corptut lemma in \cite{grafakos}. Here we omit the details.
+\finproof
+We recall following lemma, see e.g. \cite{Wong_Asymptotic}:
+\begin{lem} \label{asym_frac}
+	Let $F(\lambda,a)=\int_{0}^{a} t^{\alpha-1}f(t)e^{\i\lambda t}dt$ where $0<a\leq+\infty$, $0<\alpha<1$ and $t^{\alpha-1}f\in L^1(0,a)$, then we have
+	\be
+	|F(\lambda,a)|\leq C(\frac{1}{\lambda^\alpha}+\frac{1}{\lambda}(a^{\alpha-1}+|t^{\alpha-1}f|_{L^1(0,a)})
+	\ee
+\end{lem}
+\begin{lem}\label{pr_dgreen}
+	Let $f(\xi,\mu_s,\mu_p)=g(\xi,\mu_s,\mu_p)/\gamma(\xi,\mu_s,\mu_p)$ where g(x,y,z) is a homogeneous quadratic polynomial with respect to x,y,z. Let $a,b>0$ and $\rho=\sqrt{a^2+b^2}$. Assume $\kappa=k_p/k_s$ and $k_s\rho >1$, then we have
+	\be \label{pr_dgreen1} \nn
+	\Big|\int_\R f(\xi,\mu_s,\mu_p) e^{\i(\mu_s b +\xi a)}d\xi
+	-f_{\xi=\frac{k_s a}{\rho}}\frac{k_s b}{\rho}(\frac{2\pi}{k_s \rho})^{1/2}e^{\i(k_s\rho-\frac{\pi}{4})}\Big|
+	\\ \hspace{-0.5cm}
+	 \leq C(\frac{k_s b}{\rho(k_s\rho)^{3/4}}+\frac{k_s a}{\rho(k_s\rho)^{5/4}})
+	\ee
+	where C is only dependent on $\kappa$.
+\end{lem}
+\debproof
+Let $I(a,b)=\int_\R f(\xi,\mu_s,\mu_p) e^{\i(\mu_s b +\xi a)}d\xi$ . To simplify the integral, the standard substitution $\xi=k_s\sin t$ is made, taking the $\xi$-plane to a strip $-\pi/2<\Re t <\pi/2$ in the t-plane, and the real axis in the $\xi$-plane onto the path L from $-\pi/2+\i\infty\rightarrow-\pi/2\rightarrow\pi/2\rightarrow\pi/2-\i\infty$ in the t-plane. Then $I(a,b):=I(\rho,\phi)$ becomes(Let a=$\rho \sin\phi$  and b=$\rho\cos\phi$, $0<\phi<\pi/2$)
+\be
+k_s \int_L f(\sin t,\cos t,(\kappa^2-\sin^2 t)^{1/2})\cos t \ e^{\i k_s\rho(\cos (t-\phi))} dt
+\ee
+Taking the shift transformation of t and using cauchy integral theorem, we can obtain the representation of I(a,b):
+\ben \hspace{-1.5cm}
+k_s\int_L f(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2})\cos (t+\phi) e^{\i k_s\rho(\cos t)} dt \\\hspace{-2cm}
+=k_s \cos \phi \int_L f(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2})\cos t \ e^{\i k_s\rho(\cos t)} dt \\\hspace{-2cm}
+-k_s \sin \phi \int_L f(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2})\sin t \ e^{\i k_s\rho(\cos t)} dt \\\hspace{-2cm}
+:=k_s (\cos\phi \ I_1+\sin\phi \ I_2)
+\een
+For $I_2$, using integration by parts on path $L$ first, we have
+\be \hspace{-2cm}
+I_2=\frac{1}{\i k_s\rho} \int_L f(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2}) d \ e^{\i(k_s\rho \cos t)} \\ \hspace{-1.5cm}
+=-\frac{1}{\i k_s\rho} \int_{L} \frac{\pa f(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2})}{\pa t
+} \  e^{\i(k_s\rho \cos t)} dt \\ \hspace{-1.5cm}
+:=\frac{1}{ k_s\rho}I_3
+\ee
+Therefore,
+\be \label{d_expan}
+I(\rho,\phi)=k_s(\cos\phi I_1 +\frac{\sin\phi}{k_s\rho}I_3)
+\ee
+First, we define $0<\phi_1<\phi_\kappa<\phi_2<\pi/2$ such that $\sin(\phi_\kappa)=\kappa,\sin(\phi_1)<\kappa/2,\sin(\phi_2)>(1+\kappa)/2$ and $\cos(\phi_1)>(1+\kappa)/2,\cos(\phi_2)<\kappa/2$. Now, we claim that \\
+1. If $\phi\in(0,\phi_1)\cup(\phi_2,\pi/2)$, we have
+\be \label{pr_dgreen3}
+\Big|I_1-f(\sin\phi,\cos\phi,(\kappa^2-\sin^2\phi)^{1/2})(\frac{2\pi}{k_s \rho})^{1/2}e^{\i(k_s\rho-\frac{\pi}{4})}\Big|
+\leq C\frac{1}{k_s\rho} \\
+|I_3|\leq C\frac{1}{(k_s\rho)^{1/2}}
+\ee
+where $C$ is independant of $\phi$.\\
+2. If $\phi\in[\phi_1,\phi_2]$ and $\phi\neq\phi_\kappa$, we have
+\be
+\Big|I_1-f(\sin\phi,\cos\phi,(\kappa^2-\sin^2\phi)^{1/2})(\frac{2\pi}{k_s \rho})^{1/2}e^{\i(k_s\rho-\frac{\pi}{4})}\Big|
+\leq C(\phi)\frac{1}{k_s\rho} \\
+|I_3|\leq C(\phi)\frac{1}{(k_s\rho)^{1/2}}
+\ee
+3. If $\phi=\phi_\kappa$, we have
+\be
+\Big|I_1-f(\sin\phi,\cos\phi,0)(\frac{2\pi}{k_s \rho})^{1/2}e^{\i(k_s\rho-\frac{\pi}{4})}\Big|
+\leq C\frac{1}{(k_s\rho)^{3/4}} \\
+|I_3|\leq C(\phi)\frac{1}{(k_s\rho)^{1/4}}
+\ee
+Since $I(\rho,\phi)$ is a continuous function, we can obtain estimate (\ref{pr_dgreen1}) soon by the claim and equality (\ref{d_expan}). We now proceed with the proof of the claim above.
+
+1. For the claim 1, wo only give the proof when $\phi\in(\phi_2,\pi/2)$ since the similar proof can be adjusted to the other case. By the convention of $\phi_2$, for any $\phi\in(\phi_2,\pi/2)$, there exists $0<\delta<\pi/4$ only dependent on $\kappa$ such that
+\be \label{d_convention1}
+|\sin(t+\phi)|>(1+2\kappa)/3,|\cos(t+\phi)|<2\kappa/3
+\ee
+for any $t\in(-\delta,\delta)$ while \be
+|\cos(t+\phi)|>(1+2\kappa)/3, |\sin(t+\phi)|<2\kappa/3
+\ee
+ for any $t\in(-\pi/2,-\pi/2+\delta)\cup(\pi/2-\delta,\pi/2)$. Let $\chi_\delta\in C^\infty_0(-\pi/2,\pi/2)$ be the cut-off function with that $0\leq\chi_\delta\leq1$, $\chi_\delta=1$ in $(-\delta/2,\delta/2)$ and $\chi_\delta=0$  in $L\bks(-\delta,\delta)$. Then we can divide $I_1$ into two parts such that
+\be \nn
+I_1=\int_L f(t)\cos t e^{\i k_s\rho\cos t}dt\\ \label{I_split}
+=\int_\R f(t)\cos t \chi_\delta(t)e^{\i k_s\rho\cos t} dt +
+\int_{L'} f(t)\cos t (1-\chi_\delta(t))e^{\i k_s\rho\cos t} dt  \\ \nn
+=: I_{11} + I_{12}
+\ee
+where $L'=L\bks(-\delta/2,\delta/2)$ and $f(t):=f(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2})$. Let $g_\delta(t)=f(t)\cos t \chi_\delta(t)$ and  subtitating $t(s)=2\arcsin s/2$ for t in $I_{11}$, we have
+\be
+I_{11}=\int_\R g_\delta(t(s))\frac{1}{\sqrt{1-s^2/4}}e^{\i k_s \rho}e^{-\i k_s\rho s^2/2} ds
+\ee
+Let $h_\delta(s)=g_\delta(t(s))\frac{1}{\sqrt{1-s^2/4}}$. It is easy to see that $h_\delta(s)\in C^\infty_0(-2\sin \delta/2,2\sin\delta/2)$. By the lemma of the stationary phase for quadratic term in \cite{Evans2010}, we have
+\be
+I_{11}=e^{\i k_s \rho}\int_\R h_\delta(s)e^{-\i\frac{k_s\rho}{2}s^2}ds=
+e^{\i k_s \rho}\int_\R \widehat{h_\delta}(y)\alpha(-y)dy
+\ee
+where
+\be
+\alpha(y)=(\frac{1}{2\pi k_s \rho})^{1/2}e^{-\i\pi/4}e^{\frac{\i}{2 k_s \rho}y^2} \\
+=(\frac{1}{2\pi k_s \rho})^{1/2}e^{-\i\pi/4}(1+O(\frac{y^2}{k_s\rho}))
+\ee
+Consequently
+\be
+I_{11}=(\frac{1}{2\pi k_s \rho})^{1/2}e^{\i k_s \rho-\i\pi/4}
+\int_\R \widehat{h_\delta}(y)(1+\frac{1}{k_s \rho}O(y^2)) dy
+\ee
+But $\int_\R \widehat{h_\delta}(y)dy=2\pi h_\delta(0)$ and $|\int_\R \widehat{h_\delta}(y)y^2 dy|<C$ since $|\widehat{h_\delta}(y)|< C_1$ and $|\widehat{h_\delta}(y)|<C_2/y^4$ where $C,C_1,C_2$ is independent of $\phi$.
+It turns to estimate $I_{12}$. Using integration by parts, we obtain
+\be
+|I_{12}|=\Bigg|\frac{1}{ k_s \rho}\int_{L'}(f(t)\cos t (1-\chi_\delta(t)/\sin t)' e^{\i k_s\rho\cos t}  dt\Bigg| \\
+\leq \frac{1}{k_s \rho}\Bigg(\int_{L\bks(-\frac{\pi}{2},\frac{\pi}{2})}|(f(t)\cos t (1-\chi_\delta(t)/\sin t)'| e^{\i \cos t} dt\\
++\int_{(-\frac{\pi}{2},\frac{\pi}{2})\bks(-\frac{\delta}{2},\frac{\delta}{2})}|(f(t)\cos t (1-\chi_\delta(t)/\sin t)'|  dt \Bigg) \\
+\leq C\frac{1}{k_s \rho}
+\ee
+Then inequality (\ref{pr_dgreen3}) follows.
+
+
+For $I_3$, we split the integral path $L$ into $L_1=(-\pi/2,\pi/2)$ and $L_2=(-\pi/2+\i\infty,-\pi/2)\cup(\pi/2,\pi/2-\i\infty)$, then we have corresponding representation: $I_3=I_{31}+I_{32}$.
+Then $|I_{32}|\leq C/(k_s\rho)$ can be proved by the same method used above. Following a tedious computation, we obtain a simple form of $\pa f/\pa t$:
+\be
+\frac{\pa f}{\pa t}&=&\frac{(\gamma\pa_t g  -g \pa_t \gamma)(\kappa^2-\sin^2 t)^{1/2}}{(\sin^2 t +\cos t (\kappa^2-\sin^2 t)^{1/2})^2}\frac{1}{(\kappa^2-\sin^2 t)^{1/2}} \\
+&:=&\frac{h(\sin (t+\phi),\cos (t+\phi),(\kappa^2-\sin^2 (t+\phi))^{1/2})}{(\kappa^2-\sin^2 t)^{1/2}}
+\ee
+where $h$ and $\pa h/\pa t$ are integrable on path $L_1$. Let define $t_1,t_2\in \chi_1=(-\pi/2+\delta,-\delta)\cup(\delta,\pi/2-\delta)$ which satisfy $\kappa^2 = \sin^2 (t_i+\phi)$, $i=1,2$. Moreover, for any $0<\lambda_1<1$ and $1<\lambda_2<1/\kappa$, there exists $\sigma>0$, which satisfy that $\chi_2=(t_1-\sigma,t_1+\sigma)\cup(t_2-\sigma,t_2+\sigma)\subset\chi_1$ and is only dependent on $\lambda_1,\lambda_2,\kappa$, such that
+\be \label{assume1}
+\lambda_1\kappa<|\sin (t+\phi)|<\lambda_2\kappa.
+\ee
+for any $t\in\chi_2$. We are now in a position to estimate $I_{21}$. Similarly, we split the path $L_1$ into $\chi_2$ and $L_1\bks \chi_2$, then we have the corresponding representation: $I_{21}=I_{\chi_2}+I_{L_1\bks{\chi_2}}$.
+
+For $I_{\chi_2}$, we only analysis the integral on $\chi_{21}=(t_1-\sigma,t_1+\sigma)$ denoted by $I^1_{\chi_2}$, the procedure of the another is same. Without loss of generality, we assume that $\sin (t_1-\sigma+\phi)<\kappa<\sin (t_1+\sigma+\phi)$. It is easy to see that $\sin (t+\phi)$ is monotonic increasing in $\chi_{21}$. Let $\sin (t+\phi) = \kappa \sin \theta$ and the implicit mapping from $\theta$ to $t$ is denoted by $t(\theta)$ while the inverse mapping by $\theta(t)$, taking the interval $\chi_{21}$ onto $L_\theta : \theta_1\rightarrow\pi/2\rightarrow\pi/2-\i\theta_2$ where $\sin(t_1-\sigma+\phi)=\kappa\sin \theta_1,\sin(t_1+\sigma+\phi)=\kappa\sin(\pi/2-\i\theta_2)$. By substituting $t(\theta)$ into $I^1_{\chi_2}$, we have
+\be
+I^1_{\chi_2}=\int_{L_\theta}\frac{ h(\kappa\sin\theta,(1-\kappa^2\sin^2\theta)^{1/2},\kappa\cos\theta)}{(1-\kappa^2\sin^2\theta)^{1/2}} \ e^{\i
+	k_s\rho(\cos(t(\theta)))} d\theta
+\ee
+Because of inequality \ref{assume1}, we assert that $h$ and $\pa h/\pa\theta$ are integrable on the path $L_\theta$. A simple computation show that
+\ben
+\frac{dt(\theta)}{d\theta}=\frac{\kappa\cos\theta}{\cos(t+\phi)} \ \
+\frac{d^2 t(\theta)}{dt^2}=\frac{\kappa^2\cos^2\theta\sin(t+\phi)-\kappa\sin\theta\cos^2(t+\phi)}{\cos^3(t+\phi)}
+\een
+Then we can obtain
+\ben
+\frac{d\cos t}{d\theta}&=&\frac{-\kappa\sin t\cos\theta}{\cos(t+\phi)} \\
+\frac{d^2\cos t}{d\theta^2}&=&\frac{d^2\cos t}{dt^2}(\frac{dt}{d\theta})^2+\frac{d\cos t}{dt}\frac{d^2t}{d\theta^2} \\
+&=&\frac{-\kappa^2\cos^2\theta\cos t}{\cos^2(t+\phi)}+\frac{\kappa\sin\theta\cos^2(t+\phi)\sin t -\kappa^2\cos^2\theta\sin(t+\phi)\sin t}{\cos^3(t+\phi)} \\
+&=&\frac{-\kappa^2\cos^2\theta\cos\phi+\kappa\sin\theta\cos^2(t+\phi)\sin t}{\cos^3(t+\phi)} \\
+&=&\frac{(\sin^2(t+\phi)-\kappa^2)\cos\phi+\cos^2(t+\phi)\sin(t+\phi)\sin t}{\cos^3(t+\phi)}
+\een
+It is simple to see that $\theta=\pi/2$ is the only stationary point of $\cos(t(\theta))$ and we can obtain
+\be
+\Bigg|\frac{d^2\cos t}{d\theta^2}(\pi/2)\Bigg|=\frac{(1-\kappa^2)\kappa}{(1-\kappa^2)^{3/2}}|\sin t|>\frac{(1-\kappa^2)\kappa}{(1-\kappa^2)^{3/2}}\sin \delta
+\ee
+Therefore, we can choose appropriate $\lambda_1,\lambda_2$, only dependent on $\kappa$, such that $|\frac{d^2\cos t}{d\theta^2}|>\frac{(1-\kappa^2)\kappa}{(1-\kappa^2)^{3/2}}\sin \delta$ for any $\theta\in \theta(\chi_{21})$. Therefore, we can decompose $\theta(\chi_{21})$ into several intervals such that in each either $|\pa \cos(t(\theta))/\pa\theta|$ or $|\pa^2 \cos(t(\theta))/\pa\theta^2|$ has positive lower bound and $\pa \cos(t(\theta))/\pa\theta$ is monotonous. Since the amplitude function of integrand in $I^1_{\chi_2}$ and its derivative with respect to $\theta$ are both integrable on $L_\theta$, the estimation $|I^1_{\chi_2}|\leq C/(k_s\rho)^{1/2}$ can be obtained immediately by lemma \ref{van}. Then the estimate $|I_{L_1\bks{\chi_2}}|\leq C/(k_s\rho)^{1/2}$ also follows lemma \ref{van}. This completes the proof of the claim 1.
+
+2. For the claim 2, since $\phi\neq\phi_\kappa$ we always can find some $\delta$ small enough such that $\sin^2(t+\phi)\neq \kappa^2$ for any $t\in(-\delta,\delta)$ .Thus, the proof is similar to the claim 1, here we omit the details.
+
+3. To prove the claim 3, observe that 0 and $\phi'$ are the only two movable singular points of $f'(t)$ for on $L$ where $\sin^2{(\phi'+\phi_\kappa)}=\kappa^2$ and $\phi'\neq 0$.
+However, we can not use stationary phase lemma directly because the fourth derivatives of amplitude function has singularity when $t=0$. Let $0<\delta<\pi/4$ such that $\sin (t+\phi_{\kappa})$ is monotonic as $t\in(-\delta,\delta)$ and $2\kappa/3\leq|\sin(\pm\delta+\phi_{\kappa})|\leq(1+2\kappa)/3$, then we have $I_1=I_{11}+I_{12}$,
+$I_3=I_{31}+I_{32}$ similar to (\ref{I_split}). Using the same argument as in the proof of the claim 1, we can easily obtain
+\be
+|I_{12}|\leq C\frac{1}{k_s \rho} \ \ \ \  |I_{32}|\leq C\frac{1}{(k_s \rho)^{1/2}}
+\ee
+Obseve that $f(t)$ can be always represented as
+\be
+f(t)=\frac{g(t)}{\sin^2 (t+\phi_{\kappa})+\cos (t+\phi_{\kappa}) (\kappa^2-\sin^2 (t+\phi_{\kappa}))^{1/2}} \\
+=\frac{g(t)(\sin^2(t+\phi_{\kappa})-\cos (t+\phi_{\kappa}) (\kappa^2-\sin^2(t+\phi_{\kappa}))^{1/2})}{(1+\kappa^2)\sin^2(t+\phi_{\kappa})-\kappa^2}  \\
+=f_1(t)+f_2(t)(\sin^2 \phi_{\kappa} -\sin^2 (t+\phi_{\kappa}))^{1/2} \\
+=f_1(t)+\i f_2(t)(\sin \phi_{\kappa}+\sin (t+\phi_{\kappa}))^{1/2}\cos^{1/2}(t/2+\phi_{\kappa}) (2\sin \frac{t}{2})^{1/2}  \\
+=f_1(t)+g_1(t)(2\sin \frac{t}{2})^{1/2}
+\ee
+where $f_1,f_2,g_1\in C^\infty(-\delta,\delta)$. It follows that
+\be \nn
+I_{11}=\int_\R f_1(t)\cos t \chi_\delta(t)e^{\i k_s\rho\cos t} dt \\
++\int_\R g_1(t)\cos t (2\sin t/2)^{1/2} \chi_\delta(t)e^{\i k_s\rho\cos t} dt \\ \nn
+:= I_{111}+I_{112}
+\ee
+\be \nn
+I_{31}=\int_\R f_1'(t) \chi_\delta(t)e^{\i k_s\rho\cos t} dt \\
++\int_\R g_1'(t) (2\sin t/2)^{1/2} \chi_\delta(t)e^{\i k_s\rho\cos t} dt \\  \nn
++\int_\R 1/2g_1(t)\cos t (2\sin t/2)^{-1/2} \chi_\delta(t)e^{\i k_s\rho\cos t} \\ \nn
+:= I_{311}+I_{312}+I_{313}
+\ee
+Subtitating $t(s)=2\arcsin s/2$ for t in $I_{112}$, $I_{312}$, and $I_{313}$ and by lemma (\ref{asym_frac}), we have
+\be
+|I_{112}|\leq C\frac{1}{(k_s \rho)^{3/4}},
+|I_{312}|\leq C\frac{1}{(k_s \rho)^{3/4}},
+|I_{313}|\leq C\frac{1}{(k_s \rho)^{1/4}}
+\ee
+By lemma (\ref{van}), we have
+\be
+|I_{311}|\leq C\frac{1}{(k_s \rho)^{1/2}}
+\ee
+Finally, the claim 3 is a direct cosequence of using stationary phase theorem for $I_{111}$. This completes the proof.
+\finproof
+\section{Some draft about Green Tensor Analysis}
+Let substitute $\xi=k\sin\theta$ into integral and shift the variable, we have
+\be
+I(y)=\int_\R f(\xi)e^{\i \xi y_1+\mu(\xi) y_2} d\xi =\int_\R f(\xi)e^{\i \xi (y_1-z_1)+\mu(\xi) (y_2-z_2)}e^{\i \xi z_1 +\mu(\xi) z_2} d\xi \\
+=k\int_{L} f(k\sin\theta)\cos\theta e^{\i k|y-z|\cos(\theta-\eta)}e^{\i|z|\cos(\theta-\phi)} d\theta\\
+=k\int_{L_\phi} f(k\sin(\theta+\phi))\cos(\theta+\phi) e^{\i k|y-z|\cos(\theta+\phi-\eta)}e^{\i|z|\cos\theta} d\theta\\
+=k\int_{L} f(k\sin(\theta+\phi))\cos(\theta+\phi) e^{\i k|y-z|\cos(\theta+\phi-\eta)}e^{\i|z|\cos\theta} d\theta
+\ee
+where $y_1,y_2>0,\sin\phi=\frac{z_1}{|z|},\cos\phi=\frac{z_2}{|z|},0<\phi<\pi/2$ and $\sin\eta=\frac{y_1-z_1}{|y-z|},\cos\eta=\frac{y_2-z_2}{|y-z|},0<\eta<\pi$. It is easy to see that $\phi+\eta<\pi$. Roughly, using stationary phase lemma, we obtain:
+\be
+I(y)=f(k\sin\phi)k\cos\phi e^{\i k|y-z|\cos(\phi-\eta)}(\frac{2\pi}{|z|})^{1/2}e^{\i|z|-\i\frac{\pi}{4}}(1+O(\frac{1}{|z|}))
+\ee
+\be
+\cos(a+\i b)=\frac{e^b+e^{-b}}{2}\cos a+\i\frac{e^{-b}-e^b}{2}\sin a \\
+\sin(a+\i b)=\frac{e^b+e^{-b}}{2}\sin a+\i\frac{e^{b}-e^{-b}}{2}\cos a
+\ee
+When $\theta\in(-a-\pi/2,-a-\pi/2+\i\infty)$, let $\theta=-a-\pi/2\i t$, where $t>0,0\leq
+a\leq\phi$, then
+\be\nn
+-\Im(|z|\cos\theta+|y-z|\cos(\theta+\phi-\eta))\\
+=|z|\sin(a+\pi/2)+|y-z|\sin(a+\pi/2-\phi+\eta) \\
+=|z|\cos a+|y-z|\cos(a-\phi+\eta) \\
+=|z|\cos a +\cos a|y-z|(\cos\phi\cos\eta+\sin\phi\sin\eta)\\
++\sin a |y-z|(\sin\phi\cos\eta-\cos\phi\sin\eta)\\
+=|z|\cos a +\cos a((y_2-z_2)\cos\phi+(y_1-z_1)\sin\phi)\\
++\sin a((y_2-z_2)\sin\phi-(y_1-z_1)\cos\phi) \\
+=y_1\sin(\phi-a)+y_2\cos(\phi-a)>0
+\ee
+Now, Using Cauchy Integral Theorem, we have
+\be
+I(y)=k\int_{L} f(k\sin(\theta+\phi))\cos(\theta+\phi) e^{\i k|y-z|\cos(\theta+\phi-\eta)}e^{\i|z|\cos\theta} d\theta
+\ee
+Let $L_1=(-\pi/2,-\pi/2+\i\infty)$ and $\theta=-\pi/2+\i t,t>0$, then
+\be
+I_1(y)=k\int_{L_1} f(k\sin(\theta+\phi))\cos(\theta+\phi) e^{\i k|y-z|\cos(\theta+\phi-\eta)}e^{\i|z|\cos\theta} d\theta \\
+=
+\ee
+\be
+I(y)=f(k\sin\phi)k\cos\phi e^{\i k|y-z|\cos(\phi-\eta)}(\frac{2\pi}{|z|})^{1/2}e^{\i|z|-\i\frac{\pi}{4}}\\
++\frac{kz_2}{|z|}O(\Bigg(\frac{1}{k|z|}\Bigg)^{3/4}+\frac{1}{k|y|})+\frac{kz_1}{|z|}O(\Bigg(\frac{1}{k|z|}\Bigg)^{5/4}+\Bigg(\frac{1}{k|y|}\Bigg)^2)
+\ee
+It is easy to see
+\be
+\int_{-d}^{d}\frac{k}{(k|x-z|)^\alpha}\frac{1}{(k|x-y|)^\beta} dx_1\leq C(\frac{1}{(kz_2)^{\alpha+\beta-1}}+\frac{1}{(ky_2)^{\alpha+\beta-1}})
+\ee
+where $z,y\in\R^2_+$, $x\in\Gamma_0$ and $\alpha+\beta>0$.
+\be
+e^{\i \mu  y_2+\i\xi(x_1-y_1)}=e^{\i\mu y_2 -\i y_2/\tan\phi}=e^{\i y_2(\mu-\xi/\tan\phi)}
+\ee
+Another method
+\be
+\int_{-\pi/2}^{\pi/2}f(k\sin(\theta+\psi))k\cos(\theta+\psi)e^{\i k|x-y|\cos\theta}\\
+=\int_{-\pi/2}^{\pi/2}f(k\sin(\theta+\psi))k\cos(\theta+\psi)e^{\i k|x-y|\cos(\theta+\psi-\psi)} \\
+=\int_{-\pi/2}^{\pi/2}f(k\sin(\theta+\psi))k\cos(\theta+\psi)e^{\i ky_2\cos(\theta+\psi)+\i k|x_1-y_1|\sin(\theta+\psi)} \\
+=\int_{-\pi/2}^{\pi/2}f(k\sin(\theta+\psi))k\cos(\theta+\psi)\\
+e^{\i k(y_2-z_2)\cos(\theta+\psi)+\i k(|x_1-y_1|-|x_1-z_1|)\sin(\theta+\psi)+\i k|z|\cos(\theta+\psi-\phi)}
+\ee
+\section{Finite Aperture Point Spread Function}
+If $x\in \Gamma_0$ and $z,y\in \R^2_+$, by lemma (\ref{pr_dgreen}) we have
+\be \hspace{-2.5cm} \nn
+G(x,y)=\frac{\i k_s}{\mu\sqrt{2\pi}}\frac{1}{\delta(\xi)}\Bigg(
+\begin{array}{cc}
+	\mu_s\beta & \xi\beta \\
+	2\xi\mu_s\mu_p & 2\xi^2\mu_p
+\end{array}\Bigg)_{\xi=k_s\frac{x_1-y_1}{|x-y|}} \frac{y_2}{|x-y|}\frac{1}{(k_s|x-y|)^{1/2}}
+e^{\i k_s|x-y|-\i\frac{\pi}{4}}\\ \hspace{-1cm}
++\frac{\i k_p}{\mu\sqrt{2\pi}}\frac{1}{\delta(\xi)}	
+\Bigg(\begin{array}{cc}
+	2\xi^2\mu_s & -2\xi\mu_s\mu_p\\
+	-\xi\beta & \mu_p\beta
+\end{array} \Bigg)_{\xi=k_p\frac{x_1-y_1}{|x-y|}} \frac{y_2}{|x-y|}\frac{1}{(k_p|x-y|)^{1/2}}
+e^{\i k_p|x-y|-\i\frac{\pi}{4}} \\ \hspace{-1cm}\nn
++O(\frac{y_2}{|x-y|}\frac{1}{(k_s|x-y|)^{3/4}}+\frac{|x_1-y_1|}{|x-y|}\frac{1}{(k_s|x-y|)^{5/4}}) \\ \hspace{-1cm}\nn
+:=\mathcal{G}_s(x,y)+\mathcal{G}_p(x,y)+O(\frac{y_2}{|x-y|}\frac{1}{(k_s|x-y|)^{3/4}}+\frac{|x_1-y_1|}{|x-y|}\frac{1}{(k_s|x-y|)^{5/4}})
+\ee
+\be
+\hspace{-2.5cm} \nn
+T_D(x,z)=\frac{k_s}{\sqrt{2\pi}}\frac{1}{\gamma(\xi)}\Bigg(
+\begin{array}{cc}
+	\mu_s\mu_p & \xi\mu_p \\
+	\xi\mu_s & \xi^2
+\end{array}\Bigg)_{\xi=k_s\frac{x_1-z_1}{|x-z|}} \frac{z_2}{|x-z|}\frac{1}{(k_s|x-z|)^{1/2}}
+e^{\i k_s|x-z|-\i\frac{\pi}{4}}\\ \hspace{-1cm}
++\frac{ k_p}{\sqrt{2\pi}}\frac{1}{\gamma(\xi)}	
+\Bigg(\begin{array}{cc}
+	\xi^2 & -\xi\mu_p \\
+	-\xi\mu_s & \mu_p\mu_s
+\end{array} \Bigg)_{\xi=k_p\frac{x_1-z_1}{|x-z|}} \frac{z_2}{|x-z|}\frac{1}{(k_p|x-z|)^{1/2}}
+e^{\i k_p|x-z|-\i\frac{\pi}{4}}\\ \hspace{-1cm} \nn
++O(\frac{k_s z_2}{|x-z|}\frac{1}{(k_s|x-z|)^{3/4}}+\frac{k_s|x_1-z_1|}{|x-z|}\frac{1}{(k_s|x-z|)^{5/4}}) \\ \hspace{-1cm}\nn
+:=\mathcal{T}_s(x,z)+\mathcal{T}_p(x,z)+O(\frac{k_s z_2}{|x-z|}\frac{1}{(k_s|x-z|)^{3/4}}+\frac{k_s|x_1-z_1|}{|x-z|}\frac{1}{(k_s|x-z|)^{5/4}})
+\ee
+Now we consider the finite aperture point spread function $J_d(z,y)$:
+\be
+\int_{-d}^{d} (T_D(x_1,0;z_1,z_2))^T\overline{G(x_1,0;y_1,y_2)}dx_1
+\ee
+Recall following standard asymptotic expansion:
+\be
+|x-y|=|x-z|+\widehat{x-z}\cdot (z-y)+O(\frac{|y-z|^2}{|x-z|}) \\
+|y|^{-\alpha}=|z|^{-\alpha}(1+\frac{|y|-|z|}{|z|})^{-\alpha}=|z|^{-\alpha}(1+O(\frac{|y-z|}{|z|})) \\
+e^{\i t}=1+O(t) \\
+|a^{1/2}-b^{1/2}|\leq C \sqrt{|a-b|}
+\ee
+where $x,y,z\in \R^2$, $t,a,b\in\R $ and $\alpha>0$.
+\begin{lem}
+For any $z,y\in \R^2_+$, $J_d(z,y)=F(z,y)+O((1+\frac{|y-z|}{z_2})(\frac{1}{k_s z_2})^{1/4}+\frac{(k_s|y-z|)^2}{k_s z_2}+(\frac{|y-z|}{z_2})^{1/2})$, where
+\be \hspace{-2.2cm}
+F(z,y) =-\frac{\i}{2\pi\mu}\int_{\theta^d_1}^{\theta^d_2}f_s(\theta)
+\Bigg(
+\begin{array}{cc}
+  \sin^2\theta & \sin\theta\cos\theta  \\
+  \sin\theta\cos\theta & \cos^2\theta
+\end{array}\Bigg)
+e^{\i k_s(z_1-y_1)\cos\theta+\i k_s(z_2-y_2)\sin\theta} d\theta \\ \hspace{-1.2cm}
+-\frac{\i}{2\pi\mu} \int_{\theta^d_1}^{\theta^d_2}f_p(\theta)
+\Bigg(
+\begin{array}{cc}
+  \cos^2\theta & -\sin\theta\cos\theta  \\
+  -\sin\theta\cos\theta & \sin^2\theta
+\end{array}\Bigg)
+e^{\i k_p(z_1-y_1)\cos\theta+\i k_p(z_2-y_2)\sin\theta}d\theta
+\ee
+and
+\ben\hspace{-3cm}
+f_s(\theta)=\frac{\sin\theta((\kappa^2-\cos^2\theta)^{1/2}(1-2\cos^2\theta)+2\overline{(\kappa^2-\cos^2\theta)^{1/2}}\cos^2\theta)}
+{(\cos^2\theta+\sin\theta(\kappa^2-\cos^2\theta)^{1/2})\overline{((1-2\cos^2\theta)^2+4\cos^2\theta\sin\theta(\kappa^2-\cos\theta)^{1/2}})} \\\hspace{-3cm}
+f_p(\theta)=\frac{\sin\theta(1/\kappa^2-\cos^2\theta)^{1/2}}
+{(\cos^2\theta+\sin\theta(1/\kappa^2-\cos^2\theta)^{1/2})((1/\kappa^2-2\cos^2\theta)^2+4\cos^2\theta\sin\theta(1/\kappa^2-\cos\theta)^{1/2})}
+\een
+where $0<\theta^d_1<\pi/2<\theta^d_2<\pi$ and $z_2=(d+z_1)\tan \theta^d_1=(z_1-d)\tan \theta^d_2$.
+\end{lem}
+\debproof
+\ben
+\frac{y_2}{|x-y|}\frac{1}{(k_s|x-y|)^{3/4}}+\frac{|x_1-y_1|}{|x-y|}\frac{1}{(k_s|x-y|)^{5/4}} \\ \hspace{-0.5cm}
+=(\frac{ z_2}{|x-z|}\frac{1}{(k_s|x-z|)^{3/4}}+\frac{|x_1-z_1|}{|x-z|}\frac{1}{(k_s|x-z|)^{5/4}})(1+O(\frac{|y-z|}{|x-z|}))
+\een
+\ben
+|\mu_\i(k_j\frac{x_1-y_1}{|x-y|})-\mu_\i(k_j\frac{x_1-z_1}{|x-z|})| \\  \leq
+C k_j \sqrt{\Big|\frac{x_1-y_1}{|x-y|}-\frac{x_1-z_1}{|x-z|}\Big|} \leq C k_j \Big(\frac{|y-z|}{|x-z|}\Big)^{1/2}
+\een
+where $i,j=s,p$.
+\be \label{G_sprin}\hspace{-2cm}
+\mathcal{G}_s(x,y)=\mathcal{G}_s(x,z)e^{\i k_s\widehat{x-z}\cdot (z-y)}+O(\frac{(k_s|y-z|)^2}{(k_s|x-z|)^{3/2}})+O(\frac{(k_s|y-z|)^{1/2}}{k_s|x-z|}) \\ \hspace{-2cm}\label{G_pprin}
+\mathcal{G}_p(x,y)=\mathcal{G}_p(x,z)e^{\i k_p\widehat{x-z}\cdot (z-y)}+O(\frac{(k_p|y-z|)^2}{(k_p|x-z|)^{3/2}})+O(\frac{(k_p|y-z|)^{1/2}}{k_p|x-z|})
+\ee
+For $l>1$, a simple computation show that
+\be\label{int_d} \hspace{-1cm}
+\int_{-d}^{d}\frac{k_s }{(k_s|x-z|)^l}dx_1=\frac{1}{(k_s z_2)^{l-1}}\int_{\frac{-d-z_1}{z_2}}^{\frac{d-z_1}{z_2}}\frac{1}{(1+t^2)^{l/2}} dt\leq C\frac{1}{(k_s z_2)^{l-1}}
+\ee
+Let
+\be
+\mathcal{G}_\alpha(x,y)=\frac{\i}{\sqrt{2\pi}\mu}g_\alpha(\frac{x_1-y_1}{|x-y|},\kappa)\frac{1}{(k_\alpha|x-y|)^{1/2}}e^{\i k_\alpha|x-y|-\i\frac{\pi}{4}} \\
+\mathcal{T}_\alpha(x,y)=\frac{k_\alpha}{\sqrt{2\pi}}
+ t_\alpha(\frac{x_1-z_1}{|x-z|},\kappa)\frac{1}{(k_s|x-z|)^{1/2}}
+e^{\i k_\alpha|x-z|-\i\frac{\pi}{4}}
+\ee
+where $\alpha=s,p$.
+Now, by substituting (\ref{G_sprin}-\ref{G_pprin}) into $J_d(z,y)$ and using inequality (\ref{int_d}), we have
+\be\nn\hspace{-1.5cm}\nn
+J_d(z,y)=\frac{-\i}{2\pi\mu}\int_{-d}^{d}t_s(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_s(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_s\widehat{x-z}\cdot (y-z)}}{|x-z|}\\
++t_p(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_p(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_p\widehat{x-z}\cdot (y-z)}}{|x-z|}dx_1\\
+\frac{-\i}{2\pi\mu}\int_{-d}^{d}t_p(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_s(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_s\widehat{x-z}\cdot (y-z)}}{|x-z|}\\
++t_s(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_p(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_p\widehat{x-z}\cdot (y-z)}}{|x-z|}dx_1\\
++O((1+\frac{|y-z|}{z_2})(\frac{1}{k_s z_2})^{1/4}+\frac{(k_s|y-z|)^2}{k_s z_2}+(\frac{|y-z|}{z_2})^{1/2})\\
+:=F(z,y)+R(z,y)\\
++O((1+\frac{|y-z|}{z_2})(\frac{1}{k_s z_2})^{1/4}+\frac{(k_s|y-z|)^2}{k_s z_2}+(\frac{|y-z|}{z_2})^{1/2})
+\ee
+We denote $\widehat{x-z}=x-z/|x-z|=(cos(\phi+\pi),\sin(\phi+\pi))$, then taking the substitution $x_1=z_1-z_2\cot\phi$, we obtain
+\be
+F(z,y)&=&\frac{-\i}{2\pi\mu} \int_{\theta^d_1}^{\theta^d_2}A_s(\phi,\kappa)e^{\i k_s(z_1-y_1)\cos\phi+\i k_s(z_2-y_2)\sin\phi} \\
+&+&\frac{-\i}{2\pi\mu} \int_{\theta^d_1}^{\theta^d_2}A_p(\phi,\kappa)e^{\i k_p(z_1-y_1)\cos\phi+\i k_p(z_2-y_2)\sin\phi}
+\ee
+\be
+R(z,y)&=&\frac{-\i}{2\pi\mu} \int_{\theta^d_1}^{\theta^d_2}B_s(\phi,\kappa)e^{\i k_s(z_1-y_1)\cos\phi+\i k_s(z_2-y_2)\sin\phi+(k_p-k_s)|x-z|} \\
+&+&\frac{-\i}{2\pi\mu} \int_{\theta^d_1}^{\theta^d_2}B_p(\phi,\kappa)e^{\i k_p(z_1-y_1)\cos\phi+\i k_p(z_2-y_2)\sin\phi+(k_s-k_p)|x-z|}
+\ee
+It is easy to see that $|R(z,y)|\leq C\frac{|z-y|}{z_2}$.
+\finproof
+
+\section*{References}
+\bibliography{eee}
+\end{document}
