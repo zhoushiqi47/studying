@@ -471,7 +471,7 @@ where $0<\theta^d_1<\pi/2<\theta^d_2<\pi$ and $z_2=(d+z_1)\tan \theta^d_1=(z_1-d
 |\mu_\i(k_j\frac{x_1-y_1}{|x-y|})-\mu_\i(k_j\frac{x_1-z_1}{|x-z|})| \\  \leq
 C k_j \sqrt{\Big|\frac{x_1-y_1}{|x-y|}-\frac{x_1-z_1}{|x-z|}\Big|} \leq C k_j \Big(\frac{|y-z|}{|x-z|}\Big)^{1/2}
 \een
-where $i,j=s,p$.
+where $i,j=s,p$. By above, we can obtain
 \be \label{G_sprin}\hspace{-2cm}
 \mathcal{G}_s(x,y)=\mathcal{G}_s(x,z)e^{\i k_s\widehat{x-z}\cdot (z-y)}+O(\frac{(k_s|y-z|)^2}{(k_s|x-z|)^{3/2}})+O(\frac{(k_s|y-z|)^{1/2}}{k_s|x-z|}) \\ \hspace{-2cm}\label{G_pprin}
 \mathcal{G}_p(x,y)=\mathcal{G}_p(x,z)e^{\i k_p\widehat{x-z}\cdot (z-y)}+O(\frac{(k_p|y-z|)^2}{(k_p|x-z|)^{3/2}})+O(\frac{(k_p|y-z|)^{1/2}}{k_p|x-z|})
@@ -492,7 +492,7 @@ Now, by substituting (\ref{G_sprin}-\ref{G_pprin}) into $J_d(z,y)$ and using ine
 \be\nn\hspace{-1.5cm}\nn
 J_d(z,y)=\frac{-\i}{2\pi\mu}\int_{-d}^{d}t_s(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_s(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_s\widehat{x-z}\cdot (y-z)}}{|x-z|}\\
 +t_p(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_p(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_p\widehat{x-z}\cdot (y-z)}}{|x-z|}dx_1\\
-\frac{-\i}{2\pi\mu}\int_{-d}^{d}t_p(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_s(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_s\widehat{x-z}\cdot (y-z)}}{|x-z|}\\
+-\frac{\i}{2\pi\mu}\int_{-d}^{d}t_p(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_s(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_s\widehat{x-z}\cdot (y-z)}}{|x-z|}\\
 +t_s(\frac{x_1-z_1}{|x-z|},\kappa)^T\overline{g_p(\frac{x_1-z_1}{|x-z|},\kappa)}\frac{e^{\i k_p\widehat{x-z}\cdot (y-z)}}{|x-z|}dx_1\\
 +O((1+\frac{|y-z|}{z_2})(\frac{1}{k_s z_2})^{1/4}+\frac{(k_s|y-z|)^2}{k_s z_2}+(\frac{|y-z|}{z_2})^{1/2})\\
 :=F(z,y)+R(z,y)\\
