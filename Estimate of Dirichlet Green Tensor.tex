@@ -331,6 +331,29 @@ By lemma (\ref{van}), we have
 \ee
 Finally, the claim 3 is a direct cosequence of using stationary phase theorem for $I_{111}$. This completes the proof.
 \finproof
+\begin{lem}
+	Assume that $0<\kappa:=\sin\phi_\kappa<1,0<\phi_\kappa<\pi/2$, $0<\phi<\pi/2$ and $-\pi/2<\phi_1<\phi_2<\pi/2$ satisfy that $\kappa^2=\sin^2(\phi+\phi_1)=\sin^2(\phi+\phi_2)$. Let $f(\theta)$:
+	\be
+	f(\theta):=F(\sin(\theta+\phi),\cos(\theta+\phi),(\kappa^2-\sin^2(\theta+\phi))^{1/2})
+	\ee
+	be a function in $C^4((-\pi/2,\pi/2)\bks\{\phi_1,\phi_2\})$. Moreover, there exits $\delta>$ such that $f(\theta)$ can be represented as
+	\be
+	f(\theta)=g_1(\theta)+g_2(\theta)((\kappa^2-\sin^2(\theta+\phi))^{1/2}))
+	\ee 
+	where $g_1,g_2\in C^4(\bigcup\limits_{i=1,2}(\phi_i-\delta,\phi_i+\delta))$. Then for any $\rho>1$, we have
+	\be\nn
+	\bigg|I(\rho):=\int_{-\pi/2}^{\pi/2}f(\theta)\cos(\theta+\phi)e^{\i\rho\cos\theta}d\theta
+	-\bigg(\frac{2\pi}{\rho}\bigg)^{1/2}f(0)\cos\phi e^{\i\rho-\i\pi/4}\bigg| \\
+	\leq C(\cos\phi\frac{1}{\rho^{3/4}}+\sin\phi\frac{1}{\rho^{5/4}})
+	\ee	
+\end{lem}
+\debproof
+The proof will be split into two parts about whether $\phi$ equal to $\phi_\kappa$.
+\be\hspace{-1cm}
+f'(\theta)=g_1'(\theta)+(g_2'(\theta)(\kappa^2-\sin^2(\theta+\phi))-g_2(\theta))\frac{1}{(\kappa^2-\sin^2(\theta+\phi))^{1/2}}\\
+:=h_1(\theta)+h_2(\theta)\frac{1}{(\kappa^2-\sin^2(\theta+\phi))^{1/2}}
+\ee
+\finproof
 \section{Some draft about Green Tensor Analysis}
 Let substitute $\xi=k\sin\theta$ into integral and shift the variable, we have
 \be
@@ -510,6 +533,24 @@ R(z,y)&=&\frac{-\i}{2\pi\mu} \int_{\theta^d_1}^{\theta^d_2}B_s(\phi,\kappa)e^{\i
 It is easy to see that $|R(z,y)|\leq C\frac{|z-y|}{z_2}$.
 \finproof
 
+Let 
+\ben
+g(x_1)=\frac{1}{((x_1-z_1)^2+z_2^2)^{3/4}((x_1-y_1)^2+y_2^2)^{1/4}}\\
+\phi(x_1)=((x_1-z_1)^2+z_2^2)^{1/2}-((x_1-y_1)^2+y_2^2)^{1/2}
+\een
+Then, we have
+\ben
+g'(x_1)=-g(x_1)[\frac{3(x_1-z_1)}{2((x_1-z_1)^2+z_2^2)}+\frac{(x_1-u_1)}{2((x_1-y_1)^2+y_2^2)}]\\
+\phi'(x_1)=\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}-\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}}\\
+=\frac{\frac{(x_1-z_1)^2}{(x_1-z_1)^2+z_2^2}-\frac{(x_1-y_1)^2}{(x_1-y_1)^2+y_2^2}}{\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}+\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}}}\\
+=\frac{(x_1-z_1)^2y_2^2-(x_1-y_1)^2z_2^2}{(\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}+\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}})((x_1-z_1)^2+z_2^2)((x_1-y_1)^2+y_2^2)}\\
+\phi''(x_1)=\frac{z_2^2}{((x_1-z_1)^2+z_2^2)^{3/2}}-\frac{y_2^2}{((x_1-y_1)^2+y_2^2)^{3/2}}
+\een
+Using integration by parts, we can obtain
+\ben
+\int_{-d}^{d} g(x_1)e^{\i k\phi(x_1)}dx_1 \\
+=\frac{1}{\i k} (\frac{g(d)}{\phi'(d)}e^{\i k\phi(d)}-\frac{g(-d)}{\phi'(-d)}e^{\i k\phi(-d)})-\frac{1}{\i k}\int_{-d}^{d}\frac{g'(x_1)}{\phi'(x_1)}-\frac{g(x_1)\phi''(x_1)}{(\phi'(x_1))^2}dx_1
+\een
 \section*{References}
 \bibliography{eee}
 \end{document}
