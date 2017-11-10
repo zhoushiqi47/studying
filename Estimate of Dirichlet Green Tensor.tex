@@ -185,7 +185,43 @@ and observe that
 |h(y)|\leq\int_{0}^{a}|f'(t)|(t^2+y^2)^{\frac{\alpha-1}{2}}dt
 \een
 \finproof
-
+\begin{lem} \label{asym_frac_2}
+	Let $F(\lambda,a)=\int_{0}^{a} t^{-1/2}f(t)e^{-\i\rho t}dt$ where $0<a\leq+\infty$ and $\rho>0$, then we have
+	\be
+	& &|F(\rho,a)-e^{-\i\frac{\pi}{4}}f(0)\Gamma(1/2)\frac{1}{\rho^{1/2}}|\\
+	&\leq& C\int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{a}|f'(t)|(t^2+y^2)^{-\frac{1}{4}}dt+\frac{1}{\rho}a^{-1/2}f(a)
+	\ee
+\end{lem}
+\debproof
+Put
+\be
+g_0(t)=t^{-1/4}e^{-\i\rho t}
+\ee
+and define
+\be
+g_1(t)=-\int_{t}^{t-\i\infty} x^{-1/2}e^{-\i\rho x} dx
+\ee
+where the path of integration is the vertical line $x=t-\i y, y\geq0$. It is easy to show that $g_1(t)'=g_0(t)$. Substituting $x=t-\i y$ into $g_1(t)$, we have
+\be
+g_1(t)=\i\int_{0}^{\infty}(t-\i y)^{-1/2}e^{-\i\rho t}e^{-\rho y} d y
+\ee
+Upon integration by parts, we have
+\ben
+F(\rho,a)&=&\int_{0}^{a}f(t)dg_1(t)\\
+&=&e^{-\i\frac{\pi}{4}}f(0)\Gamma(1/2)\frac{1}{\rho^{1/2}}+f(a)g_1(a)-\int_{0}^{a}f'(t)g_1(t)dt \\
+&=&e^{-\i\frac{\pi}{4}}f(0)\Gamma(1/2)\frac{1}{\rho^{1/2}}+\i f(a)\int_{0}^{\infty}(a-\i y)^{-1/2}e^{-\i\rho t}e^{-\rho y} d y
+\\ & & -\i
+\int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{a}f'(t)(t-\i y)^{-1/2}e^{-\i\rho t}dt
+\een
+Let 
+\ben
+h(y)=\int_{0}^{a}f'(t)(t-\i y)^{-1/2}e^{-\i\rho t}dt
+\een
+and observe that
+\ben
+|h(y)|\leq\int_{0}^{a}|f'(t)|(t^2+y^2)^{-\frac{1}{4}}dt
+\een
+\finproof
 \begin{lem}
 	Assume that $0<\kappa:=\sin\phi_\kappa<1,0<\phi_\kappa<\pi/2$, $0\leq\phi\leq\pi/2$ and $-\pi/2<t_1<t_2<\pi/2$ satisfy that $\kappa^2=\sin^2(\phi+t_1)=\sin^2(\phi+t_2)$. Let $f(\theta)$:
 	\be
@@ -540,7 +576,7 @@ f(t)= t^{-1/2} e^{-\i\rho t/2} \\
 g(t)=-\int_{t}^{t-\i\infty}x^{-1/2}e^{-\i\rho x/2} dx \\
 =\i\int_{0}^{\infty}(t-\i x)^{-1/2}e^{-\i\rho t-\rho x} dx
 \een
-It is to see that $g'(t)=f(t)$. Then we have
+It is easy to see that $g'(t)=f(t)$. Then we have
 \ben
 =\int_{0}^{\infty}\chi(t)(-\sqrt{t}\cos(\frac{\phi-\phi_\kappa}{2})-\sqrt{4-t}\sin(\frac{\phi-\phi_\kappa}{2})^{1/2}t^{-1/2} e^{-\i\rho t/2}\\
 =\chi(0)(-2\sin(\frac{\phi-\phi_\kappa}{2}))^{1/2}g(0) \\
@@ -582,8 +618,79 @@ Immediately, we can obtain
 \een
 It follows that
 \ben
-R(\rho)\leq C\rho^{-3/4}
+R(\rho)\leq \int_{0}^{\infty} x^{-1/4}e^{-\rho x}\leq C\rho^{-3/4}
 \een
+\section{stationary of phase lemma}
+\begin{lem}
+	Assume that $0<\kappa:=\sin\phi_\kappa<1,0<\phi_\kappa<\pi/2$, $0\leq\phi\leq\pi/2$. Let 
+	\be
+	f(t,\phi):=F(\sin(t+\phi),\cos(t+\phi),(\kappa^2-\sin^2(t+\phi))^{1/2})
+	\ee
+	be a complexed function in $C((-\pi/2,\pi/2)\times(0,\pi/2))$. Moreover, its partial derivative with respect to $t$ can be represented as
+	\be\label{repre}
+	\frac{\pa f(t,\phi)}{\pa t}=g(t,\phi)(\kappa^2-\sin^2(t+\phi))^{-1/2}
+	\ee 
+	where $g(t,\phi)$ is uniformly bounded. Then for any $\rho\geq1$, we have
+	\be\nn
+	\bigg|I(\rho,\phi):=\int_{-\pi/2}^{\pi/2}f(t)e^{\i\rho\cos t}dt
+	-\bigg(\frac{2\pi}{\rho}\bigg)^{1/2}f(0) e^{\i\rho-\i\pi/4}\bigg| \\
+	\leq C\frac{1}{\rho^{3/4}}
+	\ee	
+\end{lem}
+\debproof
+Solving the following equation:
+\ben
+\kappa^2-\sin^2(t+\phi)=0
+\een
+we have, if $0<\phi<\pi/2-\phi_\kappa$,
+\ben
+t_1(\phi)=\phi_\kappa-\phi \ \ \ \ \ t_2(\phi)=-\phi_\kappa-\phi
+\een
+and if $\pi/2-\phi_\kappa\leq\phi<\pi/2$,
+\ben
+ t_1(\phi)=\phi_\kappa-\phi  \ \ \ \ \ t_2(\phi)=\pi-\phi_\kappa-\phi
+\een
+Since $|t_2(\phi)|<\phi_\kappa$ or $|t_2(\phi)|<\pi/2-\phi_\kappa$ , we now define $\delta:=\min(\frac{\phi_\kappa}{2},\frac{\pi/2-\phi_\kappa}{2})$ and it is easy to see that
+ \ben
+ \kappa+\sin(t+\phi)\neq0\\
+ \cos(\frac{t+\phi+\phi_\kappa}{2})\neq0
+ \een
+ for any $(t,\phi)\in[-\delta,\delta]\times[0,\pi/2]$.  Let $\chi_\delta\in C^\infty_0(-\pi/2,\pi/2)$ be the cut-off function with that $0\leq\chi_\delta\leq1$, $\chi_\delta=1$ in $(-\delta/2,\delta/2)$ and $\chi_\delta=0$  in $(-\pi/2,\pi/2)\bks(-\delta,\delta)$. Then we can divide $I$ into two parts such that
+ \ben\label{I_splits}
+ I=\int_{-\delta}^{\delta} f(t) \chi_\delta(t)e^{\i \rho\cos t} dt +
+ \int_{-\pi/2}^{\pi/2} f(t) (1-\chi_\delta(t))e^{\i \rho\cos t} dt  \\ 
+ =: I_{1} + I_{2}
+ \een
+ Subtitating $t(s)=2\arcsin s/2$ for t in $I_{1}$, we can obtain
+ \be\hspace{-1cm}
+ I_{1}&=&\int_{s(-\delta)}^{s(\delta)}  f(t(s))\chi_\delta(t(s))\frac{1}{\sqrt{1-s^2/4}}e^{\i  \rho}e^{-\i \rho s^2/2} ds \\ \hspace{-1cm}
+ &=&\int_{0}^{s(\delta)}  (f(t(s))\chi_\delta(t(s))+f(-t(s))\chi_\delta(-t(s)))\frac{1}{\sqrt{1-s^2/4}}e^{\i  \rho}e^{-\i \rho s^2/2} ds  \\ \hspace{-1cm}
+ &:=& I_{11}+I_{12}
+ \ee
+ Taking substitution $s=\sqrt{x}$, we have
+ \ben
+ I_{11}&=&\frac{1}{2}\int_{0}^{\sqrt{2\sin \frac{\delta}{2}}}  f(t(\sqrt{x}))\chi_\delta(t(\sqrt{x}))\frac{1}{\sqrt{1-x/4}}x^{-1/2}e^{\i  \rho}e^{-\i \rho x/2} ds 
+ \een
+ 
+ 
+Observe that there exists $0<\delta<\min(\epsilon/2,\phi_\kappa,\pi/2-\phi_\kappa)$ that $\kappa/2<\sin(t+\phi)<(1+\kappa)/2$ for any $t\in(-\delta,\delta)$ and $\phi\in(\phi_\kappa-\delta,\phi_\kappa+\delta)$.
+\ben
+(\kappa+\sin(t+\phi))>3\kappa/2 \\
+\cos(\frac{t+\phi+\phi_\kappa}{2})=\sqrt{\sin^2(\frac{t+\phi+\phi_\kappa}{2})}>\sqrt{1-((1+\kappa)/2)^2} \\
+(\kappa^2-\sin^2(t+\phi))^{1/2} \\
+=((\kappa+\sin(t+\phi))(\kappa-\sin(t+\phi))^{1/2}\\
+=(\kappa+\sin(t+\phi))^{1/2}(\cos(\frac{t+\phi+\phi_\kappa}{2}))^{1/2}
+(-2\sin(\frac{t+\phi-\phi_\kappa}{2}))^{1/2} \\
+\frac{\pa f(t,\phi)}{\pa t}=\frac{\pa g_1(t,\phi)}{\pa t}+\frac{\pa g_2(t,\phi)}{\pa t}(\kappa^2-\sin^2(t+\phi))^{1/2}\\
++g_2(t,\phi)\frac{-2\cos(t+\phi)}{(\kappa^2-\sin^2(t+\phi))^{1/2}}\\
+:=\frac{h(t,\phi)}{(\kappa^2-\sin^2(t+\phi))^{1/2}} \\
+h(t,\phi)<M
+\een
+For any $\phi\in[0,\pi/2]$, we have
+\ben
+\int_{-\pi/2}^{\pi/2} \frac{\pa f(t,\phi)}{\pa t}
+\een
+\finproof
 
 \section*{References}
 \bibliography{eee}

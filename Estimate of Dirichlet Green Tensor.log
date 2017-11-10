@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  9 NOV 2017 20:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  10 NOV 2017 18:04
 entering extended mode
 **"./Estimate of Dirichlet Green Tensor.tex"
 ("Estimate of Dirichlet Green Tensor.tex"
@@ -95,7 +95,11 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
 Package color Info: Driver file: pdftex.def on input line 143.
 )
-("Estimate of Dirichlet Green Tensor.aux")
+("Estimate of Dirichlet Green Tensor.aux"
+
+LaTeX Warning: Label `I_splits' multiply defined.
+
+)
 \openout1 = `"Estimate of Dirichlet Green Tensor.aux"'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
@@ -110,8 +114,7 @@ LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
 LaTeX Font Info:    ... okay on input line 16.
-
-(C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
+ (C:\CTEX\MiKTeX\tex\context\base\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count89
 \scratchdimen=\dimen109
@@ -198,45 +201,57 @@ Underfull \hbox (badness 10000) in paragraph at lines 186--188
 
  []
 
-[2{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}] [3]
-[4]
-Overfull \hbox (14.33205pt too wide) in alignment at lines 275--281
+[2{C:/CTEX/UserData/pdftex/config/pdftex.map{Unicode.sfd}{UGBK.sfd}}]
+Underfull \hbox (badness 10000) in paragraph at lines 223--226
+
+ []
+
+[3] [4]
+Overfull \hbox (14.33205pt too wide) in alignment at lines 311--317
  [] [] [] [] 
  []
 
-[5]
-Underfull \hbox (badness 10000) in paragraph at lines 326--329
+[5] [6]
+Underfull \hbox (badness 10000) in paragraph at lines 362--365
 
  []
-
-[6]
-
-LaTeX Warning: Reference `pr_dgreen' on page 7 undefined on input line 387.
 
 [7]
-Overfull \hbox (2.51326pt too wide) in alignment at lines 452--457
+
+LaTeX Warning: Reference `pr_dgreen' on page 8 undefined on input line 423.
+
+[8]
+Overfull \hbox (2.51326pt too wide) in alignment at lines 488--493
  [] [] [] [] 
  []
 
-[8] [9]
-Underfull \hbox (badness 10000) in paragraph at lines 504--507
+[9]
+Underfull \hbox (badness 10000) in paragraph at lines 540--543
 
  []
 
-[10] [11] ("Estimate of Dirichlet Green Tensor.bbl") [12]
+[10] [11] [12] [13]
+Underfull \hbox (badness 10000) in paragraph at lines 692--694
+
+ []
+
+("Estimate of Dirichlet Green Tensor.bbl" [14]) [15]
 ("Estimate of Dirichlet Green Tensor.aux")
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 2350 strings out of 495237
- 28039 string characters out of 3182726
- 98735 words of memory out of 3000000
- 5589 multiletter control sequences out of 15000+200000
+ 2352 strings out of 495237
+ 28059 string characters out of 3182726
+ 97805 words of memory out of 3000000
+ 5591 multiletter control sequences out of 15000+200000
  12792 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 38i,11n,26p,786b,185s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 38i,11n,26p,786b,237s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fon
 ts/type1/public/amsfonts/cm/cmbx6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
 ts/cm/cmbx8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/C
@@ -251,10 +266,10 @@ m/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
 blic/amsfonts/latxfont/lasy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (12 pages, 259799 by
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (15 pages, 269382 by
 tes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
+ 123 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
