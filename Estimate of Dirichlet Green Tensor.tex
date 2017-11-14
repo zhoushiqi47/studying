@@ -552,7 +552,7 @@
 	\een
 	Then, we have
 	\ben
-	g'(x_1)=-g(x_1)[\frac{3(x_1-z_1)}{2((x_1-z_1)^2+z_2^2)}+\frac{(x_1-u_1)}{2((x_1-y_1)^2+y_2^2)}]\\
+	g'(x_1)=-g(x_1)[\frac{3(x_1-z_1)}{2((x_1-z_1)^2+z_2^2)}+\frac{(x_1-y_1)}{2((x_1-y_1)^2+y_2^2)}]\\
 	\phi'(x_1)=\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}-\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}}\\
 	=\frac{\frac{(x_1-z_1)^2}{(x_1-z_1)^2+z_2^2}-\frac{(x_1-y_1)^2}{(x_1-y_1)^2+y_2^2}}{\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}+\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}}}\\
 	=\frac{(x_1-z_1)^2y_2^2-(x_1-y_1)^2z_2^2}{(\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}+\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}})((x_1-z_1)^2+z_2^2)((x_1-y_1)^2+y_2^2)}\\
@@ -560,8 +560,50 @@
 	\een
 	Using integration by parts, we can obtain
 	\ben
-	\int_{-d}^{d} g(x_1)e^{\i k\phi(x_1)}dx_1 \\
-	=\frac{1}{\i k} (\frac{g(d)}{\phi'(d)}e^{\i k\phi(d)}-\frac{g(-d)}{\phi'(-d)}e^{\i k\phi(-d)})-\frac{1}{\i k}\int_{-d}^{d}\frac{g'(x_1)}{\phi'(x_1)}-\frac{g(x_1)\phi''(x_1)}{(\phi'(x_1))^2}dx_1
+	\int_{-d}^{d} g(x_1)e^{\i \phi(x_1)}dx_1 \\
+	=(\frac{g(d)}{\phi'(d)}e^{\i \phi(d)}-\frac{g(-d)}{\phi'(-d)}e^{\i \phi(-d)})-\int_{-d}^{d}\frac{g'(x_1)}{\phi'(x_1)}-\frac{g(x_1)\phi''(x_1)}{(\phi'(x_1))^2}dx_1
+	\een
+	Assume that 
+	\ben
+	|y_1|\leq c_0 d  \ \ \ |z_1|\leq c_0 d \ \ \ h\leq y_2,z_2\leq c_1h \ \ \ d\leq c_2
+	h    
+	\een
+	where $0<c_0<1$. Let define $0<\theta_y,\theta_z<\pi$ such that 
+	\ben
+	\cos\theta_y=\frac{x_1-y_1}{((x_1-y_1)^2+y_2^2)^{1/2}} \\
+	\cos\theta_z=\frac{x_1-z_1}{((x_1-z_1)^2+z_2^2)^{1/2}}
+	\een
+	By mean value theorem and the law of sines, we get
+	\ben
+	|\phi'(x_1)|&=&|\cos\theta_z-\cos\theta_y|=|\sin\theta'||\theta_z-\theta_y|\\
+	&\geq&\frac{h}{(1+c_0)d}|\sin(\theta_z-\theta_y)| \\
+	&=&\frac{h}{(1+c_0)d}\frac{|z-y|}{|x-y|}\sin\theta_{|x-y|}\\
+	&=&\frac{h}{(1+c_0)d}\frac{|z-y|}{|x-z|}\sin\theta_{|x-z|} \\
+	&\geq&\frac{h^2}{(1+c_0)^2d^2}\frac{|z-y|}{|x-y|}\\
+\mbox{or}	&\geq&\frac{h^2}{(1+c_0)^2d^2}\frac{|z-y|}{|x-z|}
+	\een
+	Then we have
+	\ben
+	|\frac{g(x_1)}{\phi'(x_1)}|&\leq&\frac{(1+c_0)^2 d^2}{h^2}\frac{1}{|z-y||x-y|^{1/2}|x-z|^{1/2}} \\
+	&\leq&C\frac{ d^2}{h^3}\frac{1}{|z-y|}
+	\een
+	Moreover, by mean value theorem agian, we have
+	\ben
+	|\phi''(x_1)|&=&|\frac{\sin^2\theta_z}{|x-z|}-\frac{\sin^2\theta_y}{|x-y|}|\\
+	&=&|\frac{2\sin\theta'\cos\theta'}{|x-y'|}(\theta_z-\theta_y)-\frac{\sin^2\theta'}{|x-y'|^2}(|x-z|-|x-y|)| \\
+	&\leq&\pi\frac{|\sin(\theta_z-\theta_y)}{h}+\frac{|z-y|}{h^2} \\
+	&\leq&\pi\frac{|\sin\theta_{|x-z|}||z-y|}{h|x-z|}+\frac{|z-y|}{h^2} \\
+	&\leq&C\frac{|z-y|}{h^2}
+	\een
+	Now, it is easy to see that
+	\ben
+	& &
+	\Big|\int_{-d}^{d}\frac{g'(x_1)}{\phi'(x_1)}-\frac{g(x_1)\phi''(x_1)}{(\phi'(x_1))^2}dx_1\Big| \\
+	&\leq&C\frac{ d^3}{h^4}\frac{1}{|z-y|}+C\frac{ d^3}{h^3}\frac{1}{|z-y|}\frac{d^2}{h^3}
+	\een
+	Based on the above analysis, we can obtain
+	\ben
+	|\int_{-d}^{d}z_2 g(x_1)e^{\i \phi(x_1)}|\leq C((\frac{d}{h})^{2}+(\frac{d}{h})^{3}+(\frac{d}{h})^{5})\frac{1}{|z-y|}
 	\een
 	\section{2017.11.08}
 	\ben
@@ -696,7 +738,7 @@
 	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \int_{-2\sin|\theta|}^{2\sin \frac{\delta}{2}-2\sin|\theta|}\frac{1}{|x|^{1/2}}((x+2\sin|\theta|)^4+y^2)^{-\frac{1}{4}}dx \\ \hspace{-1.5cm}
 	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \int_{-2\sin|\theta|}^{2\sin \frac{\delta}{2}}\frac{1}{|x|^{1/2}}((x+2\sin|\theta|)^4+y^2)^{-\frac{1}{4}}dx\\ \hspace{-1.5cm}
 	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \Bigg( \int_{0}^{\sqrt{2\sin \frac{\delta}{2}}}(x^8+y^2)^{-\frac{1}{4}}dx+ \int_{0}^{\sqrt{2\sin |\theta|}}((x^2-2\sin|\theta|)^4+y^2)^{-\frac{1}{4}}dx\Bigg)\\ \hspace{-1.5cm}
-	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \Bigg(y^{-\frac{1}{4}}\int_{0}^{\infty}(x^8+1)^{-\frac{1}{4}}dx+ y^{-\frac{1}{4}}\int_{0}^{\sqrt{2\sin |\theta|}}(2\sin|\theta|--x^2)^{-\frac{1}{2}}dx\Bigg)\\ \hspace{-1.5cm}
+	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \Bigg(y^{-\frac{1}{4}}\int_{0}^{\infty}(x^8+1)^{-\frac{1}{4}}dx+ y^{-\frac{1}{4}}\int_{0}^{\sqrt{2\sin |\theta|}}(2\sin|\theta|-x^2)^{-\frac{1}{2}}dx\Bigg)\\ \hspace{-1.5cm}
 	&\leq&C \int_{0}^{\infty}y^{-\frac{1}{4}}e^{-\rho y}dy \Bigg(\int_{0}^{\infty}(x^8+1)^{-\frac{1}{4}}dx+ \int_{0}^{1}(1-x^2)^{-\frac{1}{2}}dx\Bigg)\leq C\frac{1}{\rho^{3/4}}
 	\een
 	Using the same agrument , we can also carry out 
