@@ -151,7 +151,7 @@
 	\finproof
 	We recall following lemma, see e.g. \cite{Wong_Asymptotic}:
 	\begin{lem} \label{asym_frac}
-		Let $F(\lambda,a)=\int_{0}^{a} t^{\alpha-1}f(t)e^{-\i\rho t}dt$ where $0<a\leq+\infty$, $0<\alpha<1$, $\rho>0$ and $t^{\alpha-1}f\in L^1(0,a)$, then we have
+		Let $F(\rho,a)=\int_{0}^{a} t^{\alpha-1}f(t)e^{-\i\rho t}dt$ where $0<a\leq+\infty$, $0<\alpha<1$, $\rho>0$ and $t^{\alpha-1}f\in L^1(0,a)$, then we have
 		\be
 		|F(\rho,a)|\leq C(\frac{1}{\rho^\alpha}f(0)+\frac{1}{\rho}(a^{\alpha-1}f(a)+|t^{\alpha-1}f|_{L^1(0,a)})
 		\ee
@@ -186,7 +186,7 @@
 	\een
 	\finproof
 	\begin{lem} \label{asym_frac_2}
-		Let $F(\lambda,a)=\int_{0}^{a} t^{-1/2}f(t)e^{-\i\rho t}dt$ where $0<a\leq+\infty$ and $\rho>0$, then we have
+		Let $F(\rho,a)=\int_{0}^{a} t^{-1/2}f(t)e^{-\i\rho t}dt$ where $0<a\leq+\infty$ and $\rho>0$, then we have
 		\be
 		& &|F(\rho,a)-e^{-\i\frac{\pi}{4}}f(0)\Gamma(1/2)\frac{1}{\rho^{1/2}}|\\
 		&\leq& C (\int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{a}|f'(t)|(t^2+y^2)^{-\frac{1}{4}}dt+\frac{1}{\rho}a^{-1/2}f(a))
@@ -755,7 +755,71 @@
 	\een
 	This completes the proof.
 	\finproof
-	
-	\section*{References}
-	\bibliography{eee}
+\section{cross term of psf, 17.11.15}	
+We need the following slight generalization of Van der Corput lemma for the oscillatory integral \cite[P.152]{grafakos}.
+\begin{lem}\label{van}
+	Let $-\infty<a<b<\infty$, and $u$ is a $C^k$ function $u$ in $(a,b)$. \\
+	1. If $|u'(t)|\ge 1$ for $t\in (a,b)$ and $u'$ is monotone in (a,b), then for any $\phi(t)$ in $(a,b)$ with integrable derivatives
+	\ben
+	\left|\int^b_a e^{\i\lambda u(t)}\phi(t)dt\right|\le
+	3\lambda^{-1}\left[|\phi(b)|+\int^b_a|\phi'(t)|dt\right].
+	\een
+	2. For all $k\geq2$, if $|u^{(k)}(t)|\ge 1$ for $t\in (a,b)$ , then for any $\phi(t)$ in $(a,b)$ with integrable derivatives
+	\ben
+	\left|\int^b_a e^{\i\lambda u(t)}\phi(t)dt\right|\le
+	12k\lambda^{-1/k}\left[|\phi(b)|+\int^b_a|\phi'(t)|dt\right].
+	\een
+\end{lem}
+\debproof
+The assertion can be proved by extending the Van der Corptut lemma in \cite{grafakos}. Here we omit the details.
+\finproof
+\begin{lem}
+	For $0<\kappa<1$, let $F(\lambda)=\int_{0}^{\kappa}f(t)e^{\i\lambda(\sqrt{1-t^2}-\tau\sqrt{\kappa^2-t^2}+\alpha t)}dt$, where $\tau\geq c_0>0$ and $\alpha\in\R$, then we have
+	\ben
+	|F(\lambda)|\leq C(\kappa) \lambda^{-\frac{1}{2N_*}} \Big[|f(\kappa)|+\int_{0}^{\kappa}|f'(t)|dt\Big]
+	\een
+	where $N_*=\min\{N|\kappa^{2N-1}<c_0,N\geq2\}$.
+\end{lem}
+\debproof
+Put $\phi(t)=-\sqrt{1-t^2}$ and $\psi(t,\tau)=\tau\phi(t/\kappa)-\phi(t)+\alpha t$. For easy of notations, we denote the $n$-th partial derivative of $g(t)$ with respect to $t$ by $g^{(n)}(t)$. Then, it is to see that, for $n>1$
+\ben
+\psi^{(n)}(t,\tau)=\frac{\tau}{\kappa^{n-1}}\phi^{(n)}(\frac{t}{\kappa})-\phi^{(n)}(t)
+\een
+A standard computation show that
+\ben
+\phi^{(1)}(t)=\frac{t}{\sqrt{1-t^2}}  \\
+\phi^{(2)}(t)=\frac{1}{(1-t^2)^{3/2}}\\
+\phi^{(3)}(t)=\frac{3t}{(1-t^2)^{5/2}}
+\een
+Moreover, for $n\geq3$, we have
+\be
+\phi^{(n)}(t)=\frac{p_n(t)}{(1-t^2)^{n-1/2}}
+\ee
+where $p_n=\sum_{0}^{n-2}a^n_{k}t^k$ is a $(n-2)$-th polynomial such that its  coefficients have following recursion formula:
+\ben
+a^{n+1}_{n-1}=(n+1)a^n_{n-2}, \ \ \ a^{n+1}_{n-2}=(n+2)a^n_{n-3} \\
+a^{n+1}_{k}=(k+1)a^n_{k+1}+(2n-k)a^n_{k-1} \ \ \ \mbox{for} \ 1\leq k\leq n-3 \\
+a^{n+1}_{0}=a^n_{1}
+\een
+Since the polynmial coefficients are all positive, it is obvious that for $n\geq 1$, $\phi^{(n)}(t)$ is a monotone increasing positive function. Using the recursion formula, it follows that
+\be \label{value_0}
+\phi^{(n)}(0)=\left\{ \begin{array}{ll}
+\ \ \ \ \ \ 	0  \ \ \ \ \ \ \ \ \ \ \  \ \ \ \ \ \  \mbox{n is odd},\\
+	(n-1)!!(n-3)!! \ \ \mbox{n is even}.
+\end{array} \right.
+\ee
+where $(2k-1)!!$ is double factorial and $n>3$. We are now in the position to proof the inequality. Since $0<\kappa<1$, obersev that 
+\ben
+\psi^{(2N_*+1)}(t,\tau)\geq \frac{\tau}{\kappa^{2N_*}}\phi^{(2N_*+1)}(t)-\phi^{(2N_*+1)}(t)>0
+\een
+Therefore, $\psi^{(2N_*)}(t,\tau)$ is monotone increasing in $[0,\kappa)$. By (\ref{value_0}), we get
+\be
+\psi^{(2N_*)}(t,\tau)\geq\psi^{(2N_*)}(0,\tau)\geq\psi^{(2N_*)}(0,c_0)\geq\frac{c_0}{\kappa^{2N_*-1}}-1>0
+\ee
+ The lemma is now a direct consequence of lemma (\ref{van}).
+\finproof
+
+
+\section*{References}
+\bibliography{eee}
 \end{document}
