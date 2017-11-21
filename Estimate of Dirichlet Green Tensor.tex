@@ -778,7 +778,7 @@ The assertion can be proved by extending the Van der Corptut lemma in \cite{graf
 	\ben
 	|F(\lambda)|\leq C(\kappa) \lambda^{-\frac{1}{2N_*}} \Big[|f(\kappa)|+\int_{0}^{\kappa}|f'(t)|dt\Big]
 	\een
-	where $N_*=\min\{N|\kappa^{2N-1}<c_0,N\geq2\}$.
+	where $N_*=\min\{N|\kappa^{2N-1}<c_0,N\in \Z_+ \}$.
 \end{lem}
 \debproof
 Put $\phi(t)=-\sqrt{1-t^2}$ and $\psi(t,\tau)=\tau\phi(t/\kappa)-\phi(t)+\alpha t$. For easy of notations, we denote the $n$-th partial derivative of $g(t)$ with respect to $t$ by $g^{(n)}(t)$. Then, it is to see that, for $n>1$
@@ -795,7 +795,7 @@ Moreover, for $n\geq3$, we have
 \be
 \phi^{(n)}(t)=\frac{p_n(t)}{(1-t^2)^{n-1/2}}
 \ee
-where $p_n=\sum_{0}^{n-2}a^n_{k}t^k$ is a $(n-2)$-th polynomial such that its  coefficients have following recursion formula:
+where $p_n=\sum_{0}^{n-2}a^n_{k}t^k$ is a $(n-2)$-th polynomial such that its  coefficients satisfy the following recursion formula:
 \ben
 a^{n+1}_{n-1}=(n+1)a^n_{n-2}, \ \ \ a^{n+1}_{n-2}=(n+2)a^n_{n-3} \\
 a^{n+1}_{k}=(k+1)a^n_{k+1}+(2n-k)a^n_{k-1} \ \ \ \mbox{for} \ 1\leq k\leq n-3 \\
@@ -813,12 +813,37 @@ where $(2k-1)!!$ is double factorial and $n>3$. We are now in the position to pr
 \psi^{(2N_*+1)}(t,\tau)\geq \frac{\tau}{\kappa^{2N_*}}\phi^{(2N_*+1)}(t)-\phi^{(2N_*+1)}(t)>0
 \een
 Therefore, $\psi^{(2N_*)}(t,\tau)$ is monotone increasing in $[0,\kappa)$. By (\ref{value_0}), we get
-\be
-\psi^{(2N_*)}(t,\tau)\geq\psi^{(2N_*)}(0,\tau)\geq\psi^{(2N_*)}(0,c_0)\geq\frac{c_0}{\kappa^{2N_*-1}}-1>0
+\be\hspace{-1.5cm}
+\psi^{(2N_*)}(t,\tau)\geq\psi^{(2N_*)}(0,\tau)\geq\psi^{(2N_*)}(0,c_0)=C(2N_*)(\frac{c_0}{\kappa^{2N_*-1}}-1)>0
 \ee
  The lemma is now a direct consequence of lemma (\ref{van}).
 \finproof
-
+\section{Other exponential decay term}
+The parameterization of hyperbolic curve passing $(\pm1,0)$ is:
+\ben
+\xi_1=\pm\sqrt{t^2+1} \ \ \ \ \xi_2= t
+\een
+where $t\in\R$. Substituting $\xi=\xi_1+\i\xi_2$ into $\mu(\xi):=(1-\xi^2)^{1/2}$ and $\mu_\kappa(\xi):=(\kappa^2-\xi^2)^{1/2}$, we get
+\ben
+\Im\mu(\xi)&=&\Im(1-(\xi_1^2-\xi_2^2+\i2\xi_1\xi_2))^{1/2}\\&=&\Im(-2t\sqrt{t^2+1}\i)^{1/2}=t^{1/2}(t^2+1)^{1/4}
+\een
+\ben
+\Im\mu_\kappa(\xi)&=&\Im(\kappa^2-(\xi_1^2-\xi_2^2+\i2\xi_1\xi_2))^{1/2}\\&=&\Im(\kappa^2-1-2t\sqrt{t^2+1}\i)^{1/2}\\ &=&\sqrt{\frac{\sqrt{(1-\kappa^2)^2+4t(t^2+1)}+1-\kappa^2}{2}}\\
+&\geq&t^{1/2}(t^2+1)^{1/4}
+\een
+where we only consider the branch, denoted by $\Gamma^+$, in the first quadrant here. For $a>0,b>$, we have
+\ben
+|e^{\i\xi a+\i\mu(\xi)b+\i\mu_\kappa(\xi)c}|\leq e^{-\sqrt{t^2+1}a-t^{1/2}(t^2+1)^{1/4}b-t^{1/2}(t^2+1)^{1/4}c}\leq e^{-t(b+c)} 
+\een 
+\begin{lem}
+	For $\xi\in\Gamma_0$, let $f(\xi)$ is complex valued function such that $|f(\xi)|\leq C(1+\xi^k)$, $k\in \Z_+$. Then we have
+	\ben
+	|I(a,b,c):=\int_{\Gamma^+}f(\xi)  \ e^{\i\xi a+\i\mu(\xi)b+\i\mu_\kappa(\xi)c} \ d\xi| \\
+	\leq C(\frac{1}{b+c}+\frac{1}{(b+c)^k})
+	\een
+\end{lem}
+\debproof
+\finproof
 
 \section*{References}
 \bibliography{eee}
