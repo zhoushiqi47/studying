@@ -730,7 +730,7 @@
 	&\leq&\int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{(2\sin \frac{\delta}{2})^2}\Big|\frac{\pa (f(t(\sqrt{x}))\chi_\delta(t(\sqrt{x}))\frac{1}{\sqrt{1-x/4}})}{\pa x}\Big|(x^2+y^2)^{-\frac{1}{4}}dx\\ \hspace{-1.5cm}
 	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{(2\sin \frac{\delta}{2})^2}
 	|\sqrt{x}\cos\theta+\sqrt{4-x}\sin\theta|^{-1/2}x^{-1/2}(x^2+y^2)^{-\frac{1}{4}}dx \\ \hspace{-1.5cm}
-	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{(2\sin \frac{\delta}{2})^2}\frac{\sqrt{x}|\cos\theta|+\sqrt{4-x}|\sin\theta|^{1/2}}{|x-4\sin^2\theta|^{1/2}}
+	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{(2\sin \frac{\delta}{2})^2}\frac{(\sqrt{x}|\cos\theta|+\sqrt{4-x}|\sin\theta|)^{1/2}}{|x-4\sin^2\theta|^{1/2}}
 	x^{-1/2}(x^2+y^2)^{-\frac{1}{4}}dx \\ \hspace{-1.5cm}
 	&\leq&C \int_{0}^{\infty}e^{-\rho y}dy \int_{0}^{(2\sin \frac{\delta}{2})^2}\frac{1}{|\sqrt{x}-2|\sin\theta||^{1/2}}
 	x^{-1/2}(x^2+y^2)^{-\frac{1}{4}}dx  \\ \hspace{-1.5cm}
@@ -818,7 +818,7 @@ Therefore, $\psi^{(2N_*)}(t,\tau)$ is monotone increasing in $[0,\kappa)$. By (\
 \ee
  The lemma is now a direct consequence of lemma (\ref{van}).
 \finproof
-\section{Other exponential decay term}
+\section{Other exponential decay term: 17.11.16 on G1}
 The parameterization of hyperbolic curve passing $(\pm1,0)$ is:
 \ben
 \xi_1=\pm\sqrt{t^2+1} \ \ \ \ \xi_2= t
@@ -831,18 +831,42 @@ where $t\in\R$. Substituting $\xi=\xi_1+\i\xi_2$ into $\mu(\xi):=(1-\xi^2)^{1/2}
 \Im\mu_\kappa(\xi)&=&\Im(\kappa^2-(\xi_1^2-\xi_2^2+\i2\xi_1\xi_2))^{1/2}\\&=&\Im(\kappa^2-1-2t\sqrt{t^2+1}\i)^{1/2}\\ &=&\sqrt{\frac{\sqrt{(1-\kappa^2)^2+4t(t^2+1)}+1-\kappa^2}{2}}\\
 &\geq&t^{1/2}(t^2+1)^{1/4}
 \een
-where we only consider the branch, denoted by $\Gamma^+$, in the first quadrant here. For $a>0,b>$, we have
+where we only consider the branch, denoted by $\Gamma^+$, in the first quadrant here. For $a>0,b>0$, we have
 \ben
-|e^{\i\xi a+\i\mu(\xi)b+\i\mu_\kappa(\xi)c}|\leq e^{-\sqrt{t^2+1}a-t^{1/2}(t^2+1)^{1/4}b-t^{1/2}(t^2+1)^{1/4}c}\leq e^{-t(b+c)} 
+|e^{\i\xi a+\i\mu(\xi)b+\i\mu_\kappa(\xi)c}|\leq e^{-ta-t^{1/2}(t^2+1)^{1/4}b-t^{1/2}(t^2+1)^{1/4}c}\leq e^{-t(b+c)} 
 \een 
 \begin{lem}
-	For $\xi\in\Gamma_0$, let $f(\xi)$ is complex valued function such that $|f(\xi)|\leq C(1+\xi^k)$, $k\in \Z_+$. Then we have
+	For $\xi\in\Gamma_0$, let $f(\xi)$ is a complex valued function in $L^1(\Gamma^+)$ such that $|f(\xi)|\leq C(1+\xi^k)$, $k\in \Z_+$. Then we have
 	\ben
 	|I(a,b,c):=\int_{\Gamma^+}f(\xi)  \ e^{\i\xi a+\i\mu(\xi)b+\i\mu_\kappa(\xi)c} \ d\xi| \\
 	\leq C(\frac{1}{b+c}+\frac{1}{(b+c)^k})
 	\een
 \end{lem}
 \debproof
+\ben
+\frac{d\xi(t)}{dt}=\frac{t}{\sqrt{t^2+1}}+\i
+\een
+Substituting $\xi(t)$ into $I(a,b,c)$, we hvae
+\ben
+|I(a,b,c)|&=&\Big|\int_{0}^{\infty}|f(\xi(t))\frac{d\xi(t)}{dt}e^{\i\xi(t) a+\i\mu(\xi(t))b+\i\mu_\kappa(\xi(t))c}dt \Big| \\
+&\leq&C\int_{0}^{\infty}(1+t^k) e^{-t(b+c)} dt\\
+&\leq& C(\frac{1}{b+c}+\frac{1}{(b+c)^k})
+\een
+\finproof
+\begin{lem}
+ Let $f(\xi)$ is a bounded complex valued function in $L^1((\kappa,1))$. Then we have
+	\ben
+	|I(a,b):=\int_{\kappa}^{1}|f(\xi)e^{\i\xi a+\i\mu_\kappa(\xi)b}d\xi|\\
+	\leq C\frac{1}{b}
+	\een
+\end{lem}
+\debproof
+It is simple to see that
+\ben
+|I(a,b)|&\leq& C \int_{\kappa}^{1}e^{-b\sqrt{\xi^2-\kappa^2}}d\xi \\
+&\leq& C\int_{0}^{\sqrt{1-\kappa^2}}\frac{t}{\sqrt{t^2+\kappa^2}}e^{-bt}dt \\
+&\leq& C\frac{1}{b}
+\een
 \finproof
 
 \section*{References}
