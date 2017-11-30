@@ -868,6 +868,30 @@ It is simple to see that
 &\leq& C\frac{1}{b}
 \een
 \finproof
+\section{about principle of arguement}
+Put
+\ben
+\delta_{\pm}(t)&=&(\kappa-2t^2)^2\mp\i4t^2\sqrt{1-t^2}\sqrt{t^2-\kappa}\\
+&:=&f_1(t)\mp \i f_2(t)
+\een
+where $0<\kappa<1$ and we have
+\ben
+{\delta'}_{\pm} (t)=f_1'(t)\mp \i f_2'(t)
+\een
+It is easy to see $f_2(1)=f_2(\kappa)=0$ and $f_1(t)>0$ for any $\kappa\leq t\leq1$. Then
+\ben
+& &\int_{\kappa}^{1}\frac{{\delta'}_{+} (t)}{\delta_{+}(t)}-\frac{{\delta'}_{-} (t)}{\delta_{-}(t)} dt \\
+&=&2\i\int_{\kappa}^{1}\Im(\frac{{\delta'}_{+} (t)}{\delta_{+}(t)})dt\\
+&=&2\i\int_{\kappa}^{1}\Im\frac{(f_1'(t)-\i f_2'(t))f_1(t)+\i f_2(t))}{(f_1(t)-\i f_2(t))(f_1(t)+\i f_2(t))} dt \\
+&=&2\i\int_{\kappa}^{1}\frac{f_1'(t) f_2(t)-f_1(t) f_2'(t)}{f_1^2(t)+ f_2^2(t)} dt\\
+&=&2\i\int_{\kappa}^{1}\frac{f_1^2(t)}{f_1^2(t)+ f_2^2(t)} \frac{f_1'(t) f_2(t)-f_1(t) f_2'(t)}{f_1^2(t)}dt\\
+&=&-2\i\int_{\kappa}^{1}\frac{f_1^2(t)}{f_1^2(t)+ f_2^2(t)} d\frac{f_2(t)}{f_1(t)}\\
+&=&-2\i\arctan \frac{f_2(t)}{f_1(t)}\Bigg|^1_\kappa=0
+\een
+Notic that, the condition only used above are  $f_2(1)=f_2(\kappa)=0$ and $f_1(t)>0$.
+
+
+
 
 \section*{References}
 \bibliography{eee}
