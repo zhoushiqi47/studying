@@ -970,25 +970,78 @@ g^{iij}=(1+2\delta_{ij})(-A(kr)\frac{r_j}{r^2})
 d^{iij}=(1+2\delta_{ij})(-A_{sp}\frac{r_j}{r^2})
 +(\frac{\i k_s^3}{4} H^{(1)}_1(k_sr)-\frac{\i k_p^3}{4} H^{(1)}_1(k_pr))\frac{r_i^2r_j}{r^3}+4A_{sp}\frac{r_i^2r_j}{r^4}\\ \hspace{-2cm}
 =(1+2\delta_{ij})(\frac{k_s^2}{4\pi r}-\frac{k_p^2}{4\pi r})\frac{r_j}{r}-(\frac{k_s^2}{2\pi r}-\frac{k_p^2}{2\pi r})\frac{r_i^2r_j}{r^3}+O(r\ln r )\\ \hspace{-2cm}
-k^2g^i=-\frac{\i}{4}H^{(1)}_1(kr)\frac{kr_i}{r}=-\frac{k^2}{2\pi r}\frac{r_i}{r}+O(r\ln r )
+=(1+2\delta_{ij})\frac{(\lambda +\mu)\om^2}{\mu(\lambda+2\mu)}\frac{1}{4\pi r}\frac{r_j}{r}-\frac{(\lambda +\mu)\om^2}{\mu(\lambda+2\mu)}\frac{1}{2\pi r}\frac{r_i^2r_j}{r^3}+O(r\ln r )\\ \hspace{-2cm}
+k^2g^i=-\frac{\i}{4}H^{(1)}_1(kr)\frac{kr_i}{r}=-\frac{k^2}{2\pi r}\frac{r_i}{r}+O(r\ln r )\\\hspace{-2cm}
+d^{iij}+d^{jjj}=2\frac{(\lambda +\mu)\om^2}{\mu(\lambda+2\mu)}\frac{1}{4\pi r}\frac{r_j}{r}+O(r\ln r )
 \een
+Then we have \cite[p43]{hsiao2008boundary}
 \ben\hspace{-2cm}
-\sigma(G_1)=\frac{1}{\om^2}\Bigg(
+\sigma(G_1)n=\frac{1}{\om^2}\Bigg(
 \begin{array}{ll}
 	(\lambda+2\mu)(k_s^2g^1_s+d^{111})+\lambda d^{122} & \mu(k_s^2g^2_s+d^{112})+\mu d^{112} \\
 	\mu(k_s^2g^2_s+d^{112})+\mu d^{112} &
 	(\lambda+2\mu)d^{122}+\lambda (k_s^2g^1_s+d^{111})
-\end{array}\Bigg)
+\end{array}\Bigg)n \\ \hspace{-2cm}
+=\frac{\mu}{2\pi(\lambda+2\mu)}\Bigg(\Bigg(
+\begin{array}{cc}
+	\frac{2(\lambda+\mu)r_1^2}{\mu r^2}+1 \\
+	\frac{2(\lambda+\mu)r_1r_2}{\mu r^2}
+\end{array}\Bigg) (-\frac{r_1 n_1}{r^2}-\frac{r_2 n_2}{r^2})-\Bigg(
+\begin{array}{cc}
+0\\
+\frac{r_2 n_1-r_1 n_2}{r^2}
+\end{array}\Bigg) \Bigg) 
 \een
 and
 \ben\hspace{-2cm}
-\sigma(G_2)=\frac{1}{\om^2}\Bigg(
+\sigma(G_2)n=\frac{1}{\om^2}\Bigg(
 \begin{array}{ll}
 	(\lambda+2\mu)d^{112}+\lambda (k_s^2g^2_s+d^{222}) & \mu(k_s^2g^1_s+d^{122})+\mu d^{122} \\
 	\mu(k_s^2g^1_s+d^{122})+\mu d^{122} &
 	(\lambda+2\mu)(k_s^2g^2_s+d^{222})+\lambda d^{112} 
+\end{array}\Bigg) n\\ \hspace{-2cm}
+=\frac{\mu}{2\pi(\lambda+2\mu)}\Bigg(\Bigg(
+\begin{array}{cc}
+	\frac{2(\lambda+\mu)r_1r_2}{\mu r^2}\\
+	\frac{2(\lambda+\mu)r_2^2}{\mu r^2}+1
+\end{array}\Bigg) (-\frac{r_1 n_1}{r^2}-\frac{r_2 n_2}{r^2})-\Bigg(
+\begin{array}{cc}
+	\frac{r_1 n_2-r_2 n_1}{r^2}\\
+	0
+\end{array}\Bigg) \Bigg)
+\een
+Now Let $u$ be represented as single potential:
+\be
+u=\int_{\pa D} G(x,y)\phi(y)ds(y)
+\ee 
+with Neumann boundary condition 
+\be
+T_x u(x)=f(x)   \ \ \ \ \ \mbox{on}  \ \ \ \pa D
+\ee
+Then we obtain corresponding integral equation
+\be
+\mathbf{P.V.}\int_{\pa D}T_x G(x,y)\phi(y)ds(y)-\frac{1}{2}\phi(x)=f(x)
+\ee
+where $x\in\pa D$.
+We describe the necessary parametrization of the integral equation 
+in the two-dimensional case. We assume that the boundary curve $\pa D$ possesses a
+regular analytic and $2\pi$-periodic parametric representation of the form
+\ben
+x(t)=(x_1(t),x_2(t))
+\een
+in counterclockwise orientation satisfying $|x (t)|2 > 0$ for all t.  Let 
+\ben
+T_0(x,y)=-\frac{\mu}{2\pi(\lambda+2\mu)}\Bigg(
+\begin{array}{cc}
+	0&	\frac{r_1 n_2-r_2 n_1}{r^2} \\
+	\frac{r_2 n_1-r_1 n_2}{r^2}	& 0
 \end{array}\Bigg)
 \een
+Then by above analysis we have
+\ben
+\int_{0}^{2\pi} (T_xG(x(t),x(\tau)-T_0(x(t),x(\tau)))\phi(x(\tau))|x'(\tau)|dt\\ \mathbf{P.V.}\int_0^{2\pi}T_0(x(t),x(\tau))\phi(x(\tau))
+|x'(\tau)|dt-\frac{1}{2}\phi(x(t))=f(x(t))
+\een
 \section*{References}
-\bibliography{eee}
+\bibliography{eee}n
 \end{document}
