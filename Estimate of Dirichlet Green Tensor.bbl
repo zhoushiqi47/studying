@@ -10,6 +10,13 @@ Loukas Grafakos.
 \newblock {\em Classical and modern Fourier analysis}.
 \newblock Prentice Hall, 2004.
 
+\bibitem{guiggiani1987direct}
+Massimo Guiggiani and Paolo Casalini.
+\newblock Direct computation of cauchy principal value integrals in advanced
+  boundary elements.
+\newblock {\em International Journal for Numerical Methods in Engineering},
+  24(9):1711--1720, 1987.
+
 \bibitem{hsiao2008boundary}
 George~C Hsiao and Wolfgang~L Wendland.
 \newblock {\em Boundary integral equations}, volume 164.

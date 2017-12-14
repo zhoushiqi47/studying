@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  13 DEC 2017 17:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  14 DEC 2017 19:07
 entering extended mode
 **"./Estimate of Dirichlet Green Tensor.tex"
 ("Estimate of Dirichlet Green Tensor.tex"
@@ -292,7 +292,14 @@ Overfull \hbox (1.5077pt too wide) in alignment at lines 961--963
  [] [] [] [] 
  []
 
-[22] ("Estimate of Dirichlet Green Tensor.bbl") [23]
+[22]
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+Missing character: There is no â in font cmr12!
+Missing character: There is no € in font cmr12!
+Missing character: There is no ” in font cmr12!
+ ("Estimate of Dirichlet Green Tensor.bbl") [23]
 ("Estimate of Dirichlet Green Tensor.aux")
 
 LaTeX Warning: There were undefined references.
@@ -302,10 +309,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2356 strings out of 495237
- 28101 string characters out of 3182726
- 99854 words of memory out of 3000000
- 5595 multiletter control sequences out of 15000+200000
+ 2357 strings out of 495237
+ 28122 string characters out of 3182726
+ 99857 words of memory out of 3000000
+ 5596 multiletter control sequences out of 15000+200000
  12792 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,12n,26p,787b,195s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -323,7 +330,7 @@ m/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
 blic/amsfonts/latxfont/lasy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (23 pages, 312348 by
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (23 pages, 315041 by
 tes).
 PDF statistics:
  148 PDF objects out of 1000 (max. 8388607)
