@@ -990,7 +990,7 @@ Then we have \cite[p43]{hsiao2008boundary}
 \begin{array}{cc}
 0\\
 \frac{r_2 n_1-r_1 n_2}{r^2}
-\end{array}\Bigg) \Bigg) 
+\end{array}\Bigg) \Bigg) +O(r\ln r)
 \een
 and
 \ben\hspace{-2cm}
@@ -1008,7 +1008,7 @@ and
 \begin{array}{cc}
 	\frac{r_1 n_2-r_2 n_1}{r^2}\\
 	0
-\end{array}\Bigg) \Bigg)
+\end{array}\Bigg) \Bigg)+O(r\ln r)
 \een
 Now Let $u$ be represented as single potential:
 \be
@@ -1031,16 +1031,63 @@ x(t)=(x_1(t),x_2(t))
 \een
 in counterclockwise orientation satisfying $|x '(t)| > 0$ for all t.  Let \cite{guiggiani1987direct}
 \ben
+T(x,y)=(T_x(N_1(x,y))n,T_x(N_1(x,y))n)\\
 T_0(x,y)=-\frac{\mu}{2\pi(\lambda+2\mu)}\Bigg(
 \begin{array}{cc}
 	0&	\frac{r_1 n_2-r_2 n_1}{r^2} \\
 	\frac{r_2 n_1-r_1 n_2}{r^2}	& 0
-\end{array}\Bigg)
+\end{array}\Bigg) \\
+T_1(x,y)=T(x,y)-T_0(x,y)
 \een
 Then by above analysis we have
+<<<<<<< HEAD
 \ben
 \int_{0}^{2\pi} (T_xG(x(t),x(\tau)-T_0(x(t),x(\tau)))\phi(x(\tau))|x'(\tau)|dt\\+—— \mathbf{P.V.}\int_0^{2\pi}T_0(x(t),x(\tau))\phi(x(\tau))
+=======
+\ben\hspace{-3cm}
+\int_{0}^{2\pi} T_1(x(t),x(\tau))\phi(x(\tau))|x'(\tau)|dt+ \mathbf{P.V.}\int_0^{2\pi}T_0(x(t),x(\tau))\phi(x(\tau))
+>>>>>>> 5098e9a913b381efe153d2d47d11aa564f0405da
 |x'(\tau)|dt-\frac{1}{2}\phi(x(t))=f(x(t))
+\een
+According to above analysis, it is easy to see that $T_1$ has no singularity. Therefore, the numerical formulartion for $T_1$ requires only straightforward application of simple quadrature formula. we choose
+an equidistant set of knots $t_j := \pi j/n, j = 0, . . . , 2n-1$ and divide $[0,2\pi)$ into n equivalent interval $I_i=[ 2j\pi/n, 2(j+1)\pi/n)$ where $[0,2\pi)= \bigcup\limits_{j=1}^{j=n-1}I_i$. Each $I_i$ is described by 3 nodes of the intrinsic variable $\xi(-1\leq\xi\leq 1)$ and the quadratic shape functions are:
+\ben
+A_{-1}(\xi)=\frac{\xi(\xi-1)}{2} \\
+A_0(\xi)=1-\xi^2\\
+A_1(\xi)=\frac{\xi(\xi+1)}{2}
+\een
+let 
+\ben
+f(x,y)=\frac{(x_1-y_1)n_2^x-(x_2-y_2)n_1^x}{|x-y|^2}
+\een
+Now, we can repersent the integral in variable $\xi$. For $x\in\pa D$ we have:
+\ben
+& &\mathbf{P.V.}\int_{\pa D}f(x,y)\phi(y)ds(y)\\
+&=&\sum_{x\notin I_i}\int_{I_i}f(x,x(t))\phi(x(t))|x'(t)|dt+\mathbf{P.V.}\sum_{x\in I_i}\int_{I_i}f(x,x(t))\phi(x(t))|x'(t)|dt
+\een
+if $x=x(2j\pi/n)$, above integral becomes to
+\ben
+& &\sum_{i\neq j,j-1}\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k\frac{2j\pi}{n}))x_k'(\frac{2j\pi}{n})}{|x(\frac{2j\pi}{n})-x^i(\xi)|^2}\phi(x^i(\xi)
+)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
+&+&\mathbf{P.V.}\sum_{i= j,j-1}\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k\frac{2j\pi}{n}))x_k'(\frac{2j\pi}{n})}{|x(\frac{2j\pi}{n})-x^i(\xi)|^2}\phi(x^i(\xi)
+)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
+&\approx&\sum_{i\neq j,j-1}\sum_{l=-1}^{1}\phi(x^i(l))\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k(\frac{2j\pi}{n}))x_k'(\frac{2j\pi}{n})}{|x(\frac{2j\pi}{n})-x^i(\xi)|^2}A_l(\xi)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
+&+&\phi(x(\frac{2j\pi}{n}))\mathbf{P.V.}\frac{\pi}{n}\Bigg(\int_{-1}^{1}\frac{\sum_{k=1,2}(x^j_k(\xi)-x^j_k(-1))x_k'(\frac{2j\pi}{n})}{|x^j(-1)-x^j(\xi)|^2}A_{-1}(\xi)\frac{|x'(\frac{(2j+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
+&+&\int_{-1}^{1}\frac{\sum_{k=1,2}(x^{j-1}_k(\xi)-x^{j-1}_k(1))x_k'(\frac{2j\pi}{n})}{|x^{j-1}(1)-x^{j-1}(\xi)|^2}A_{-1}(\xi)\frac{|x'(\frac{(2j-1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\Bigg)
+\een
+and if $x=x((2j+1)\pi/n)$, above integral becomes to
+\ben
+& &\sum_{i\neq j,}\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k\frac{2j+1\pi}{n}))x_k'(\frac{2j+1\pi}{n})}{|x(\frac{2j+1\pi}{n})-x^i(\xi)|^2}\phi(x^i(\xi)
+)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j+1\pi}{n})|}d\xi\\
+&+&\mathbf{P.V.}\sum_{i= j,j-1}\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k\frac{2j+1\pi}{n}))x_k'(\frac{2j+1\pi}{n})}{|x(\frac{2j+1\pi}{n})-x^i(\xi)|^2}\phi(x^i(\xi)
+)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j+1\pi}{n})|}d\xi\\
+&\approx&\sum_{i\neq j}\sum_{l=-1}^{1}\phi(x^i(l))\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k(\frac{(2j+1)\pi}{n}))x_k'(\frac{(2j+1)\pi}{n})}{|x(\frac{(2j+1)\pi}{n})-x^i(\xi)|^2}A_l(\xi)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{(2j+1)\pi}{n})|}d\xi\\
+&+&\phi(x(\frac{(2j+1)\pi}{n}))\mathbf{P.V.}\frac{\pi}{n}\Bigg(\int_{-1}^{1}\frac{\sum_{k=1,2}(x^j_k(\xi)-x^j_k(0))x_k'(\frac{(2j+1)\pi}{n})}{|x^j(0)-x^j(\xi)|^2}A_{0}(\xi)\frac{|x'(\frac{((2j+1)+\xi)\pi}{n})|}{|x'(\frac{(2j+1)\pi}{n})|}d\xi
+\een
+where $x^i(\xi)=x((2i+1+\xi)\pi/n)$. For simplicity, we denote a 3-D tensor $M_{jil}$:
+\ben
+M_{jil}=\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k(\frac{j\pi}{n}))x_k'(\frac{2j+1\pi}{n})}{|x(\frac{2j+1\pi}{n})-x^i(\xi)|^2}A_l(\xi
+)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{j\pi}{n})|}d\xi
 \een
 \section*{References}
 \bibliography{eee}n
