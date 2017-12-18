@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  14 DEC 2017 19:07
-=======
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  15 DEC 2017 13:46
->>>>>>> 5098e9a913b381efe153d2d47d11aa564f0405da
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  18 DEC 2017 09:44
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -303,16 +299,6 @@ Overfull \hbox (1.5077pt too wide) in alignment at lines 961--963
  []
 
 [22]
-<<<<<<< HEAD
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ” in font cmr12!
-Missing character: There is no â in font cmr12!
-Missing character: There is no € in font cmr12!
-Missing character: There is no ” in font cmr12!
- ("Estimate of Dirichlet Green Tensor.bbl") [23]
-("Estimate of Dirichlet Green Tensor.aux")
-=======
 Overfull \hbox (39.42789pt too wide) in alignment at lines 1043--1046
  [] [] [] [] 
  []
@@ -334,7 +320,6 @@ Overfull \hbox (77.88857pt too wide) in alignment at lines 1074--1081
 
 (./Estimate of Dirichlet Green Tensor.bbl) [24]
 (./Estimate of Dirichlet Green Tensor.aux)
->>>>>>> 5098e9a913b381efe153d2d47d11aa564f0405da
 
 LaTeX Warning: There were undefined references.
 
@@ -343,34 +328,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 2357 strings out of 495237
- 28122 string characters out of 3182726
- 99857 words of memory out of 3000000
- 5596 multiletter control sequences out of 15000+200000
- 12792 words of font info for 50 fonts, out of 3000000 for 9000
- 14 hyphenation exceptions out of 8191
- 38i,12n,26p,787b,195s stack positions out of 5000i,500n,10000p,200000b,50000s
-<C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/CTEX/MiKTeX/fon
-ts/type1/public/amsfonts/cm/cmbx6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfon
-ts/cm/cmbx8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/C
-TEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/CTEX/MiKTeX/fonts/type
-1/public/amsfonts/cm/cmmi6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/c
-mmi8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/CTEX/MiKT
-eX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/
-amsfonts/cm/cmr6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C
-:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/t
-ype1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/c
-m/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/
-MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
-blic/amsfonts/latxfont/lasy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/s
-ymbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (23 pages, 315041 by
-=======
- 2356 strings out of 493014
- 29638 string characters out of 6133350
- 104756 words of memory out of 5000000
- 5856 multiletter control sequences out of 15000+600000
+ 2357 strings out of 493014
+ 29659 string characters out of 6133350
+ 104759 words of memory out of 5000000
+ 5857 multiletter control sequences out of 15000+600000
  12792 words of font info for 50 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,26p,785b,195s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -392,8 +353,7 @@ ive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive
 texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/t
 exmf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/2
 016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (24 pages, 299433 by
->>>>>>> 5098e9a913b381efe153d2d47d11aa564f0405da
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (24 pages, 302029 by
 tes).
 PDF statistics:
  154 PDF objects out of 1000 (max. 8388607)
