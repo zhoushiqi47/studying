@@ -919,7 +919,7 @@ and
 Y_k(t)&=&\frac{1}{\pi}\{\ln t^2-2\ln 2+2C_{euler}\}J_k(t)-\frac{1}{\pi}\sum_{p=0}^{k-1}\frac{(k-1-p)!}{p!}(2/t)^{k-2p} \\
 &-&\frac{1}{\pi}\sum_{p=0}^{\infty}\frac{(-1)^p}{p!(k+p)!}(t/2)^{k+2p}\{\psi(p+k)+\psi(p)\}
 \een
-Specally
+Speceilly
 \ben
 Y_0(t)=\frac{1}{\pi}\{\ln t^2-2\ln 2+2C_{euler}\}J_0(t)
 -\frac{1}{\pi}\sum_{p=1}^{\infty}\frac{(-1)^p}{p!p!}(t/2)^{2p}\{2\psi(p)\} \\
@@ -976,7 +976,7 @@ d^{iij}+d^{jjj}=2\frac{(\lambda +\mu)\om^2}{\mu(\lambda+2\mu)}\frac{1}{4\pi r}\f
 \een
 Then we have \cite[p43]{hsiao2008boundary}
 \ben\hspace{-2cm}
-\sigma(G_1)n=\frac{1}{\om^2}\Bigg(
+\sigma(Ge_1)n=\frac{1}{\om^2}\Bigg(
 \begin{array}{ll}
 	(\lambda+2\mu)(k_s^2g^1_s+d^{111})+\lambda d^{122} & \mu(k_s^2g^2_s+d^{112})+\mu d^{112} \\
 	\mu(k_s^2g^2_s+d^{112})+\mu d^{112} &
@@ -994,7 +994,7 @@ Then we have \cite[p43]{hsiao2008boundary}
 \een
 and
 \ben\hspace{-2cm}
-\sigma(G_2)n=\frac{1}{\om^2}\Bigg(
+\sigma(Ge_2)n=\frac{1}{\om^2}\Bigg(
 \begin{array}{ll}
 	(\lambda+2\mu)d^{112}+\lambda (k_s^2g^2_s+d^{222}) & \mu(k_s^2g^1_s+d^{122})+\mu d^{122} \\
 	\mu(k_s^2g^1_s+d^{122})+\mu d^{122} &
@@ -1044,6 +1044,15 @@ Then by above analysis we have
 \int_{0}^{2\pi} T_1(x(t),x(\tau))\phi(x(\tau))|x'(\tau)|dt+ \mathbf{P.V.}\int_0^{2\pi}T_0(x(t),x(\tau))\phi(x(\tau))
 |x'(\tau)|dt-\frac{1}{2}\phi(x(t))=f(x(t))
 \een
+In particular, using expasion above, we can deduce the diagonal terms:
+\ben\hspace{-2cm}
+\lim_{\tau\to t}\frac{-r_1 n_1-r_2 n_2}{r^2}=\lim_{\tau\to t} \frac{(x_1(\tau)-x_1(t))x_2'(t)-(x_2(\tau)-x_2(t))x_1'(t)}{|x(t)-x(\tau)|^2|x'(t)|}=\frac{x_1''(t)x_2'(t)-x_2''(t)x_1'(t)}{2|x'(t)|^3}
+\een
+and
+\ben
+\lim_{\tau\to t} \frac{(r_1n_2-r_2n_1)|x'(\tau)|(\tau-t)}{r^2}\\
+=\lim_{\tau\to t}\frac{(x_1(\tau)-x_1(t))x_1'(t)+(x_2(\tau)-x_2(t))x_2'(t))|x'(\tau)|(\tau-t)}{|x(t)-x(\tau)|^2|x'(t)|}=1
+\een
 According to above analysis, it is easy to see that $T_1$ has no singularity. Therefore, the numerical formulartion for $T_1$ requires only straightforward application of simple quadrature formula. we choose
 an equidistant set of knots $t_j := \pi j/n, j = 0, . . . , 2n-1$ and divide $[0,2\pi)$ into n equivalent interval $I_i=[ 2j\pi/n, 2(j+1)\pi/n)$ where $[0,2\pi)= \bigcup\limits_{j=1}^{j=n-1}I_i$. Each $I_i$ is described by 3 nodes of the intrinsic variable $\xi(-1\leq\xi\leq 1)$ and the quadratic shape functions are:
 \ben
@@ -1055,7 +1064,7 @@ let
 \ben
 f(x,y)=\frac{(x_1-y_1)n_2^x-(x_2-y_2)n_1^x}{|x-y|^2}
 \een
-Now, we can repersent the integral in variable $\xi$. For $x\in\pa D$ we have:
+and it is easy to see that $(n_x^1,n_x^2)=(x_2'(t),-x_1'(t))/|x'(t)|$. Now, we can repersent the integral in variable $\xi\in[-1,1]$. For $x\in\pa D$ we have:
 \ben
 & &\mathbf{P.V.}\int_{\pa D}f(x,y)\phi(y)ds(y)\\
 &=&\sum_{x\notin I_i}\int_{I_i}f(x,x(t))\phi(x(t))|x'(t)|dt+\mathbf{P.V.}\sum_{x\in I_i}\int_{I_i}f(x,x(t))\phi(x(t))|x'(t)|dt
@@ -1068,7 +1077,7 @@ if $x=x(2j\pi/n)$, above integral becomes to
 )\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
 &\approx&\sum_{i\neq j,j-1}\sum_{l=-1}^{1}\phi(x^i(l))\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k(\frac{2j\pi}{n}))x_k'(\frac{2j\pi}{n})}{|x(\frac{2j\pi}{n})-x^i(\xi)|^2}A_l(\xi)\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
 &+&\phi(x(\frac{2j\pi}{n}))\mathbf{P.V.}\frac{\pi}{n}\Bigg(\int_{-1}^{1}\frac{\sum_{k=1,2}(x^j_k(\xi)-x^j_k(-1))x_k'(\frac{2j\pi}{n})}{|x^j(-1)-x^j(\xi)|^2}A_{-1}(\xi)\frac{|x'(\frac{(2j+1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\\
-&+&\int_{-1}^{1}\frac{\sum_{k=1,2}(x^{j-1}_k(\xi)-x^{j-1}_k(1))x_k'(\frac{2j\pi}{n})}{|x^{j-1}(1)-x^{j-1}(\xi)|^2}A_{-1}(\xi)\frac{|x'(\frac{(2j-1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\Bigg)
+&+&\int_{-1}^{1}\frac{\sum_{k=1,2}(x^{j-1}_k(\xi)-x^{j-1}_k(1))x_k'(\frac{2j\pi}{n})}{|x^{j-1}(1)-x^{j-1}(\xi)|^2}A_{1}(\xi)\frac{|x'(\frac{(2j-1+\xi)\pi}{n})|}{|x'(\frac{2j\pi}{n})|}d\xi\Bigg)
 \een
 and if $x=x((2j+1)\pi/n)$, above integral becomes to
 \ben
@@ -1081,8 +1090,199 @@ and if $x=x((2j+1)\pi/n)$, above integral becomes to
 \een
 where $x^i(\xi)=x((2i+1+\xi)\pi/n)$. For simplicity, we denote a 3-D tensor $M_{jil}$:
 \ben
-M_{jil}=\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k(\frac{j\pi}{n}))x_k'(\frac{2j+1\pi}{n})}{|x(\frac{2j+1\pi}{n})-x^i(\xi)|^2}A_l(\xi
+M_{jil}=\frac{\pi}{n}\int_{-1}^{1}\frac{\sum_{k=1,2}(x^i_k(\xi)-x_k(\frac{j\pi}{n}))x_k'(\frac{j\pi}{n})}{|x(\frac{j\pi}{n})-x^i(\xi)|^2}A_l(\xi
 )\frac{|x'(\frac{(2i+1+\xi)\pi}{n})|}{|x'(\frac{j\pi}{n})|}d\xi
+\een
+Then, the general Matrix is 
+\ben
+G_{ji}=\left\{
+\begin{array}{ll}
+	M_{j,i,-1}+M_{j,i-1,1} \ \ \ j \ \mbox{is even} \ \ \\
+	M_{j,i,0} \ \ \  \ \ \ \ \ \ \ j \ \mbox{is odd}
+\end{array}
+ \right.
+\een
+\section{Traction Tenson of Neumann Green Function}
+\ben \hspace{-2.5cm}
+\hat{\Phi}(\xi,x_2;y_2)=\frac{\i}{2\omega^2}
+\Bigg[ \Bigg( \begin{array}{cc}
+	\mu_s & -\xi\frac{x_2-y_2}{|x_2-y_2|} \\
+	-\xi\frac{x_2-y_2}{|x_2-y_2|} & \frac{\xi^2}{\mu_s}
+\end{array} \Bigg)e^{\i\mu_s|x_2-y_2|} +
+\Bigg( \begin{array}{cc}
+	\frac{\xi^2}{\mu_p} & \xi\frac{x_2-y_2}{|x_2-y_2|} \\
+	\xi\frac{x_2-y_2}{|x_2-y_2|} & \mu_p
+\end{array} \Bigg) e^{\i\mu_p|x_2-y_2|} \Bigg]
+\een
+\be
+\hat N(\xi,x_2;y_2) = \hat \Phi(\xi,x_2;y_2)  -\hat \Phi(\xi,x_2;-y_2) + \hat N_c(\xi,x_2;y_2)
+\ee
+\be
+\hat
+N_c(\xi,x_2;y_2) = &=& \frac{\i}{\omega^2 \delta(\xi)} \Bigg\{ A(\xi)e^{\i\mu_s(x_2+y_2)}+B(\xi)e^{\i\mu_p(x_2+y_2)}\\ \nn
+&&+C(\xi)e^{\i\mu_s x_2+\mu_p y_2}+D(\xi)e^{\i\mu_p x_2+\mu_s y_2}\Bigg\}
+\ee
+\ben \hspace{-3cm}
+\sigma(\Phi)(\xi,x_2;y_2)e_1=\frac{\mu}{2\omega^2}
+\Bigg[ \Bigg( \begin{array}{cc}
+	-2\xi\mu_s & \frac{x_2-y_2}{|x_2-y_2|}2\xi^2\\
+	-\frac{x_2-y_2}{|x_2-y_2|}\beta & \frac{\xi\beta}{\mu_s} 
+\end{array} \Bigg)e^{\i\mu_s|x_2-y_2|} +
+\Bigg( \begin{array}{cc}
+	-\frac{\alpha\xi}{\mu_p} & -\frac{x_2-y_2}{|x_2-y_2|}\alpha\\
+		-\frac{x_2-y_2}{|x_2-y_2|}2\xi^2 & -2\xi\mu_p
+\end{array} \Bigg) e^{\i\mu_p|x_2-y_2|} \Bigg]
+\een
+\ben \hspace{-3cm}
+\sigma(\Phi)(\xi,x_2;y_2)e_2=\frac{\mu}{2\omega^2}
+\Bigg[ \Bigg( \begin{array}{cc}
+	-\frac{x_2-y_2}{|x_2-y_2|}\beta & \frac{\xi\beta}{\mu_s} \\
+	2\xi\mu_s & -\frac{x_2-y_2}{|x_2-y_2|}2\xi^2
+\end{array} \Bigg)e^{\i\mu_s|x_2-y_2|} +
+\Bigg( \begin{array}{cc}
+	-\frac{x_2-y_2}{|x_2-y_2|}2\xi^2 & -2\xi\mu_p\\
+	-\frac{\beta\xi}{\mu_p} & -\frac{x_2-y_2}{|x_2-y_2|}\beta
+\end{array} \Bigg) e^{\i\mu_p|x_2-y_2|} \Bigg]
+\een
+where
+$\alpha(\xi)=k_s^2-2\mu_p^2$, $\beta(\xi)=k_s^2-2\xi^2$.
+\be
+\hat N(\xi,x_2;y_2) = \hat \Phi(\xi,x_2;y_2)  -\hat \Phi(\xi,x_2;-y_2) + \hat N_c(\xi,x_2;y_2)
+\ee
+\be
+\hat
+N_c(\xi,x_2;y_2)  &=& \frac{\i}{\omega^2 \delta(\xi)} \Bigg\{ A(\xi)e^{\i\mu_s(x_2+y_2)}+B(\xi)e^{\i\mu_p(x_2+y_2)}\\ \nn
+&&+C(\xi)e^{\i\mu_s x_2+\mu_p y_2}+D(\xi)e^{\i\mu_p x_2+\mu_s y_2}\Bigg\}
+\ee
+where
+\ben
+&&{A(\xi)} =
+\left( \begin{array}{ll}
+	\mu_s\beta^2 & -4\xi^3\mu_s\mu_p \\
+	-\xi\beta^2  & 4\xi_4\mu_p
+\end{array} \right)\ \ \ \ \ \
+{B(\xi)} =
+\left( \begin{array}{ll}
+	4\xi^4\mu_s & \xi\beta^2 \\
+	4\xi^3\mu_s\mu_p  & \mu_p\beta^2
+\end{array} \right) \\
+&&{C(\xi)} =
+\left( \begin{array}{ll}
+	2\xi^2\mu_s\beta & -2\xi\mu_s\mu_p\beta \\
+	-2\xi^3\beta  & 2\xi^2\mu_p\beta
+\end{array} \right)\ \
+{D(\xi)} =
+\left( \begin{array}{ll}
+	2\xi^2\mu_s\beta & 2\xi^3\beta \\
+	2\xi\mu_s\mu_p\beta  & 2\xi^2\mu_p\beta
+\end{array} \right)
+\een
+The traction of integral part $N_c$:
+\ben\hspace{-2cm}
+\sigma(N_c(\xi,x_2;y_2))e_1  &=& \frac{-\mu}{\omega^2 \delta(\xi)} \Bigg\{ A(\xi)e^{\i\mu_s(x_2+y_2)}+B(\xi)e^{\i\mu_p(x_2+y_2)}\\ \nn
+&&+C(\xi)e^{\i\mu_s x_2+\mu_p y_2}+D(\xi)e^{\i\mu_p x_2+\mu_s y_2}\Bigg\}
+\een
+where
+\ben
+&&{A(\xi)} =
+\left( \begin{array}{ll}
+	2\xi\mu_s\beta^2 & -8\mu_s\mu_p\xi^4\\
+	\beta^3  & -4\xi^3\mu_p\beta
+\end{array} \right)\ \ \ \ \ \
+{B(\xi)} =
+\left( \begin{array}{ll}
+	4\xi^3\mu_s\alpha & \alpha\beta^2 \\
+	8\xi^4\mu_s\mu_p  & 2\xi\mu_p\beta^2
+\end{array} \right) \\
+&&{C(\xi)} =
+\left( \begin{array}{ll}
+	4\xi^3\mu_s\beta & -4\xi^2\mu_s\mu_p\beta \\
+	2\xi^2\beta^2  & -2\xi\mu_p\beta^2
+\end{array} \right)\ \
+{D(\xi)} =
+\left( \begin{array}{ll}
+	2\xi\mu_s\alpha\beta & 2\xi^2\alpha\beta \\
+	4\xi^2\mu_s\mu_p\beta  & 4\xi^3\mu_p\beta
+\end{array} \right)
+\een
+and
+\ben\hspace{-2cm}
+\sigma(N_c(\xi,x_2;y_2))e_2  &=& \frac{-\mu}{\omega^2 \delta(\xi)} \Bigg\{ A(\xi)e^{\i\mu_s(x_2+y_2)}+B(\xi)e^{\i\mu_p(x_2+y_2)}\\ \nn
+&&+C(\xi)e^{\i\mu_s x_2+\mu_p y_2}+D(\xi)e^{\i\mu_p x_2+\mu_s y_2}\Bigg\}
+\een
+where
+\ben
+&&{A(\xi)} =
+\left( \begin{array}{ll}
+	\beta^3  & -4\xi^3\mu_p\beta\\
+	-2\xi\mu_s\beta^2 & 8\mu_s\mu_p\xi^4
+\end{array} \right)\ \ \ \ \ \
+{B(\xi)} =
+\left( \begin{array}{ll}
+	8\xi^4\mu_s\mu_p  & 2\xi\mu_p\beta^2\\
+	4\xi^3\mu_s\beta& \beta^3
+\end{array} \right) \\
+&&{C(\xi)} =
+\left( \begin{array}{ll}
+	2\xi^2\beta^2  & -2\xi\mu_p\beta^2\\
+	-4\xi^3\mu_s\beta & 4\xi^2\mu_s\mu_p\beta 
+\end{array} \right)\ \
+{D(\xi)} =
+\left( \begin{array}{ll}
+	4\xi^2\mu_s\mu_p\beta  & 4\xi^3\mu_p\beta \\
+	2\xi\mu_s\beta^2 & 2\xi^2\beta^2 \\
+\end{array} \right)
+\een
+where $\delta(\xi)=\beta^2+4\xi^2\mu_s\mu_p $
+\section{reflection of Plane wave}
+\subsection{P-wave}
+We denote incident P-wave \cite[p172]{achenbach1980} as
+\be
+u^0=A_0(\sin t_0,\cos t_0)^Te^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}
+\ee
+and its stress as
+\ben
+\sigma(u^0)=\i k_p A_0(2\mu \sin t_0\cos t_0,\lambda+2\mu \cos^2 t_0)^Te^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}
+\een
+The reflected P-wave is represented as
+\ben
+u^1=A_1(\sin t_1,-\cos t_1)^Te^{\i k_p(x_1\sin t_1-x_2 \cos t_1)}\\
+\sigma(u^1)=\i k_p A_1(-2\mu \sin t_1\cos t_1,\lambda+2\mu \cos^2 t_1)^Te^{\i k_p(x_1\sin t_1+x_2 \cos t_1)}
+\een
+and reflected S-wave as
+\ben
+u^2=A_2(\cos t_2,\sin t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}\\
+\sigma(u^2)=\i k_sA_2(\mu(\sin^2t_2-cos^2 t_2),-2\mu\sin t_2\cos t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}
+\een
+We consider the clamped condition, then the total field on the $x_2=0$ vanish:
+\ben
+u^0(x_1,0)+u^1(x_1,0)+u^2(x_1,0)=0
+\een
+for any $x_1\in \R$. A simple computation show that
+\ben
+t_1=t_0  \ \ \ \ \ \ \mbox{and} \ \ \ \ \frac{\sin t_2}{\sin t_0}=\frac{k_p}{k_s}:=\kappa \\
+ A_0=\cos(t_0-t_2) \ \ \ \ \ A_1=\cos(t_0+t_2) \ \ \ \ \ \ A_2=-\sin 2t_0
+\een
+\subsection{S-wave}
+Similarly, we denote incident S-wave as 
+\be
+u^0=A_0(-\cos t_0,\sin t_0)^Te^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}\\
+\sigma(u^0)=\i k_s(\mu(\sin^2t_0-cos^2 t_0),2\mu\sin t_0\cos t_0)e^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}
+\ee
+The reflected P-wave is represented as
+\ben
+u^1=A_1(\sin t_1,-\cos t_1)^Te^{\i k_p(x_1\sin t_1-x_2 \cos t_1)}\\
+\sigma(u^1)=\i k_p A_1(-2\mu \sin t_1\cos t_1,\lambda+2\mu \cos^2 t_1)^Te^{\i k_p(x_1\sin t_1+x_2 \cos t_1)}
+\een
+and reflected S-wave as
+\ben
+u^2=A_2(\cos t_2,\sin t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}\\
+\sigma(u^2)=\i k_sA_2(\mu(\sin^2t_2-cos^2 t_2),-2\mu\sin t_2\cos t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}
+\een
+The result is 
+\ben
+t_2=t_0  \ \ \ \ \ \ \mbox{and} \ \ \ \ \frac{\sin t_1}{\sin t_0}=\frac{k_s}{k_p}=\frac{1}{\kappa} \\
+A_0=\cos(t_0-t_1) \ \ \ \ \ A_1=\sin 2t_0 \ \ \ \ \ \ A_2=\cos(t_0+t_1)
 \een
 \section*{References}
 \bibliography{eee}n
