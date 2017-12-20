@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  19 DEC 2017 14:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  20 DEC 2017 15:23
 entering extended mode
 **"./Estimate of Dirichlet Green Tensor.tex"
 ("Estimate of Dirichlet Green Tensor.tex"
@@ -323,12 +323,22 @@ Overfull \hbox (8.24463pt too wide) in alignment at lines 1106--1116
  []
 
 
-Overfull \hbox (54.47012pt too wide) in alignment at lines 1125--1135
+Overfull \hbox (54.47012pt too wide) in alignment at lines 1118--1128
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (63.5521pt too wide) in alignment at lines 1129--1139
  [] [] [] [] 
  []
 
 [24]
-Overfull \hbox (63.5521pt too wide) in alignment at lines 1136--1146
+Overfull \hbox (11.91653pt too wide) in alignment at lines 1202--1212
+ [] [] [] [] 
+ []
+
+
+Overfull \hbox (12.29839pt too wide) in alignment at lines 1242--1252
  [] [] [] [] 
  []
 
@@ -344,7 +354,7 @@ LaTeX Warning: There were multiply-defined labels.
 Here is how much of TeX's memory you used:
  2358 strings out of 495237
  28137 string characters out of 3182726
- 101860 words of memory out of 3000000
+ 102860 words of memory out of 3000000
  5597 multiletter control sequences out of 15000+200000
  12792 words of font info for 50 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -363,7 +373,7 @@ m/cmsy8.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/CTEX/
 MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/CTEX/MiKTeX/fonts/type1/pu
 blic/amsfonts/latxfont/lasy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/s
 ymbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (27 pages, 337142 by
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (27 pages, 337143 by
 tes).
 PDF statistics:
  161 PDF objects out of 1000 (max. 8388607)

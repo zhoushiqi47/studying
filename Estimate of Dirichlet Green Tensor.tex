@@ -1114,14 +1114,7 @@ G_{ji}=\left\{
 	\xi\frac{x_2-y_2}{|x_2-y_2|} & \mu_p
 \end{array} \Bigg) e^{\i\mu_p|x_2-y_2|} \Bigg]
 \een
-\be
-\hat N(\xi,x_2;y_2) = \hat \Phi(\xi,x_2;y_2)  -\hat \Phi(\xi,x_2;-y_2) + \hat N_c(\xi,x_2;y_2)
-\ee
-\be
-\hat
-N_c(\xi,x_2;y_2) = &=& \frac{\i}{\omega^2 \delta(\xi)} \Bigg\{ A(\xi)e^{\i\mu_s(x_2+y_2)}+B(\xi)e^{\i\mu_p(x_2+y_2)}\\ \nn
-&&+C(\xi)e^{\i\mu_s x_2+\mu_p y_2}+D(\xi)e^{\i\mu_p x_2+\mu_s y_2}\Bigg\}
-\ee
+
 \ben \hspace{-3cm}
 \sigma(\Phi)(\xi,x_2;y_2)e_1=\frac{\mu}{2\omega^2}
 \Bigg[ \Bigg( \begin{array}{cc}
@@ -1205,6 +1198,18 @@ where
 	4\xi^2\mu_s\mu_p\beta  & 4\xi^3\mu_p\beta
 \end{array} \right)
 \een
+In particular, for $y_2=0$, a more simpler form are deduced:
+\ben\hspace{-2cm}
+\sigma(N(\xi,x_2;y_2))e_1  =\frac{-1}{ \delta(\xi)}
+\Bigg\{\left( \begin{array}{ll}
+	2\xi\mu_s\beta & -4\mu_s\mu_p\xi^2\\
+	\beta^2  & -2\xi\mu_p\beta
+\end{array} \right)e^{\i\mu_s x_2}+
+\left( \begin{array}{ll}
+	2\xi\mu_s\alpha & \alpha\beta \\
+	4\xi^2\mu_s\mu_p  & 2\xi\mu_p\beta
+\end{array} \right) e^{\i\mu_p x_2}\Bigg\}
+\een
 and
 \ben\hspace{-2cm}
 \sigma(N_c(\xi,x_2;y_2))e_2  &=& \frac{-\mu}{\omega^2 \delta(\xi)} \Bigg\{ A(\xi)e^{\i\mu_s(x_2+y_2)}+B(\xi)e^{\i\mu_p(x_2+y_2)}\\ \nn
@@ -1233,6 +1238,18 @@ where
 	2\xi\mu_s\beta^2 & 2\xi^2\beta^2 \\
 \end{array} \right)
 \een
+Similarly, for $y_2=0$, a more simpler form are deduced:
+\ben\hspace{-2cm}
+\sigma(N(\xi,x_2;y_2))e_2  =\frac{-1}{ \delta(\xi)}
+\Bigg\{\left( \begin{array}{ll}
+	\beta^2  & -2\xi\mu_p\beta\\
+	-2\xi\mu_s\beta & 4\mu_s\mu_p\xi^2
+\end{array} \right)e^{\i\mu_s x_2}+
+\left( \begin{array}{ll}
+	4\xi^2\mu_s\mu_p  & 2\xi\mu_p\beta\\
+		2\xi\mu_s\beta & \beta^2 
+\end{array} \right) e^{\i\mu_p x_2}\Bigg\}
+\een
 where $\delta(\xi)=\beta^2+4\xi^2\mu_s\mu_p $
 \section{reflection of Plane wave}
 \subsection{P-wave}
@@ -1252,7 +1269,7 @@ u^1=A_1(\sin t_1,-\cos t_1)^Te^{\i k_p(x_1\sin t_1-x_2 \cos t_1)}\\
 and reflected S-wave as
 \ben
 u^2=A_2(\cos t_2,\sin t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}\\
-\sigma(u^2)=\i k_sA_2(\mu(\sin^2t_2-cos^2 t_2),-2\mu\sin t_2\cos t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}
+\sigma(u^2)=\i k_sA_2(\mu(\sin^2t_2-\cos^2 t_2),-2\mu\sin t_2\cos t_2)^Te^{\i k_s(x_1\sin t_2-x_2 \cos t_2)}
 \een
 We consider the clamped condition, then the total field on the $x_2=0$ vanish:
 \ben
@@ -1267,7 +1284,7 @@ t_1=t_0  \ \ \ \ \ \ \mbox{and} \ \ \ \ \frac{\sin t_2}{\sin t_0}=\frac{k_p}{k_s
 Similarly, we denote incident S-wave as 
 \be
 u^0=A_0(-\cos t_0,\sin t_0)^Te^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}\\
-\sigma(u^0)=\i k_s(\mu(\sin^2t_0-cos^2 t_0),2\mu\sin t_0\cos t_0)e^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}
+\sigma(u^0)=\i k_s(\mu(\sin^2t_0-\cos^2 t_0),2\mu\sin t_0\cos t_0)e^{\i k_p(x_1\sin t_0+x_2 \cos t_0)}
 \ee
 The reflected P-wave is represented as
 \ben
