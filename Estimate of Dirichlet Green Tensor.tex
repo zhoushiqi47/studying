@@ -1301,6 +1301,75 @@ The result is
 t_2=t_0  \ \ \ \ \ \ \mbox{and} \ \ \ \ \frac{\sin t_1}{\sin t_0}=\frac{k_s}{k_p}=\frac{1}{\kappa} \\
 A_0=\cos(t_0-t_1) \ \ \ \ \ A_1=\sin 2t_0 \ \ \ \ \ \ A_2=\cos(t_0+t_1)
 \een
+
+\section{scattering relation of elastic wave}
+The solution for the scattering of a plane P-wave  $u_p$(or S-wave $u_s$) with incident direction $d_0$ at a plane $\Gamma := {x \in \R^2 :
+x \cdot \nu = 0}$ through the origin with normal vector $\nu$ is described by
+\be
+u=u_p + u_{p,p}+u_{p,s}=A_0d_0 e^{\i kp x\cdot d}+A_1 d_1 e^{\i kp x\cdot d_1}+A _2d_2^\perp d_0^{\i ks x\cdot d_2}\\
+u=u_s + u_{s,p}+u_{s,s}=A_0d_0^\perp e^{\i ks x\cdot d}+A_1 d_1 e^{\i kp x\cdot d_1}+A_2 d_2^\perp d^{\i ks x\cdot d_2}
+\ee
+where $d_i=(d_i^1,d_i^2)^T$ are unit vectors, $d_i^\perp=(d_i^2,-d_i^1)^T$ and $A_i$ are corresponding amplitude. For fixed boundary, we have $u=0$ for $x\in\Gamma$. After a standard computation, we get
+for P-wave:
+\be
+d_1= d_0- 2\alpha\nu\\
+d_2= d_0- \beta\nu\\
+A_0=\kappa(d,\nu)^2-\kappa(d,\nu^\perp)^2-\beta(d,\nu)\\
+A_1=\kappa-\beta(d,\nu)\\
+A_2=-2(d,\nu)(d,\nu^\perp)
+\ee
+where $\alpha=(d,\nu)$, $\beta=\kappa\alpha-\sqrt{\kappa^2\alpha^2-\kappa^2+1}$ and $\kappa=k_p/k_s$. For S-wave:
+\be
+d_1 =d_0- \gamma\nu \\
+d_2 =d_0- 2\alpha\nu\\
+A_0=\kappa_1(d,\nu)^2-\kappa_1(d,\nu^\perp)^2-\gamma(d,\nu)\\
+A_1=2(d,\nu)(d,\nu^\perp)\\
+A_2=\kappa_1-\gamma(d,\nu)
+\ee
+where $\gamma=\kappa_1\alpha-\sqrt{\kappa_1^2\alpha^2-\kappa_1^2+1}$ and $\kappa_1=1/\kappa$. Thus the traction of $u(x)$ on the plane $\Gamma$ can be obtained. For P-wave
+\ben
+\sigma(u)\cdot\nu=[\i k_p A_0 (\lambda\nu+2\mu(d_0,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_p x\cdot d}:=\i k_p Rf_p(x,d,\nu) e^{\i k_p x\cdot d}
+\een For S-wave
+\ben
+\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d}:=\i k_s Rf_p(x,d,\nu) e^{\i k_s x\cdot d}
+\een
+\begin{definition}
+For any unit vector $d\in \R^2$, let $u^i_p =d e^{\i k_p x\cdot d}$ or $u^i_s= d^\perp e^{\i k_s x\cdot d}$ be the incident wave and $u^s_\alpha = u^s_\alpha(x;d)$ be the radiation solution of the Navier equation:
+\be
+u^s_\alpha + \om^2u^s_\alpha = 0\ \ \mbox{in} \ \  \R^2\bks\bar{D} \\
+u^s_\alpha =-u^i_\alpha \ \ \mbox{on} \ \ \pa D 
+\ee
+The scattering coecient R(x;d) for $x\in\pa D$ is defined by the relation
+\ben
+\sigma(u^s_\alpha+u^i_\alpha)\cdot \nu= \i k_\alpha R_\alpha(x;d)e^{\i k_\alpha x\cdot d}  \ \ \ \mbox{on}\ \ \pa D
+\een
+where $\alpha=p,s$.
+\end{definition}
+In the case of high frequency approximation, the scattering coecient can be approximated by
+\ben
+R_\alpha(x;d)=\left\{ \begin{array}{ll}
+		Rf_\alpha(x;d,\nu)    \ \  \  \mbox{if} \ \ x \in \pa D^{-}_d=\{x\in \pa D, \nu(x)\cdot d<0\},\\ 
+	0 \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \mbox{if} \ \ x \in \pa D^{-}_d=\{x\in \pa D, \nu(x)\cdot d\geq0\}.
+\end{array} \right.
+\een
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./graphic/pwave_kirchhoffpi0.eps}
+	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoffpi0.eps}	
+	\caption{$\theta=0\pi$}\label{figure_1}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./graphic/pwave_kirchhoff.eps}
+	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoff.eps}	
+	\caption{$\theta=pi/4$}\label{figure_2}
+\end{figure}
+\begin{figure}
+	\centering
+	\includegraphics[width=0.8\textwidth]{./graphic/pwave_kirchhoffpi3.eps}
+	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoffpi3.eps}	
+	\caption{$\theta=\pi/3$}\label{figure_3}
+\end{figure}
 \section*{References}
 \bibliography{eee}n
 \end{document}
