@@ -1313,14 +1313,14 @@ where $d_i=(d_i^1,d_i^2)^T$ are unit vectors, $d_i^\perp=(d_i^2,-d_i^1)^T$ and $
 for P-wave:
 \be
 d_1= d_0- 2\alpha\nu\\
-d_2= d_0- \beta\nu\\
+d_2= \kappa d_0- \beta\nu\\
 A_0=\kappa(d,\nu)^2-\kappa(d,\nu^\perp)^2-\beta(d,\nu)\\
 A_1=\kappa-\beta(d,\nu)\\
 A_2=-2(d,\nu)(d,\nu^\perp)
 \ee
 where $\alpha=(d,\nu)$, $\beta=\kappa\alpha-\sqrt{\kappa^2\alpha^2-\kappa^2+1}$ and $\kappa=k_p/k_s$. For S-wave:
 \be
-d_1 =d_0- \gamma\nu \\
+d_1 =\kappa_1 d_0- \gamma\nu \\
 d_2 =d_0- 2\alpha\nu\\
 A_0=\kappa_1(d,\nu)^2-\kappa_1(d,\nu^\perp)^2-\gamma(d,\nu)\\
 A_1=2(d,\nu)(d,\nu^\perp)\\
@@ -1331,7 +1331,7 @@ where $\gamma=\kappa_1\alpha-\sqrt{\kappa_1^2\alpha^2-\kappa_1^2+1}$ and $\kappa
 \sigma(u)\cdot\nu=[\i k_p A_0 (\lambda\nu+2\mu(d_0,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_p x\cdot d}:=\i k_p Rf_p(x,d,\nu) e^{\i k_p x\cdot d}
 \een For S-wave
 \ben
-\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d}:=\i k_s Rf_p(x,d,\nu) e^{\i k_s x\cdot d}
+\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d}:=\i k_s Rf_s(x,d,\nu) e^{\i k_s x\cdot d}
 \een
 \begin{definition}
 For any unit vector $d\in \R^2$, let $u^i_p =d e^{\i k_p x\cdot d}$ or $u^i_s= d^\perp e^{\i k_s x\cdot d}$ be the incident wave and $u^s_\alpha = u^s_\alpha(x;d)$ be the radiation solution of the Navier equation:
@@ -1370,6 +1370,161 @@ R_\alpha(x;d)=\left\{ \begin{array}{ll}
 	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoffpi3.eps}	
 	\caption{$\theta=\pi/3$}\label{figure_3}
 \end{figure}
+
+\section{Difference of solution of naviar equation in full-space and half-space,0105}
+
+For any $0<\ep<1$, we consider the problem
+\be {\label{elas_z1}}
+\Delta_e u_1^\ep + (1+\i\ep)\omega^2 u_1^\ep=0 \qquad\mbox{\rm in } \R^2_+\bks \bar{D}\\
+u_1^\ep= g \ \ \ \ \mbox{\rm on } \Ga_D  \label{elas_zbd}\\
+\sigma(u_\eps^1)e_2=0 \ \ \ \ \mbox{\rm on} \Ga_0 \label{elas_zb0}
+\ee
+and
+\be {\label{elas_z2}}
+\Delta_e u_2^\ep + (1+\i\ep)\omega^2 u_2^\ep=0 \qquad\mbox{\rm in } \R^2\bks \bar{D}\\
+u_2^\ep= g \ \ \ \ \mbox{\rm on } \Ga_D  \label{elas_zbd2}
+\ee
+Let $w^\ep(x)$ be the solution of the problem:
+\be {\label{elas_z3}}
+\Delta_e w^\ep + (1+\i\ep)\omega^2 w^\ep=0 \qquad\mbox{\rm in } \R^2_+\\
+\sigma(w^\ep)e_2=-\sigma(u_2^\ep)e_2 \ \ \ \ \mbox{\rm on} \Ga_0 \label{elas_zb01}
+\ee
+Then $u^\ep_1-u^\ep_2-w^\ep$ satisfies (\ref{elas_z1}),(\ref{elas_zb0}) with the boundary condition $u^\ep_1-u^\ep_2-w^\ep=-w^\ep$ on $\Gamma_D$. Thus by the limiting absorption principle, we have
+\be\label{diff1}
+\|T_x^\nu(u^\ep_1-u^\ep_2)\|_{H^{-1/2}(\Gamma_D)}&\leq& C(\| w^\ep\|_{H^{1/2}(\Gamma_D)}+|T_x^\nu(w^\ep)\|_{H^{-1/2}(\Gamma_D)})\\
+&\leq&C \max_{x\in D}(|w^\ep(x)|+d_D|\nabla w^\ep(x|)
+\ee
+where C is indepandent of $\ep,\om$. By the integral representation formula we have for any $z\in\Ga_0$
+\be
+u_2^\ep(z)=\int_{\Gamma_D}(T^{\nu}_y \Phi^\ep(y,z))^Tu_2^\ep(y)-\Phi^\ep(z,y)(T^{\nu}_y u_2^\ep(y)) ds(y)
+\ee
+which yields by using the integral representation again that for $x\in D$
+\be
+w^\ep(x)=\int_{\Ga_0} N^\ep(x,z)(T_z^{e_2}u_2^\ep(z))ds(z)\\
+=\int_{\Gamma_D}ds(y)\int_{\Ga_0} N^\ep(x,z)(T_z^{e_2}((T^{\nu}_y \Phi^\ep(y,z))^T))ds(z)\\
+-\int_{\Gamma_D}v^\ep(x,y)(T^{\nu}_y u_2^\ep(y))ds(y)\\
+=\int_{\Gamma_D}ds(y)\int_{\Ga_0} N^\ep(x,z)(T_z^{e_2}( \Phi^\ep(y,z)^T(T^{\nu}_y)^T)ds(z)\\
+-\int_{\Gamma_D}v^\ep(x,y)(T^{\nu}_y u_2^\ep(y))ds(y)\\
+=\int_{\Gamma_D}ds(y)\int_{\Ga_0} N^\ep(x,z)(T^{\nu}_y(T_z^{e_2} \Phi^\ep(z,y))^T)^T ds(z)\\
+-\int_{\Gamma_D}v^\ep(x,y)(T^{\nu}_y u_2^\ep(y))ds(y)\\
+=\int_{\Gamma_D}(T^{\nu}_y( v^\ep(x,y))^T)^T u_2^\ep(y)
+-v^\ep(x,y)(T^{\nu}_y u_2^\ep(y))ds(y)
+\ee
+where
+\be
+v^\ep(x,y)=\int_{\Ga_0} N^\ep(x,z)(T_z^{e_2}\Phi^\ep(z,y))ds(z)
+\ee
+Since $\|T_x^\nu(u^\ep_2)\|_{H^{-1/2}(\Gamma_D)}\leq C \|g\|_{H^{1/2}(\Gamma_D)}$, we obtain
+\be
+|w^\ep(x)|\leq C \|g\|_{H^{1/2}(\Gamma_D)}\max_{x\in D}(|v^\ep(x,y)|+d_D|\nabla_yv^\ep(x,y)|)
+\ee
+and
+\be
+|\nabla w^\ep(x)|\leq C \|g\|_{H^{1/2}(\Gamma_D)}\max_{x\in D}(|\nabla_x v^\ep(x,y)|+d_D|\nabla_x\nabla_yv^\ep(x,y)|)
+\ee
+By (\ref{diff1}) and letting $\ep\to0^+$, we have 
+\be\label{diff2}
+\|T_x^\nu(u_1-u_2)\|_{H^{-1/2}(\Gamma_D)}
+\leq C\|g\|_{H^{1/2}(\Gamma_D)}\max_{x\in D}\lim_{\ep\to0^+}(|v^\ep(x,y)|\\
++d_D|\nabla_y v^\ep(x,y)|+d_D|\nabla_x v^\ep(x,y)|+d_D^2|\nabla_x\nabla_yv^\ep(x,y)|)
+\ee
+where $u_1$ is the scattering solution in the half-space and $u_2$ in the full-space. Now, it turns to estimate $v^\ep(x,y)$. Applying the Fourier transformation to the first horizontal variable of $N^\ep(z,x)$ and$T_z^{e_2}\Phi^\ep(z,y)$, we have 
+\ben
+\hspace{-2cm}
+\mathcal{F}[N^\ep](\xi,0;x)
+=\frac{\i}{\mu\delta(\xi)} \Bigg[ \Bigg(
+\begin{array}{cc}
+	2\xi^2\mu_s & -2\xi\mu_s\mu_p\\
+	-\xi\beta & \mu_p\beta
+\end{array} \Bigg)e^{\i\mu_p x_2}
++ \Bigg(
+\begin{array}{cc}
+	\mu_s\beta & \xi\beta \\
+	2\xi\mu_s\mu_p & 2\xi^2\mu_p
+\end{array} \Bigg)e^{\i\mu_s x_2} \Bigg]e^{-\i\xi x_1} \\
+\een
+\ben \hspace{-2cm}
+\mathcal{F}[T_z^{e_2}\Phi^\ep](\xi,0;y)=\frac{\mu}{2\omega^2}
+\Bigg[
+\Bigg( \begin{array}{cc}
+	2\xi^2 & -2\xi\mu_p\\
+	-\frac{\beta\xi}{\mu_p} & \beta
+\end{array} \Bigg) e^{\i\mu_py_2}+
+ \Bigg( \begin{array}{cc}
+	\beta & \frac{\xi\beta}{\mu_s} \\
+	2\xi\mu_s & 2\xi^2
+\end{array} \Bigg)e^{\i\mu_s y_2}  \Bigg]e^{-\i\xi y_1}
+\een
+Using Parseval identity combined with above two formula, we have
+\ben
+\lim_{\ep\to0^+}v^\ep(x,y)=\lim_{\ep\to0^+}\int_{\R}\mathcal{F}[N^\ep](\xi,0;x)^T\mathcal{F}[T_z^{e_2}\Phi^\ep](-\xi,0;y)d\xi
+\een
+\begin{lem}
+	For any $x,y\in D$, let
+	\ben
+	p(x,y)=\lim_{\ep\to0^+}p^\ep(x,y):=\lim_{\ep\to0^+}\int_\R \frac{f(\mu^\ep_p,\mu^\ep_s,\xi)}{\delta^\ep(\xi)}e^{\i\mu^\ep_\alpha x_2+\i \mu^\ep_\beta y_2+\i \xi(y_1-x_1)}d\xi
+	\een
+	where $f(a,b,c)$ is a homogeneous fifth order polynomial with repect to a,b,c and $\alpha=s,p$, $\beta=s,p$.Then there exists a constant $C>0$ only depandent on $\kappa$ such that
+	\ben\hspace{-2.5cm}
+	|p(x,y)|+k_s^{-1}|\nabla_x p(x,y)|+k_s^{-1}|\nabla_y p(x,y)|+k_s^{-2}|\nabla_x\nabla_y p(x,y)|\leq C((k_s h)^{-1/2}+e^{-\sqrt{k_R^2-k_s^2}h})
+	\een
+	uniformly for $x,y\in D$.
+\end{lem}
+\debproof
+Without loss of generality, we assume $k_\alpha\leq k_\beta$. Then we can divide $p(x,y)$ into two parts:
+\ben
+p(x,y)&=&\lim_{\ep\to0^+}\int_{I_1}+\int_{I_2}\frac{f(\mu^\ep_p,\mu^\ep_s,\xi)}{(k^\ep_\alpha)^2\delta^\ep(\xi)}e^{\i\mu^\ep_\alpha x_2+\i \mu^\ep_\beta y_2+\i \xi(y_1-x_1)}d\xi\\
+&=&\int_{I_1}\frac{f(\mu_p,\mu_s,\xi)}{k^2_\alpha\delta(\xi)}e^{\i\mu_\alpha x_2+\i \mu_\beta y_2+\i \xi(y_1-x_1)}d\xi\\
+&+&\lim_{\ep\to0^+}\int_{I_2}\frac{f(\mu^\ep_p,\mu^\ep_s,\xi)}{(k^\ep_\alpha)^2\delta^\ep(\xi)}e^{\i\mu^\ep_\alpha x_2+\i \mu^\ep_\beta y_2+\i \xi(y_1-x_1)}d\xi\\
+&=&p_1(x,y)+p_2(x,y)
+\een
+where $I_1=(-k_\alpha,k_\alpha)$, $I_2=(-2k_R+k_\alpha,k_\alpha)\cup(k_\alpha,2k_R-k_\alpha)$ and $I_2=R\bks[-k_\alpha,k_\alpha]$. Substituting $\xi=k_\alpha t$ into $p_1(x,y)$, we get
+\ben
+p_1(x,y)=\int_{-1}^{1}\frac{ f(\mu_p(k_\alpha t),\mu_s(k_\alpha t),k_\alpha t)}{k_\alpha \delta(k_\alpha t)}e^{\i k_\alpha x_2(\sqrt{1-t^2}+\tau \sqrt{\varsigma^2-t^2} +\gamma t)}dt
+\een
+where $\tau=y_2/x_2$, $\varsigma=k_\beta/k_\alpha$ and $\gamma=(y_1-x_1)/x_2$. It is easy to see that the phase function $\phi(t)=\sqrt{1-t^2}+\tau \sqrt{\varsigma^2-t^2} +\gamma t$ satifies $|\phi''(t)|\geq 1/(1-t^2)^{3/2}\geq1$ for $t\in(-1,1)$. Then we can obtain $|p_1(x,y)|\leq C 1/(k_s h)^{1/2}$ by lemma \ref{van}.
+
+For $p_2(x,y)$, by changing the integration path and using same argument as in the proof of estimate for psf, we can easily obtain:
+\ben
+|p_2(x,y)|\leq C(\frac{1}{k_sh}+e^{-\sqrt{k_R^2-k_s^2}}h)
+\een
+This completes the proof of the esitmate for $|p(x,y)|$. The other estimates can be proved by a similar argument. We omit the details
+\finproof
+\begin{lem}
+	For any $x,y\in D$, let
+	\ben
+	p(x,y)=\lim_{\ep\to0^+}p^\ep(x,y):=\lim_{\ep\to0^+}\int_\R \frac{f(\mu^\ep_p,\mu^\ep_s,\xi)}{\delta^\ep(\xi)}e^{\i\mu^\ep_\alpha x_2+\i \mu^\ep_\beta y_2+\i \xi(y_1-x_1)}d\xi
+	\een
+	where $f(a,b,c)$ is a homogeneous fifth order polynomial with repect to a,b,c and $\alpha=s,p$, $\beta=s,p$.Then there exists a constant $C>0$ only depandent on $\kappa$ such that
+	\ben\hspace{-3cm}
+	|p(x,y)|+k_s^{-1}|\nabla_x p(x,y)|+k_s^{-1}|\nabla_y p(x,y)|+k_s^{-2}|\nabla_x\nabla_y p(x,y)|\leq C(1+k_s d_D)((k_s h)^{-1/2}+e^{-\sqrt{k_R^2-k_s^2}h})
+	\een
+	uniformly for $x,y\in D$.
+\end{lem}
+\debproof
+Without loss of generality, we assume $k_\alpha\leq k_\beta$. Then we can divide $p(x,y)$ into four parts:
+\ben
+p(x,y)&=&\lim_{\ep\to0^+}\int_{I_1}+\int_{I_2}+\int_{I_3}\frac{f(\mu^\ep_p,\mu^\ep_s,\xi)}{(k^\ep_\alpha)^2\delta^\ep(\xi)}e^{\i\mu^\ep_\alpha x_2+\i \mu^\ep_\beta y_2+\i \xi(y_1-x_1)}d\xi\\
+&=&\int_{I_1}+\mathrm{PV}\int_{I_2}+\int_{I_3}\frac{f(\mu_p,\mu_s,\xi)}{k^2_\alpha\delta(\xi)}e^{\i\mu_\alpha x_2+\i \mu_\beta y_2+\i \xi(y_1-x_1)}d\xi\\
+&+&\i\pi(\frac{f(\mu_p(k_R),\mu_s(k_R),k_R)}{k^2_\alpha\delta'(k_R)}e^{\i\mu_\alpha(k_R) x_2+\i \mu_\beta(k_R) y_2+\i k_R(y_1-x_1)}\\
+&-&\frac{f(\mu_p(k_R),\mu_s(k_R),-k_R)}{k^2_\alpha\delta'(-k_R)}e^{\i\mu_\alpha(k_R) x_2+\i \mu_\beta(k_R) y_2-\i k_R(y_1-x_1)})\\
+:&=&p_1(x,y)+p_2(x,y)+p_3(x,y)+p_4(x,y)
+\een
+where $I_1=(-k_\alpha,k_\alpha)$, $I_2=(-2k_R+k_\alpha,k_\alpha)\cup(k_\alpha,2k_R-k_\alpha)$ and $I_2=R\bks[-2k_R+k_\alpha,2k_R-k_\alpha]$. Substituting $\xi=k_\alpha t$ into $p_1(x,y)$, we get
+\ben
+p_1(x,y)=\int_{-1}^{1}\frac{ f(\mu_p(k_\alpha t),\mu_s(k_\alpha t),k_\alpha t)}{k_\alpha \delta(k_\alpha t)}e^{\i k_\alpha x_2(\sqrt{1-t^2}+\tau \sqrt{\varsigma^2-t^2} +\gamma t)}dt
+\een
+where $\tau=y_2/x_2$, $\varsigma=k_\beta/k_\alpha$ and $\gamma=(y_1-x_1)/x_2$. It is easy to see that the phase function $\phi(t)=\sqrt{1-t^2}+\tau \sqrt{\varsigma^2-t^2} +\gamma t$ satifies $|\phi''(t)|\geq 1/(1-t^2)^{3/2}\geq1$ for $t\in(-1,1)$. Then we can obtain $|p_1(x,y)|\leq C 1/(k_s h)^{1/2}$ by lemma \ref{van}.
+
+Let 
+\ben
+g_\pm(\xi)=\frac{f(\mu_p,\mu_s,\xi)(\xi\pm k_R)}{\delta(\xi)}e^{\i\mu_\alpha x_2+\i \mu_\beta y_2+\i \xi(y_1-x_1)}d\xi
+\een
+ Then by the definition of cauchy principle value, we have
+\ben
+p_2(x,y)=\int_{-2k_R+k_\alpha}^{-k_\alpha}\frac{g_-(\xi)-g_-(-k_R)}{x+k_R}d\xi+\int_{k_\alpha}^{2k_R-k_\alpha}\frac{g_+(\xi)-g_+(k_R)}{x-k_R}d\xi
+\een
+\finproof
 \section*{References}
-\bibliography{eee}n
+\bibliography{eee}
 \end{document}
