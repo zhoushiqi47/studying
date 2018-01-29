@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  25 JAN 2018 09:40
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  25 JAN 2018 17:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -104,6 +104,9 @@ LaTeX Warning: Label `I_splits' multiply defined.
 
 
 LaTeX Warning: Label `van' multiply defined.
+
+
+LaTeX Warning: Label `figure_rectangle_phaless' multiply defined.
 
 )
 \openout1 = `"Estimate of Dirichlet Green Tensor.aux"'.
@@ -1674,6 +1677,193 @@ to.pdf>
 Package pdftex.def Info: ./graphic_phase/rectangle_r_10_k_4_phaseless_n_512_bia
 s_100-eps-converted-to.pdf used on input line 1608.
 (pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/pear_r_10_k_4_vector.eps>
+(epstopdf)                    date: 2018-01-25 14:50:29
+(epstopdf)                    size: 383197 bytes
+(epstopdf)             Output file: <./graphic_phase/pear_r_10_k_4_vector-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:44:56
+(epstopdf)                    size: 29232 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/pear_r_10_
+k_4_vector-eps-converted-to.pdf ./graphic_phase/pear_r_10_k_4_vector.eps>
+(epstopdf)             \includegraphics on input line 1614.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/pear_r_10_k_4_vector-eps-converted-to.pdf, id=224, 562.1pt x 4
+21.575pt>
+File: ./graphic_phase/pear_r_10_k_4_vector-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use ./graphic_phase/pear_r_10_k_4_vector-eps-converted-to.pdf>
+Package pdftex.def Info: ./graphic_phase/pear_r_10_k_4_vector-eps-converted-to.
+pdf used on input line 1614.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/pear_r_10_k_4_scalar.eps>
+(epstopdf)                    date: 2018-01-25 14:50:07
+(epstopdf)                    size: 383004 bytes
+(epstopdf)             Output file: <./graphic_phase/pear_r_10_k_4_scalar-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:44:57
+(epstopdf)                    size: 29940 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/pear_r_10_
+k_4_scalar-eps-converted-to.pdf ./graphic_phase/pear_r_10_k_4_scalar.eps>
+(epstopdf)             \includegraphics on input line 1615.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/pear_r_10_k_4_scalar-eps-converted-to.pdf, id=225, 562.1pt x 4
+21.575pt>
+File: ./graphic_phase/pear_r_10_k_4_scalar-eps-converted-to.pdf Graphic file (t
+ype pdf)
+ <use ./graphic_phase/pear_r_10_k_4_scalar-eps-converted-to.pdf>
+Package pdftex.def Info: ./graphic_phase/pear_r_10_k_4_scalar-eps-converted-to.
+pdf used on input line 1615.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/pear_r_10_k_4_phaseless_n_
+128_bias_100.eps>
+(epstopdf)                    date: 2018-01-25 14:54:19
+(epstopdf)                    size: 383407 bytes
+(epstopdf)             Output file: <./graphic_phase/pear_r_10_k_4_phaseless_n_
+128_bias_100-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:44:58
+(epstopdf)                    size: 32298 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/pear_r_10_
+k_4_phaseless_n_128_bias_100-eps-converted-to.pdf ./graphic_phase/pear_r_10_k_4
+_phaseless_n_128_bias_100.eps>
+(epstopdf)             \includegraphics on input line 1616.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/pear_r_10_k_4_phaseless_n_128_bias_100-eps-converted-to.pdf, i
+d=226, 562.1pt x 421.575pt>
+File: ./graphic_phase/pear_r_10_k_4_phaseless_n_128_bias_100-eps-converted-to.p
+df Graphic file (type pdf)
+
+<use ./graphic_phase/pear_r_10_k_4_phaseless_n_128_bias_100-eps-converted-to.pd
+f>
+Package pdftex.def Info: ./graphic_phase/pear_r_10_k_4_phaseless_n_128_bias_100
+-eps-converted-to.pdf used on input line 1616.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/pear_r_10_k_4_phaseless_n_
+512_bias_100.eps>
+(epstopdf)                    date: 2018-01-25 17:02:48
+(epstopdf)                    size: 383409 bytes
+(epstopdf)             Output file: <./graphic_phase/pear_r_10_k_4_phaseless_n_
+512_bias_100-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/pear_r_10_
+k_4_phaseless_n_512_bias_100-eps-converted-to.pdf ./graphic_phase/pear_r_10_k_4
+_phaseless_n_512_bias_100.eps>
+(epstopdf)             \includegraphics on input line 1617.
+runsystem(repstopdf --outfile=./graphic_phase/pear_r_10_k_4_phaseless_n_512_bia
+s_100-eps-converted-to.pdf ./graphic_phase/pear_r_10_k_4_phaseless_n_512_bias_1
+00.eps)...executed safely (allowed).
+
+Package epstopdf Info: Result file: <./graphic_phase/pear_r_10_k_4_phaseless_n_
+512_bias_100-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-25 17:04:26
+(epstopdf)                    size: 30287 bytes.
+
+<./graphic_phase/pear_r_10_k_4_phaseless_n_512_bias_100-eps-converted-to.pdf, i
+d=227, 562.1pt x 421.575pt>
+File: ./graphic_phase/pear_r_10_k_4_phaseless_n_512_bias_100-eps-converted-to.p
+df Graphic file (type pdf)
+
+<use ./graphic_phase/pear_r_10_k_4_phaseless_n_512_bias_100-eps-converted-to.pd
+f>
+Package pdftex.def Info: ./graphic_phase/pear_r_10_k_4_phaseless_n_512_bias_100
+-eps-converted-to.pdf used on input line 1617.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/bi_circle_r_10_k_4_vector.
+eps>
+(epstopdf)                    date: 2018-01-25 10:41:24
+(epstopdf)                    size: 384173 bytes
+(epstopdf)             Output file: <./graphic_phase/bi_circle_r_10_k_4_vector-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:42:43
+(epstopdf)                    size: 24153 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/bi_circle_
+r_10_k_4_vector-eps-converted-to.pdf ./graphic_phase/bi_circle_r_10_k_4_vector.
+eps>
+(epstopdf)             \includegraphics on input line 1623.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/bi_circle_r_10_k_4_vector-eps-converted-to.pdf, id=228, 562.1p
+t x 421.575pt>
+File: ./graphic_phase/bi_circle_r_10_k_4_vector-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use ./graphic_phase/bi_circle_r_10_k_4_vector-eps-converted-to.pdf>
+Package pdftex.def Info: ./graphic_phase/bi_circle_r_10_k_4_vector-eps-converte
+d-to.pdf used on input line 1623.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/bi_circle_r_10_k_4_scalar.
+eps>
+(epstopdf)                    date: 2018-01-25 10:35:29
+(epstopdf)                    size: 383981 bytes
+(epstopdf)             Output file: <./graphic_phase/bi_circle_r_10_k_4_scalar-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:42:43
+(epstopdf)                    size: 25045 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/bi_circle_
+r_10_k_4_scalar-eps-converted-to.pdf ./graphic_phase/bi_circle_r_10_k_4_scalar.
+eps>
+(epstopdf)             \includegraphics on input line 1624.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/bi_circle_r_10_k_4_scalar-eps-converted-to.pdf, id=229, 562.1p
+t x 421.575pt>
+File: ./graphic_phase/bi_circle_r_10_k_4_scalar-eps-converted-to.pdf Graphic fi
+le (type pdf)
+
+<use ./graphic_phase/bi_circle_r_10_k_4_scalar-eps-converted-to.pdf>
+Package pdftex.def Info: ./graphic_phase/bi_circle_r_10_k_4_scalar-eps-converte
+d-to.pdf used on input line 1624.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/bi_circle_r_10_k_4_phasele
+ss_n_128_bias_100.eps>
+(epstopdf)                    date: 2018-01-25 11:03:33
+(epstopdf)                    size: 384190 bytes
+(epstopdf)             Output file: <./graphic_phase/bi_circle_r_10_k_4_phasele
+ss_n_128_bias_100-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:42:44
+(epstopdf)                    size: 33872 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/bi_circle_
+r_10_k_4_phaseless_n_128_bias_100-eps-converted-to.pdf ./graphic_phase/bi_circl
+e_r_10_k_4_phaseless_n_128_bias_100.eps>
+(epstopdf)             \includegraphics on input line 1625.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/bi_circle_r_10_k_4_phaseless_n_128_bias_100-eps-converted-to.p
+df, id=230, 562.1pt x 421.575pt>
+File: ./graphic_phase/bi_circle_r_10_k_4_phaseless_n_128_bias_100-eps-converted
+-to.pdf Graphic file (type pdf)
+
+<use ./graphic_phase/bi_circle_r_10_k_4_phaseless_n_128_bias_100-eps-converted-
+to.pdf>
+Package pdftex.def Info: ./graphic_phase/bi_circle_r_10_k_4_phaseless_n_128_bia
+s_100-eps-converted-to.pdf used on input line 1625.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./graphic_phase/bi_circle_r_10_k_4_phasele
+ss_n_512_bias_100.eps>
+(epstopdf)                    date: 2018-01-25 12:55:41
+(epstopdf)                    size: 384194 bytes
+(epstopdf)             Output file: <./graphic_phase/bi_circle_r_10_k_4_phasele
+ss_n_512_bias_100-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-01-25 16:42:45
+(epstopdf)                    size: 29801 bytes
+(epstopdf)             Command: <repstopdf --outfile=./graphic_phase/bi_circle_
+r_10_k_4_phaseless_n_512_bias_100-eps-converted-to.pdf ./graphic_phase/bi_circl
+e_r_10_k_4_phaseless_n_512_bias_100.eps>
+(epstopdf)             \includegraphics on input line 1626.
+Package epstopdf Info: Output file is already uptodate.
+
+<./graphic_phase/bi_circle_r_10_k_4_phaseless_n_512_bias_100-eps-converted-to.p
+df, id=231, 562.1pt x 421.575pt>
+File: ./graphic_phase/bi_circle_r_10_k_4_phaseless_n_512_bias_100-eps-converted
+-to.pdf Graphic file (type pdf)
+
+<use ./graphic_phase/bi_circle_r_10_k_4_phaseless_n_512_bias_100-eps-converted-
+to.pdf>
+Package pdftex.def Info: ./graphic_phase/bi_circle_r_10_k_4_phaseless_n_512_bia
+s_100-eps-converted-to.pdf used on input line 1626.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
  (./Estimate of Dirichlet Green Tensor.bbl) [34] [35 <./graphic/peanut_2pi-eps-
 converted-to.pdf> <./graphic/peanut_2pi_neumann-eps-converted-to.pdf> <./graphi
 c/peanut_2pi_impedance_1-eps-converted-to.pdf> <./graphic/peanut_2pi_transmissi
@@ -1717,7 +1907,15 @@ _4_scalar-eps-converted-to.pdf> <./graphic_phase/5-leaf_r_10_k_4_phaseless_n_12
 s-converted-to.pdf> <./graphic_phase/rectangle_r_10_k_4_scalar-eps-converted-to
 .pdf> <./graphic_phase/rectangle_r_10_k_4_phaseless_n_128_bias_100-eps-converte
 d-to.pdf> <./graphic_phase/rectangle_r_10_k_4_phaseless_n_512_bias_100-eps-conv
-erted-to.pdf>] (./Estimate of Dirichlet Green Tensor.aux)
+erted-to.pdf>] [37 <./graphic_phase/pear_r_10_k_4_vector-eps-converted-to.pdf> 
+<./graphic_phase/pear_r_10_k_4_scalar-eps-converted-to.pdf> <./graphic_phase/pe
+ar_r_10_k_4_phaseless_n_128_bias_100-eps-converted-to.pdf> <./graphic_phase/pea
+r_r_10_k_4_phaseless_n_512_bias_100-eps-converted-to.pdf> <./graphic_phase/bi_c
+ircle_r_10_k_4_vector-eps-converted-to.pdf> <./graphic_phase/bi_circle_r_10_k_4
+_scalar-eps-converted-to.pdf> <./graphic_phase/bi_circle_r_10_k_4_phaseless_n_1
+28_bias_100-eps-converted-to.pdf> <./graphic_phase/bi_circle_r_10_k_4_phaseless
+_n_512_bias_100-eps-converted-to.pdf>]
+(./Estimate of Dirichlet Green Tensor.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -1726,10 +1924,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2708 strings out of 493014
- 46884 string characters out of 6133350
- 108979 words of memory out of 5000000
- 6137 multiletter control sequences out of 15000+600000
+ 2750 strings out of 493014
+ 49558 string characters out of 6133350
+ 108989 words of memory out of 5000000
+ 6171 multiletter control sequences out of 15000+600000
  15736 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,26p,785b,365s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1753,11 +1951,11 @@ exmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2016/te
 xmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2016/tex
 mf-dist/fonts/type1/public/amsfonts/latxfont/lasy10.pfb></usr/local/texlive/201
 6/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (36 pages, 1466849 b
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (37 pages, 1679286 b
 ytes).
 PDF statistics:
- 738 PDF objects out of 1000 (max. 8388607)
- 484 compressed objects within 5 object streams
+ 809 PDF objects out of 1000 (max. 8388607)
+ 521 compressed objects within 6 object streams
  0 named destinations out of 1000 (max. 500000)
- 311 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 351 words of extra memory for PDF output out of 10000 (max. 10000000)
 
