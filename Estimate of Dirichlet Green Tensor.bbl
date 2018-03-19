@@ -5,31 +5,29 @@ Jan Achenbach.
 \newblock {\em Wave Propagation in Elastic Solids}.
 \newblock North-Holland, 1980.
 
+\bibitem{chen2015reverse_elas}
+Zhiming CHEN and GuangHui HUANG.
+\newblock Reverse time migration for extended obstacles: Elastic waves.
+\newblock {\em SCIENTIA SINICA Mathematica}, 45(8):1103--1114, 2015.
+
 \bibitem{Evans2010}
 Lawrence~C Evans.
 \newblock {\em Partial differential equations. 2nd ed}.
-\newblock Marcel Dekker,, 2010.
+\newblock Marcel Dekker, 2010.
 
 \bibitem{grafakos}
 Loukas Grafakos.
 \newblock {\em Classical and modern Fourier analysis}.
 \newblock Prentice Hall, 2004.
 
-\bibitem{guiggiani1987direct}
-Massimo Guiggiani and Paolo Casalini.
-\newblock Direct computation of cauchy principal value integrals in advanced
-  boundary elements.
-\newblock {\em International Journal for Numerical Methods in Engineering},
-  24(9):1711--1720, 1987.
-
-\bibitem{hsiao2008boundary}
-George~C Hsiao and Wolfgang~L Wendland.
-\newblock {\em Boundary integral equations}, volume 164.
-\newblock Springer, 2008.
+\bibitem{watson1995treatise}
+George~Neville Watson.
+\newblock {\em A treatise on the theory of Bessel functions}.
+\newblock Cambridge university press, 1995.
 
 \bibitem{Wong_Asymptotic}
-R.~Wong, Werner Rheinboldt, and Daniel Siewiorek.
-\newblock {\em Asymptotic Approximations of Integrals}.
-\newblock 1989.
+Roderick Wong.
+\newblock {\em Asymptotic approximations of integrals}.
+\newblock SIAM, 2001.
 
 \end{thebibliography}

@@ -1627,6 +1627,75 @@ p_2(x,y)=\int_{-2k_R+k_\alpha}^{-k_\alpha}\frac{g_-(\xi)-g_-(-k_R)}{x+k_R}d\xi+\
 	
 	\caption{Circle;From left to right: vector imaging, scalar imaging, phaseless imaging128, phaseless imaging512; From up to down: R=10, R=100 }\label{figure_bicircle_phaless}
 \end{figure}
+
+\section{RTM phaseless: elastic; 03.15}
+The RTM imaging function studied in \cite{chen2015reverse_elas} for reconstructing extended targets is
+\ben
+I_1(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(c_pG_p(z,x_rs)q+c_sG_s(z,x_s)q\bigg)\\
+\cdot\bigg(c_pG_p(z,x_r)+c_sG_s(z,x_r)\bigg)\overline{u^s_q(x_r,x_s)}ds(x_r)ds(x_s)
+\een
+For vector $x=(x_1,x_2)^T$, we introduce tow unit vectors $\hat{x}={x}/{|x|}:=(\hat{x}_1,\hat{x}_2)^T$ and $\tilde{x}=(-\hat{x}_2,\hat{x}_1)$. We define $A(x)=\hat{x}\hat{x}^T$ and $B(x)=\tilde{x}\tilde{x}^T$
+\ben
+I_2(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(k_pg_p(z,x_rs)A(x_s)q+k_sg_s(z,x_s)B(x_s)q\bigg)\\
+\cdot\bigg(k_pg_p(z,x_r)A(x_r)+k_sg_s(z,x_r)B(x_r)\bigg)\overline{u^s_q(x_r,x_s)}ds(x_r)ds(x_s)
+\een
+or
+\ben
+I_2(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(c_pG_p(z,x_rs)q+c_sG_s(z,x_s)q\bigg)\\
+\cdot\bigg(k_pg_p(z,x_r)A(x_r)+k_sg_s(z,x_r)B(x_r)\bigg)\overline{u^s_q(x_r,x_s)}ds(x_r)ds(x_s)
+\een
+and
+\ben
+I_3(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(k_pg_p(z,x_rs)A(x_s)q+k_sg_s(z,x_s)B(x_s)q\bigg)\\
+\cdot\bigg(k_pg_p(z,x_r)\hat{x_r}D_p(x_r,x_s)+k_sg_s(z,x_r)\tilde{x_r}D_s(x_r,x_s)\bigg)ds(x_r)ds(x_s)
+\een
+or
+\ben
+I_3(z)=-\om^2\Im\sum_{q=e_1,e_2}\int_{\Ga_s}\int_{\Ga_r}\bigg(c_pG_p(z,x_rs)q+c_sG_s(z,x_s)q\bigg)\\
+\cdot\bigg(k_pg_p(z,x_r)\hat{x_r}D_p(x_r,x_s)+k_sg_s(z,x_r)\tilde{x_r}D_s(x_r,x_s)\bigg)ds(x_r)ds(x_s)
+\een
+where
+\ben
+D_p(x_r,x_s)=\frac{|\hat{x_r}^Tu_q(x_r,x_s)|^2-|\hat{x_r}^Tu^i_q(x_r,x_s))|^2}{\hat{x_r}^Tu^i_q(x_r,x_s))} \\
+D_s(x_r,x_s)=\frac{|\tilde{x_r}^Tu_q(x_r,x_s)|^2-|\tilde{x_r}^Tu^i_q(x_r,x_s))|^2}{\tilde{x_r}^Tu^i_q(x_r,x_s))}
+\een 
+Conjecture
+\ben
+|I_1(z)-I_2(z)|\leq C\frac{1}{k_p R_s}, \ \ |I_2(z)-I_3(z)|\leq C\frac{1}{k_p R_s}
+\een
+\begin{lem}\label{kir_eq}
+	We have
+\ben
+k_p\int_{|x|=R}g_p(z,x)A(x)\overline{G(x,y)}ds(x)=\Im G_p(z,y) +W_p(y,z)\\
+k_s\int_{|x|=R}g_s(z,x)B(x)\overline{G(x,y)}ds(x)=\Im G_s(z,y) +W_s(y,z)
+\een
+where $|W_\alpha^{ij}(z,y)|+k_\alpha^{-1}|\nabla_z W_\alpha^{ij}(z,y)|\leq C_\alpha R^{-1}$ for some constanc $C_\alpha$ depending on $k_\alpha|z|,k_\alpha|y|$, $\alpha\in\{p,s\}$.
+\end{lem}
+\debproof
+We first recall the following estimate for the first Hankel function in \cite[p.197]{watson1995treatise}, for any $t>0$, we have
+\ben\hspace{-2cm}
+H^{(1)}_0(t)=\left(\frac 2{\pi t}\right)^{1/2}e^{\i(t-\pi/4)}+R_0(t),\ \ 
+H^{(1)}_1(t)=\left(\frac 2{\pi t}\right)^{1/2}e^{\i(t-3\pi/4)}+R_1(t),
+\een
+where $|R_j(t)|\le Ct^{-3/2}$, $j=0,1$, for some constant $C>0$ independent of $t$. By the defination of Green Tensor, we have
+\ben\hspace{-2cm}
+G_p(x,y)=\frac{\i}{\sqrt{8\pi}(\lambda+2\mu)}A(x-y)\frac{1}{(k_p|x-y|)^{1/2}}e^{\i k_p|x-y|-\i\frac{\pi}{4}}+O(\frac{1}{(k_p|x-y|)^{3/2}})\\ \hspace{-2cm}
+G_s(x,y)=\frac{\i}{\sqrt{8\pi}\mu}B(x-y)\frac{1}{(k_s|x-y|)^{1/2}}e^{\i k_p|x-y|-\i\frac{\pi}{4}}+O(\frac{1}{(k_s|x-y|)^{3/2}})
+\een
+Some simple manipulation yields:
+\ben 
+|A(x-y)-A(x)|\leq C_1/|x|, \ \ |B(x-y)-B(x)|\leq C_2/|x| \\
+ |\frac{1}{|x-y|}-\frac{1}{|x|}|\leq C_3/|x|^2 , \ \
+||x-y|-(|x|-\hat{x}\cdot y)|\leq C_4/|x|
+\een
+where $C_i$, i=1,2,3,4 depend on $|y|$.
+\finproof
+
+Now we turn to the analysisi of the imaging function $I_3(z)$. We first observe that:
+\ben
+D_p(x_r,x_s)=\hat{x_r}^T\overline{u^s_q}+\frac{|\hat{x_r}^Tu^s_q(x_r,x_s)|^2}{\hat{x_r}^Tu^i_q(x_r,x_s))}+\frac{(\hat{x_r}^Tu^s_q(x_r,x_s))(\hat{x_r}^T\overline{u^i_q(x_r,x_s)})}{\hat{x_r}^Tu^i_q(x_r,x_s))}  \\ 
+D_s(x_r,x_s)=\tilde{x_r}^T\overline{u^s_q}+\frac{|\tilde{x_r}^Tu^s_q(x_r,x_s)|^2}{\tilde{x_r}^Tu^i_q(x_r,x_s))}+\frac{(\tilde{x_r}^Tu^s_q(x_r,x_s))(\tilde{x_r}^T\overline{u^i_q(x_r,x_s)})}{\tilde{x_r}^Tu^i_q(x_r,x_s))}
+\een
 \section*{References}
 \bibliography{eee}
 \end{document}
