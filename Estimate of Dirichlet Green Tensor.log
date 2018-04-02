@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  19 MAR 2018 11:41
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  2 APR 2018 17:43
 entering extended mode
 **"./Estimate of Dirichlet Green Tensor.tex"
 ("Estimate of Dirichlet Green Tensor.tex"
@@ -1911,7 +1911,30 @@ Underfull \hbox (badness 10000) in paragraph at lines 1690--1693
 
  []
 
-("Estimate of Dirichlet Green Tensor.bbl") [38]
+[38] <./graphic/transform_th.png, id=740, 481.04718pt x 498.36188pt>
+File: ./graphic/transform_th.png Graphic file (type png)
+
+<use ./graphic/transform_th.png>
+Package pdftex.def Info: ./graphic/transform_th.png used on input line 1733.
+(pdftex.def)             Requested size: 178.55725pt x 184.98415pt.
+
+<./graphic/transform_t.png, id=742, 569.87906pt x 515.67656pt>
+File: ./graphic/transform_t.png Graphic file (type png)
+
+<use ./graphic/transform_t.png>
+Package pdftex.def Info: ./graphic/transform_t.png used on input line 1734.
+(pdftex.def)             Requested size: 178.55725pt x 161.57343pt.
+ [39 <./graphic/transform_th.png> <./graphic/transform_t.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1755--1759
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 1775--1777
+
+ []
+
+("Estimate of Dirichlet Green Tensor.bbl") [40]
 ("Estimate of Dirichlet Green Tensor.aux")
 
 LaTeX Warning: There were undefined references.
@@ -1921,10 +1944,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2753 strings out of 495237
- 48071 string characters out of 3182726
- 103108 words of memory out of 3000000
- 5913 multiletter control sequences out of 15000+200000
+ 2766 strings out of 495237
+ 48380 string characters out of 3182726
+ 103130 words of memory out of 3000000
+ 5923 multiletter control sequences out of 15000+200000
  15736 words of font info for 64 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
  38i,13n,26p,787b,365s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1943,10 +1966,10 @@ cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX
 blic/amsfonts/cm/cmti10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
 12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/CTEX
 /MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (38 pages, 1808749 b
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (40 pages, 1912541 b
 ytes).
 PDF statistics:
- 805 PDF objects out of 1000 (max. 8388607)
+ 816 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 351 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 361 words of extra memory for PDF output out of 10000 (max. 10000000)
 

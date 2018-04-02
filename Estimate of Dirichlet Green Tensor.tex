@@ -1510,7 +1510,7 @@ p(x,y)&=&\lim_{\ep\to0^+}\int_{I_1}+\int_{I_2}+\int_{I_3}\frac{f(\mu^\ep_p,\mu^\
 &-&\frac{f(\mu_p(k_R),\mu_s(k_R),-k_R)}{k^2_\alpha\delta'(-k_R)}e^{\i\mu_\alpha(k_R) x_2+\i \mu_\beta(k_R) y_2-\i k_R(y_1-x_1)})\\
 :&=&p_1(x,y)+p_2(x,y)+p_3(x,y)+p_4(x,y)
 \een
-where $I_1=(-k_\alpha,k_\alpha)$, $I_2=(-2k_R+k_\alpha,k_\alpha)\cup(k_\alpha,2k_R-k_\alpha)$ and $I_2=R\bks[-2k_R+k_\alpha,2k_R-k_\alpha]$. Substituting $\xi=k_\alpha t$ into $p_1(x,y)$, we get
+where $I_1=(-k_\alpha,k_\alpha)$, $I_2=(-2k_R+k_\alpha,k_\alpha)\cup(k_\alpha,2k_R-k_\alpha)$ and $I_3=R\bks[-2k_R+k_\alpha,2k_R-k_\alpha]$. Substituting $\xi=k_\alpha t$ into $p_1(x,y)$, we get
 \ben
 p_1(x,y)=\int_{-1}^{1}\frac{ f(\mu_p(k_\alpha t),\mu_s(k_\alpha t),k_\alpha t)}{k_\alpha \delta(k_\alpha t)}e^{\i k_\alpha x_2(\sqrt{1-t^2}+\tau \sqrt{\varsigma^2-t^2} +\gamma t)}dt
 \een
@@ -1696,6 +1696,84 @@ Now we turn to the analysisi of the imaging function $I_3(z)$. We first observe 
 D_p(x_r,x_s)=\hat{x_r}^T\overline{u^s_q}+\frac{|\hat{x_r}^Tu^s_q(x_r,x_s)|^2}{\hat{x_r}^Tu^i_q(x_r,x_s))}+\frac{(\hat{x_r}^Tu^s_q(x_r,x_s))(\hat{x_r}^T\overline{u^i_q(x_r,x_s)})}{\hat{x_r}^Tu^i_q(x_r,x_s))}  \\ 
 D_s(x_r,x_s)=\tilde{x_r}^T\overline{u^s_q}+\frac{|\tilde{x_r}^Tu^s_q(x_r,x_s)|^2}{\tilde{x_r}^Tu^i_q(x_r,x_s))}+\frac{(\tilde{x_r}^Tu^s_q(x_r,x_s))(\tilde{x_r}^T\overline{u^i_q(x_r,x_s)})}{\tilde{x_r}^Tu^i_q(x_r,x_s))}
 \een
+
+\section{Estimate by hankel methon,03.30}
+Preminary:
+\ben
+S(s)=e^{-\i\frac{\pi}{4}}s(2+\i s^2)^{-1/2}\cos\phi+(1+\i s^2)\sin\phi \\
+C(s)=(1+\i s^2)\cos\phi-e^{-\i\frac{\pi}{4}}s(2+\i s^2)^{-1/2}\sin\phi \\
+\cos\theta=1-2\sin^2\frac{\theta}{2}:=1-t^2\\
+t=e^{-\i\frac{\pi}{4}}s
+\een
+\section{04.02}
+Let $f(\xi):=h(\xi,\mu(\xi),\mu_\kappa(\xi))$ be a analytic function with respect to $\xi$ in $\C\bks\{\i\R\cup(-1,1)\}$. For any $a,b>0$, we denote
+\ben
+I(f;a,b)=\int_{\R}f(\xi)e^{\i a\xi+\i b\mu(\xi)}d\xi
+\een
+where $\mu(\xi)=(1-\xi^2)^{1/2}$, $\mu_\kappa(\xi)=(\kappa-\xi^2)^{1/2}$.
+\begin{lem}\label{new_station_phase}
+	Let $a,b >0$, $\rho=\sqrt{a^2+b^2}$, and $f(\xi):=h(\xi,\mu(\xi),\mu_\kappa(\xi))$ be a analytic function in $\C\bks\{\i\R\cup(-1,1)\}$. Then 
+	\ben\hspace{-2.5cm}
+	I(f;a,b)=\sqrt{\frac{2}{\rho}}e^{\i\rho-\i\pi/4}\int_{\R}F(\frac{t}{\sqrt{\rho}})C(\frac{t}{\sqrt{\rho}})e^{-t^2}dt+
+	O(\rho^{-3/2})\|F(\frac{t}{\sqrt{\rho}})C(\frac{t}{\sqrt{\rho}})t^2e^{-t^2}\|_{L^1(\R)}
+	\een
+	where $F(s)= h(S(s),C(s),\mu_\kappa(S(s))$ and $\sin\phi=a/\rho,\cos\phi=b/\rho$.
+\end{lem}
+\debproof
+ To simplify the integral, the standard substitution $\xi=k_s\sin \theta$ is made, taking the $\xi$-plane to a strip $-\pi/2<\Re \theta <\pi/2$ in the $\theta$-plane, and the real axis in the $\xi$-plane onto the path L from $-\pi/2+\i\infty\rightarrow-\pi/2\rightarrow\pi/2\rightarrow\pi/2-\i\infty$ in the $\theta-plane$. The integral $I(f;a,b)$ then becomes( Let a=$\rho \sin\phi$  and b=$\rho\cos\phi$, $0<\phi<\pi/2$)
+\be
+ I(f;a,b)=\int_L h(\sin \theta,\cos \theta,\mu_\kappa(\sin \theta))\cos \theta \ e^{\i\rho(\cos (\theta-\phi))} d\theta
+\ee
+Taking the shift transformation of $\theta$ and using cauchy integral theorem, we can obtain the more useful representation of $I(f;a,b)$:
+\be
+I(f;a,b)=\int_L f(\sin (\theta+\phi))\cos (\theta+\phi) \ e^{\i\rho\cos \theta} d\theta
+\ee
+\begin{figure}
+	\centering
+	\includegraphics[width=0.4\textwidth]{./graphic/transform_th.png}
+	\includegraphics[width=0.4\textwidth]{./graphic/transform_t.png}
+
+	\caption{integral path in $\theta-plane$ and t-plane  }\label{transform_t}
+\end{figure}
+Notice that $\cos\theta=1-2\sin^2\frac{\theta}{2}$, by substituting $\theta(t)=2\arctan\frac{\sqrt{2}t}{2}$, we get:
+\ben\hspace{-1.5cm}
+I(f;a,b)=e^{\i\rho}\int_{L_1\cup(-1,1)\cup L_2} f(\sin (\theta(t)+\phi))\cos (\theta(t)+\phi)\frac{2}{(2-t^2)^{1/2}} \ e^{-\i\rho t^2} dt
+\een
+where 
+\ben
+L1=\{t|(\Re t)^2-(\Im t)^2=1,\Re t <0,\Im t>0\}\\
+L2=\{t|(\Re t)^2-(\Im t)^2=1,\Re t >0,\Im t<0\}
+\een
+and the geometry is depicted in Figure \ref{transform_t}. A simple computation show that the substitution $\theta(t)=2\arctan\frac{\sqrt{2}t}{2}$ transform the domain $\Omega_\theta=\{\theta||\Re\theta|<\pi, \Re\theta\cdot\Im\theta<0\}$ in the $\theta$-plane into $\Omega_t=\{t| \Re t\cdot\Im t<0\}$ in t-plane. Now it is easy to see that $f(\sin(\theta(t)_\phi))$ is analytic in the domain $\Omega_t$. Since $\Omega_t$ is surrounded by $L_1\cup L_2\cup(-1,1)$ and the diagonal line of the second and the fourth quadrants denote by $L3$, by using Cauchy integral theorem, we have
+\ben\hspace{-1.5cm}
+I(f;a,b)=e^{\i\rho}\int_{L_3} f(\sin (\theta(t)+\phi))\cos (\theta(t)+\phi)\frac{2\cos (\theta(t)+\phi)}{(2-t^2)^{1/2}} \ e^{-\i\rho t^2} dt \\ \hspace{-1.5cm}
+=e^{\i\rho-\i \pi/4}\int_{\R} f(\sin (\theta(e^{-\i\pi/4 s})+\phi))\frac{2\cos (\theta(e^{-\i\pi/4 s})+\phi)}{(2+\i s^2)^{1/2}} \ e^{-\rho s^2} ds \\
+ \hspace{-1.5cm}
+=e^{\i\rho-\i \pi/4}\int_{\R} f(S(s))\frac{2C(s)}{(2+\i s^2)^{1/2}} \ e^{-\rho s^2} ds \\
+\hspace{-1.5cm}
+=\sqrt{\frac{2}{\rho}}e^{\i\rho-\i \pi/4}\int_{\R} f(S(\frac{t}{\sqrt{\rho}}))C(\frac{t}{\sqrt{\rho}}){(1+\i \frac{t^2}{2\rho})^{-1/2}} \ e^{-t^2} dt
+\een
+The lemma follows immediately from the fact that $(1+\i s)^{-1/2}=1+O(|s|),s\in\R$. The proof is completed.
+\finproof
+\begin{lem}
+	Let p(x,y,z) be a homogeneous polynomial of degree 2 and $f(\xi)=p(\xi,\mu(\xi),\mu_\kappa(\xi))/(\xi^2+\mu(\xi)\mu_\kappa(\xi))$. Then we have
+	\ben
+	|I(f;a,b)|\leq C(\frac{b}{\rho}\rho^{-1/2}+\frac{a}{\rho}\rho^{-5/4}+\rho^{-3/2})
+	\een
+	where C is a constant independant of $a,b$.
+\end{lem}
+\debproof
+By lemme \ref{new_station_phase}, it suffice to estimate the integral $I(\rho)$ where
+\ben
+I(\rho)=\int_{\R}F(\frac{t}{\sqrt{\rho}})C(\frac{t}{\sqrt{\rho}})e^{-t^2}dt \\
+\leq \cos\phi|\int_{\R}F(\frac{t}{\sqrt{\rho}})(1+\i\frac{t^2}{\rho})e^{-t^2}dt|+\frac{1}{\rho}\sin\phi|\int_{\R}F(\frac{t}{\sqrt{\rho}})(2+\i\frac{t^2}{\rho})^{1/2}te^{-t^2}dt|
+\een
+\ben
+\max\{|S(s)|,|C(s)|\}\leq |s(2+\i s^2)^{1/2}|+|1+\i s^2|\leq C(1+s+s^2)\\
+|\mu_\kappa(C(s))|\leq C (1+s+s^2) \\
+|\mu_\kappa(C(s))|\geq C s^{1/4}
+\een
+\finproof
 \section*{References}
 \bibliography{eee}
 \end{document}
