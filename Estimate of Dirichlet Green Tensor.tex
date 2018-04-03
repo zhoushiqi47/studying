@@ -1700,10 +1700,11 @@ D_s(x_r,x_s)=\tilde{x_r}^T\overline{u^s_q}+\frac{|\tilde{x_r}^Tu^s_q(x_r,x_s)|^2
 \section{Estimate by hankel methon,03.30}
 Preminary:
 \ben
-S(s)=e^{-\i\frac{\pi}{4}}s(2+\i s^2)^{-1/2}\cos\phi+(1+\i s^2)\sin\phi \\
-C(s)=(1+\i s^2)\cos\phi-e^{-\i\frac{\pi}{4}}s(2+\i s^2)^{-1/2}\sin\phi \\
 \cos\theta=1-2\sin^2\frac{\theta}{2}:=1-t^2\\
-t=e^{-\i\frac{\pi}{4}}s
+t=e^{-\i\frac{\pi}{4}}s\\
+\sin\theta(s):=S(s)=e^{-\i\frac{\pi}{4}}s(2+\i s^2)^{-1/2}\cos\phi+(1+\i s^2)\sin\phi \\
+\cos\theta(s):=C(s)=(1+\i s^2)\cos\phi-e^{-\i\frac{\pi}{4}}s(2+\i s^2)^{-1/2}\sin\phi \\
+\cos\frac{\theta(s)}{2}=(2-(t(s))^2)^{1/2}=(2+\i s^2)^{1/2}
 \een
 \section{04.02}
 Let $f(\xi):=h(\xi,\mu(\xi),\mu_\kappa(\xi))$ be a analytic function with respect to $\xi$ in $\C\bks\{\i\R\cup(-1,1)\}$. For any $a,b>0$, we denote
@@ -1755,8 +1756,9 @@ I(f;a,b)=e^{\i\rho}\int_{L_3} f(\sin (\theta(t)+\phi))\cos (\theta(t)+\phi)\frac
 \een
 The lemma follows immediately from the fact that $(1+\i s)^{-1/2}=1+O(|s|),s\in\R$. The proof is completed.
 \finproof
+The following lemma is a directed consequence of lemma \ref{new_station_phase}
 \begin{lem}
-	Let p(x,y,z) be a homogeneous polynomial of degree 2 and $f(\xi)=p(\xi,\mu(\xi),\mu_\kappa(\xi))/(\xi^2+\mu(\xi)\mu_\kappa(\xi))$. Then we have
+	Let p(x,y,z) be a homogeneous polynomial of degree 2 and $f(\xi)=p(\xi,\mu(\xi),\mu_\kappa(\xi))/(\xi^2+\mu(\xi)\mu_\kappa(\xi))$. Then for $\rho>1$, we have
 	\ben
 	|I(f;a,b)|\leq C(\frac{b}{\rho}\rho^{-1/2}+\frac{a}{\rho}\rho^{-5/4}+\rho^{-3/2})
 	\een
@@ -1766,13 +1768,39 @@ The lemma follows immediately from the fact that $(1+\i s)^{-1/2}=1+O(|s|),s\in\
 By lemme \ref{new_station_phase}, it suffice to estimate the integral $I(\rho)$ where
 \ben
 I(\rho)=\int_{\R}F(\frac{t}{\sqrt{\rho}})C(\frac{t}{\sqrt{\rho}})e^{-t^2}dt \\
-\leq \cos\phi|\int_{\R}F(\frac{t}{\sqrt{\rho}})(1+\i\frac{t^2}{\rho})e^{-t^2}dt|+\frac{1}{\rho}\sin\phi|\int_{\R}F(\frac{t}{\sqrt{\rho}})(2+\i\frac{t^2}{\rho})^{1/2}te^{-t^2}dt|
+= \cos\phi\int_{\R}F(\frac{t}{\sqrt{\rho}})(1+\i\frac{t^2}{\rho})e^{-t^2}dt-\frac{1}{\rho}\sin\phi\int_{\R}e^{-\i\pi/4} F(\frac{t}{\sqrt{\rho}})(2+\i\frac{t^2}{\rho})^{1/2}te^{-t^2}dt \\
+:=\frac{b}{\rho}\phi I_1(\rho)-\frac{1}{\rho}\frac{a}{\rho} e^{-\i\pi/4} I_2(\rho)
 \een
+For $s\in\R$, it is easy to check that
 \ben
 \max\{|S(s)|,|C(s)|\}\leq |s(2+\i s^2)^{1/2}|+|1+\i s^2|\leq C(1+s+s^2)\\
-|\mu_\kappa(C(s))|\leq C (1+s+s^2) \\
-|\mu_\kappa(C(s))|\geq C s^{1/4}
+|\mu_\kappa(C(s))|\leq C(1+|S(s)|)\leq C (1+s+s^2) 
 \een
+where C is independent of $\phi$. Consequently, for $\rho>1$, we obtain
+\ben
+|I_1(\rho)|\leq\int_\R |p(S(\frac{t}{\sqrt{\rho}}),(\frac{t}{\sqrt{\rho}}),\mu_\kappa(S(\frac{t}{\sqrt{\rho}})))|(1+\frac{t^2}{\rho})e^{-t^2}dt \\
+\leq C\int_\R\sum_{k=0}^{6}\frac{t}{\sqrt{\rho}}e^{-t^2}dt\leq C
+\een
+Before estimating $I_2(\rho)$, we need to deal with term $\mu_\kappa(S(s))$. Let $\kappa=\sin_\kappa,0<\theta_\kappa<\pi/2$, then we have
+\ben
+|\mu_\kappa(S(s))|^2=|\sin^2\theta(s)-\sin^2(\theta(s)+\phi)|\\
+=4|\sin\frac{\theta(s)+\theta_\kappa+\phi}{2}||\cos\frac{\theta(s)+\theta_\kappa+\phi}{2}||\cos\frac{\theta(s)-\theta_\kappa+\phi}{2}||\sin\frac{\theta(s)-\theta_\kappa+\phi}{2}| \\
+\geq C|\sin\frac{\theta(s)-\theta_\kappa+\phi}{2}| \\
+\geq C(|s\cos\frac{\theta_\kappa-\phi}{2}+\sqrt{\sqrt{4+s^2}+2}\sin\frac{\theta_\kappa-\phi}{2}|+|s\cos\frac{\theta_\kappa-\phi}{2}-\sqrt{\sqrt{4+s^2}-2}\sin\frac{\theta_\kappa-\phi}{2}|) \\
+\geq C s
+\een
+Now using integration by parts and inequality above, we get
+\ben
+|I_2(\rho)|\leq\frac{1}{\sqrt{\rho}}\int_\R\Big( |F'(\frac{t}{\sqrt{\rho}})||2+\frac{t^2}{\rho}|^{1/2}+|F(\frac{t}{\sqrt{\rho}})|\Big)e^{-t^2}dt \\
+\leq C\frac{1}{\sqrt{\rho}}\int_\R |F'(\frac{t}{\sqrt{\rho}})|e^{-t^2}dt + C\frac{1}{\sqrt{\rho}} \\
+\leq C\frac{1}{\sqrt{\rho}}\int_\R |\mu_\kappa(S(\frac{t}{\sqrt{\rho}}))|^{-1}e^{-t^2}dt + C\frac{1}{\sqrt{\rho}}\\
+\leq C \frac{1}{\rho^{1/4}}
+\een
+By the smae procedure as above, it is easy to see that
+\ben
+\|F(\frac{t}{\sqrt{\rho}})C(\frac{t}{\sqrt{\rho}})t^2e^{-t^2}\|_{L^1(\R)}\leq C
+\een
+This completes the proof.
 \finproof
 \section*{References}
 \bibliography{eee}

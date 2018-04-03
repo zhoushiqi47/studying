@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  2 APR 2018 17:43
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9) (preloaded format=pdflatex 2017.10.26)  3 APR 2018 21:19
 entering extended mode
 **"./Estimate of Dirichlet Green Tensor.tex"
 ("Estimate of Dirichlet Green Tensor.tex"
@@ -1915,26 +1915,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 1690--1693
 File: ./graphic/transform_th.png Graphic file (type png)
 
 <use ./graphic/transform_th.png>
-Package pdftex.def Info: ./graphic/transform_th.png used on input line 1733.
+Package pdftex.def Info: ./graphic/transform_th.png used on input line 1734.
 (pdftex.def)             Requested size: 178.55725pt x 184.98415pt.
 
 <./graphic/transform_t.png, id=742, 569.87906pt x 515.67656pt>
 File: ./graphic/transform_t.png Graphic file (type png)
 
 <use ./graphic/transform_t.png>
-Package pdftex.def Info: ./graphic/transform_t.png used on input line 1734.
+Package pdftex.def Info: ./graphic/transform_t.png used on input line 1735.
 (pdftex.def)             Requested size: 178.55725pt x 161.57343pt.
  [39 <./graphic/transform_th.png> <./graphic/transform_t.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1755--1759
-
+Overfull \hbox (14.81017pt too wide) in alignment at lines 1769--1773
+ [] [] [] [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 1775--1777
+Overfull \hbox (86.73312pt too wide) in alignment at lines 1785--1791
+ [] [] [] [] 
+ []
+
+[40]
+Underfull \hbox (badness 10000) in paragraph at lines 1802--1805
 
  []
 
-("Estimate of Dirichlet Green Tensor.bbl") [40]
+("Estimate of Dirichlet Green Tensor.bbl") [41]
 ("Estimate of Dirichlet Green Tensor.aux")
 
 LaTeX Warning: There were undefined references.
@@ -1966,10 +1971,10 @@ cm/cmsy10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/CTEX
 blic/amsfonts/cm/cmti10.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/cm/cmti
 12.pfb><C:/CTEX/MiKTeX/fonts/type1/public/amsfonts/latxfont/lasy10.pfb><C:/CTEX
 /MiKTeX/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Estimate of Dirichlet Green Tensor.pdf" (40 pages, 1912541 b
+Output written on "Estimate of Dirichlet Green Tensor.pdf" (41 pages, 1916425 b
 ytes).
 PDF statistics:
- 816 PDF objects out of 1000 (max. 8388607)
+ 819 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  361 words of extra memory for PDF output out of 10000 (max. 10000000)
 
