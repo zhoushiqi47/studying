@@ -1,0 +1,33 @@
+\begin{thebibliography}{1}
+
+\bibitem{achenbach1980}
+Jan Achenbach.
+\newblock {\em Wave Propagation in Elastic Solids}.
+\newblock North-Holland, 1980.
+
+\bibitem{chen2015reverse_elas}
+Zhiming CHEN and GuangHui HUANG.
+\newblock Reverse time migration for extended obstacles: Elastic waves.
+\newblock {\em SCIENTIA SINICA Mathematica}, 45(8):1103--1114, 2015.
+
+\bibitem{Evans2010}
+Lawrence~C Evans.
+\newblock {\em Partial differential equations. 2nd ed}.
+\newblock Marcel Dekker, 2010.
+
+\bibitem{grafakos}
+Loukas Grafakos.
+\newblock {\em Classical and modern Fourier analysis}.
+\newblock Prentice Hall, 2004.
+
+\bibitem{watson1995treatise}
+George~Neville Watson.
+\newblock {\em A treatise on the theory of Bessel functions}.
+\newblock Cambridge university press, 1995.
+
+\bibitem{Wong_Asymptotic}
+Roderick Wong.
+\newblock {\em Asymptotic approximations of integrals}.
+\newblock SIAM, 2001.
+
+\end{thebibliography}
