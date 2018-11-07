@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  7 NOV 2018 10:58
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  7 NOV 2018 11:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -413,42 +413,122 @@ s-converted-to.pdf used on input line 253.
 
 [6 <./figures/ks_add_kp_Ppotential_e2-eps-converted-to.pdf> <./figures/ks_add_k
 p_Spotential_e1_add_Ppotential_e2-eps-converted-to.pdf>]
-Overfull \hbox (73.80847pt too wide) in alignment at lines 264--268
+Package epstopdf Info: Source file: <./figures/kp_scalar_e2_e2.eps>
+(epstopdf)                    date: 2018-11-07 11:44:10
+(epstopdf)                    size: 51162 bytes
+(epstopdf)             Output file: <./figures/kp_scalar_e2_e2-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2018-11-07 11:45:19
+(epstopdf)                    size: 19256 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/kp_scalar_e2_e2-
+eps-converted-to.pdf ./figures/kp_scalar_e2_e2.eps>
+(epstopdf)             \includegraphics on input line 262.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/kp_scalar_e2_e2-eps-converted-to.pdf, id=134, 421.575pt x 317.185pt>
+File: ./figures/kp_scalar_e2_e2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/kp_scalar_e2_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/kp_scalar_e2_e2-eps-converted-to.pdf used on
+ input line 262.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+Package epstopdf Info: Source file: <./figures/ks_scalar_e1_e1.eps>
+(epstopdf)                    date: 2018-11-07 11:44:10
+(epstopdf)                    size: 48338 bytes
+(epstopdf)             Output file: <./figures/ks_scalar_e1_e1-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2018-11-07 11:45:40
+(epstopdf)                    size: 19593 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_scalar_e1_e1-
+eps-converted-to.pdf ./figures/ks_scalar_e1_e1.eps>
+(epstopdf)             \includegraphics on input line 271.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_scalar_e1_e1-eps-converted-to.pdf, id=135, 421.575pt x 317.185pt>
+File: ./figures/ks_scalar_e1_e1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/ks_scalar_e1_e1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_scalar_e1_e1-eps-converted-to.pdf used on
+ input line 271.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+
+Overfull \hbox (73.80847pt too wide) in alignment at lines 274--278
  [] [] [] [] 
  []
 
+[7 <./figures/kp_scalar_e2_e2-eps-converted-to.pdf> <./figures/ks_scalar_e1_e1-
+eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figures/ks_add_kp_scalar_e2_e2.eps>
+(epstopdf)                    date: 2018-11-07 11:44:10
+(epstopdf)                    size: 53545 bytes
+(epstopdf)             Output file: <./figures/ks_add_kp_scalar_e2_e2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-11-07 11:46:31
+(epstopdf)                    size: 21195 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_add_kp_scalar
+_e2_e2-eps-converted-to.pdf ./figures/ks_add_kp_scalar_e2_e2.eps>
+(epstopdf)             \includegraphics on input line 281.
+Package epstopdf Info: Output file is already uptodate.
 
-Overfull \hbox (73.80847pt too wide) in alignment at lines 269--273
+<./figures/ks_add_kp_scalar_e2_e2-eps-converted-to.pdf, id=158, 421.575pt x 317
+.185pt>
+File: ./figures/ks_add_kp_scalar_e2_e2-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ./figures/ks_add_kp_scalar_e2_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_add_kp_scalar_e2_e2-eps-converted-to.pdf 
+used on input line 281.
+(pdftex.def)             Requested size: 321.40851pt x 241.82777pt.
+
+Overfull \hbox (73.80847pt too wide) in alignment at lines 284--288
  [] [] [] [] 
  []
 
-[7] (./Different Imaging Functions.aux) ) 
+Package epstopdf Info: Source file: <./figures/ks_add_kp_scalar_e1_e1.eps>
+(epstopdf)                    date: 2018-11-07 11:44:10
+(epstopdf)                    size: 45187 bytes
+(epstopdf)             Output file: <./figures/ks_add_kp_scalar_e1_e1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-11-07 11:46:50
+(epstopdf)                    size: 18835 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_add_kp_scalar
+_e1_e1-eps-converted-to.pdf ./figures/ks_add_kp_scalar_e1_e1.eps>
+(epstopdf)             \includegraphics on input line 291.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_add_kp_scalar_e1_e1-eps-converted-to.pdf, id=159, 421.575pt x 317
+.185pt>
+File: ./figures/ks_add_kp_scalar_e1_e1-eps-converted-to.pdf Graphic file (type 
+pdf)
+ <use ./figures/ks_add_kp_scalar_e1_e1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_add_kp_scalar_e1_e1-eps-converted-to.pdf 
+used on input line 291.
+(pdftex.def)             Requested size: 321.40851pt x 241.82777pt.
+ [8 <./figures/ks_add_kp_scalar_e2_e2-eps-converted-to.pdf> <./figures/ks_add_k
+p_scalar_e1_e1-eps-converted-to.pdf>] [9] (./Different Imaging Functions.aux) )
+ 
 Here is how much of TeX's memory you used:
- 2432 strings out of 493014
- 31913 string characters out of 6133350
- 90590 words of memory out of 5000000
- 5906 multiletter control sequences out of 15000+600000
+ 2456 strings out of 493014
+ 32891 string characters out of 6133350
+ 90626 words of memory out of 5000000
+ 5926 multiletter control sequences out of 15000+600000
  13428 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,7n,26p,277b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msbm10.pfb>
-Output written on "Different Imaging Functions.pdf" (7 pages, 272750 bytes).
+</usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><
+/usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></
+usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></u
+sr/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></us
+r/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr
+/local/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/l
+ocal/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/loc
+al/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local
+/texlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/te
+xlive/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texli
+ve/2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/
+2016/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2
+016/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Different Imaging Functions.pdf" (9 pages, 335516 bytes).
 PDF statistics:
- 181 PDF objects out of 1000 (max. 8388607)
- 127 compressed objects within 2 object streams
+ 227 PDF objects out of 1000 (max. 8388607)
+ 159 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 51 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
 
