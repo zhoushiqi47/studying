@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  7 NOV 2018 10:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.17 (TeX Live 2016) (preloaded format=pdflatex 2016.11.30)  7 NOV 2018 10:58
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -201,59 +201,254 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 166.
 (/usr/local/texlive/2016/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 )
-Overfull \hbox (2.13754pt too wide) in alignment at lines 170--173
+Package epstopdf Info: Source file: <./figures/fullwave.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 53994 bytes
+(epstopdf)             Output file: <./figures/fullwave-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-07 10:17:52
+(epstopdf)                    size: 20362 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/fullwave-eps-con
+verted-to.pdf ./figures/fullwave.eps>
+(epstopdf)             \includegraphics on input line 172.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/fullwave-eps-converted-to.pdf, id=7, 421.575pt x 317.185pt>
+File: ./figures/fullwave-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figures/fullwave-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/fullwave-eps-converted-to.pdf used on input 
+line 172.
+(pdftex.def)             Requested size: 299.08714pt x 225.03351pt.
+Package epstopdf Info: Source file: <./figures/ks_Spotential_e2.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 60752 bytes
+(epstopdf)             Output file: <./figures/ks_Spotential_e2-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-11-07 10:19:13
+(epstopdf)                    size: 23564 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_Spotential_e2
+-eps-converted-to.pdf ./figures/ks_Spotential_e2.eps>
+(epstopdf)             \includegraphics on input line 181.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_Spotential_e2-eps-converted-to.pdf, id=8, 421.575pt x 317.185pt>
+File: ./figures/ks_Spotential_e2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figures/ks_Spotential_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_Spotential_e2-eps-converted-to.pdf used o
+n input line 181.
+(pdftex.def)             Requested size: 299.08714pt x 225.03351pt.
+Package epstopdf Info: Source file: <./figures/kp_Spotential_e2.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 52291 bytes
+(epstopdf)             Output file: <./figures/kp_Spotential_e2-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-11-07 10:20:28
+(epstopdf)                    size: 20800 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/kp_Spotential_e2
+-eps-converted-to.pdf ./figures/kp_Spotential_e2.eps>
+(epstopdf)             \includegraphics on input line 190.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/kp_Spotential_e2-eps-converted-to.pdf, id=9, 421.575pt x 317.185pt>
+File: ./figures/kp_Spotential_e2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figures/kp_Spotential_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/kp_Spotential_e2-eps-converted-to.pdf used o
+n input line 190.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+ [2 <./figures/fullwave-eps-converted-to.pdf> <./figures/ks_Spotential_e2-eps-c
+onverted-to.pdf>]
+Package epstopdf Info: Source file: <./figures/ks_Ppotential_e2.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 46178 bytes
+(epstopdf)             Output file: <./figures/ks_Ppotential_e2-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-11-07 10:20:48
+(epstopdf)                    size: 19411 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_Ppotential_e2
+-eps-converted-to.pdf ./figures/ks_Ppotential_e2.eps>
+(epstopdf)             \includegraphics on input line 199.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_Ppotential_e2-eps-converted-to.pdf, id=43, 421.575pt x 317.185pt>
+File: ./figures/ks_Ppotential_e2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/ks_Ppotential_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_Ppotential_e2-eps-converted-to.pdf used o
+n input line 199.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+ [3 <./figures/kp_Spotential_e2-eps-converted-to.pdf> <./figures/ks_Ppotential_
+e2-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figures/kp_Ppotential_e2.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 53140 bytes
+(epstopdf)             Output file: <./figures/kp_Ppotential_e2-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-11-07 10:21:14
+(epstopdf)                    size: 19435 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/kp_Ppotential_e2
+-eps-converted-to.pdf ./figures/kp_Ppotential_e2.eps>
+(epstopdf)             \includegraphics on input line 208.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/kp_Ppotential_e2-eps-converted-to.pdf, id=65, 421.575pt x 317.185pt>
+File: ./figures/kp_Ppotential_e2-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/kp_Ppotential_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/kp_Ppotential_e2-eps-converted-to.pdf used o
+n input line 208.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+Package epstopdf Info: Source file: <./figures/ks_Spotential_e1.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 50066 bytes
+(epstopdf)             Output file: <./figures/ks_Spotential_e1-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-11-07 10:22:11
+(epstopdf)                    size: 20133 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_Spotential_e1
+-eps-converted-to.pdf ./figures/ks_Spotential_e1.eps>
+(epstopdf)             \includegraphics on input line 217.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_Spotential_e1-eps-converted-to.pdf, id=66, 421.575pt x 317.185pt>
+File: ./figures/ks_Spotential_e1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/ks_Spotential_e1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_Spotential_e1-eps-converted-to.pdf used o
+n input line 217.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+ [4 <./figures/kp_Ppotential_e2-eps-converted-to.pdf> <./figures/ks_Spotential_
+e1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figures/kp_Spotential_e1.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 45532 bytes
+(epstopdf)             Output file: <./figures/kp_Spotential_e1-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-11-07 10:22:11
+(epstopdf)                    size: 18332 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/kp_Spotential_e1
+-eps-converted-to.pdf ./figures/kp_Spotential_e1.eps>
+(epstopdf)             \includegraphics on input line 226.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/kp_Spotential_e1-eps-converted-to.pdf, id=88, 421.575pt x 317.185pt>
+File: ./figures/kp_Spotential_e1-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figures/kp_Spotential_e1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/kp_Spotential_e1-eps-converted-to.pdf used o
+n input line 226.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+
+Overfull \hbox (33.3593pt too wide) in alignment at lines 229--232
+ [] [] [] [] 
+ []
+
+Package epstopdf Info: Source file: <./figures/ks_add_kp_Spotential_e1.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 47479 bytes
+(epstopdf)             Output file: <./figures/ks_add_kp_Spotential_e1-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2018-11-07 10:22:40
+(epstopdf)                    size: 19169 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_add_kp_Spoten
+tial_e1-eps-converted-to.pdf ./figures/ks_add_kp_Spotential_e1.eps>
+(epstopdf)             \includegraphics on input line 235.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_add_kp_Spotential_e1-eps-converted-to.pdf, id=89, 421.575pt x 317
+.185pt>
+File: ./figures/ks_add_kp_Spotential_e1-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ./figures/ks_add_kp_Spotential_e1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_add_kp_Spotential_e1-eps-converted-to.pdf
+ used on input line 235.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+
+Overfull \hbox (39.35931pt too wide) in alignment at lines 238--241
+ [] [] [] [] 
+ []
+
+[5 <./figures/kp_Spotential_e1-eps-converted-to.pdf> <./figures/ks_add_kp_Spote
+ntial_e1-eps-converted-to.pdf>]
+Package epstopdf Info: Source file: <./figures/ks_add_kp_Ppotential_e2.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 50427 bytes
+(epstopdf)             Output file: <./figures/ks_add_kp_Ppotential_e2-eps-conv
+erted-to.pdf>
+(epstopdf)                    date: 2018-11-07 10:23:14
+(epstopdf)                    size: 19587 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_add_kp_Ppoten
+tial_e2-eps-converted-to.pdf ./figures/ks_add_kp_Ppotential_e2.eps>
+(epstopdf)             \includegraphics on input line 244.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_add_kp_Ppotential_e2-eps-converted-to.pdf, id=111, 421.575pt x 31
+7.185pt>
+File: ./figures/ks_add_kp_Ppotential_e2-eps-converted-to.pdf Graphic file (type
+ pdf)
+ <use ./figures/ks_add_kp_Ppotential_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_add_kp_Ppotential_e2-eps-converted-to.pdf
+ used on input line 244.
+(pdftex.def)             Requested size: 312.4786pt x 235.10524pt.
+Package epstopdf Info: Source file: <./figures/ks_add_kp_Spotential_e1_add_Ppot
+ential_e2.eps>
+(epstopdf)                    date: 2018-11-07 10:16:17
+(epstopdf)                    size: 49303 bytes
+(epstopdf)             Output file: <./figures/ks_add_kp_Spotential_e1_add_Ppot
+ential_e2-eps-converted-to.pdf>
+(epstopdf)                    date: 2018-11-07 10:29:23
+(epstopdf)                    size: 20017 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figures/ks_add_kp_Spoten
+tial_e1_add_Ppotential_e2-eps-converted-to.pdf ./figures/ks_add_kp_Spotential_e
+1_add_Ppotential_e2.eps>
+(epstopdf)             \includegraphics on input line 253.
+Package epstopdf Info: Output file is already uptodate.
+
+<./figures/ks_add_kp_Spotential_e1_add_Ppotential_e2-eps-converted-to.pdf, id=1
+12, 421.575pt x 317.185pt>
+File: ./figures/ks_add_kp_Spotential_e1_add_Ppotential_e2-eps-converted-to.pdf 
+Graphic file (type pdf)
+
+<use ./figures/ks_add_kp_Spotential_e1_add_Ppotential_e2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figures/ks_add_kp_Spotential_e1_add_Ppotential_e2-ep
+s-converted-to.pdf used on input line 253.
+(pdftex.def)             Requested size: 321.40851pt x 241.82777pt.
+
+[6 <./figures/ks_add_kp_Ppotential_e2-eps-converted-to.pdf> <./figures/ks_add_k
+p_Spotential_e1_add_Ppotential_e2-eps-converted-to.pdf>]
+Overfull \hbox (73.80847pt too wide) in alignment at lines 264--268
  [] [] [] [] 
  []
 
 
-Overfull \hbox (2.4857pt too wide) in alignment at lines 174--177
+Overfull \hbox (73.80847pt too wide) in alignment at lines 269--273
  [] [] [] [] 
  []
 
-
-Overfull \hbox (2.13754pt too wide) in alignment at lines 186--189
- [] [] [] [] 
- []
-
-
-Overfull \hbox (2.13754pt too wide) in alignment at lines 190--193
- [] [] [] [] 
- []
-
-
-Overfull \hbox (64.63307pt too wide) in alignment at lines 194--197
- [] [] [] [] 
- []
-
-
-Overfull \hbox (70.63309pt too wide) in alignment at lines 198--201
- [] [] [] [] 
- []
-
-[2] (./Different Imaging Functions.aux) ) 
+[7] (./Different Imaging Functions.aux) ) 
 Here is how much of TeX's memory you used:
- 2338 strings out of 493014
- 29173 string characters out of 6133350
- 94509 words of memory out of 5000000
- 5843 multiletter control sequences out of 15000+600000
- 10484 words of font info for 41 fonts, out of 8000000 for 9000
+ 2432 strings out of 493014
+ 31913 string characters out of 6133350
+ 90590 words of memory out of 5000000
+ 5906 multiletter control sequences out of 15000+600000
+ 13428 words of font info for 55 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,7n,26p,277b,147s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,7n,26p,277b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/local/texlive/2016/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/pu
-blic/amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on "Different Imaging Functions.pdf" (2 pages, 83004 bytes).
+nts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2016/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2016/texmf-dist/font
+s/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2016/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2016/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2016/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2016/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr6.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr7.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr8.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmsy10.pfb></usr/local/texlive/2016/texmf-dist/fonts/type1/public/amsf
+onts/symbols/msbm10.pfb>
+Output written on "Different Imaging Functions.pdf" (7 pages, 272750 bytes).
 PDF statistics:
- 51 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 181 PDF objects out of 1000 (max. 8388607)
+ 127 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 51 words of extra memory for PDF output out of 10000 (max. 10000000)
 

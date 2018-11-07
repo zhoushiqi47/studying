@@ -161,42 +161,114 @@
 	\newcommand{\een}{\end{eqnarray*}}
 \newcommand{\nn}{\nonumber}
 
-\section{Imaging Functions}
+
 
 \ben
 \hskip-1cm I_1(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 [\T_D(x_s,z)^Tq]\cdot[\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.67\textwidth]{./figures/fullwave}
+	\caption{$I_1$}\label{I1}
+\end{figure}
 \ben
-\hskip-1cm I_2(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_2(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}]\nabla_z\times[\T_D(x_r,z)^T\overline{u^s_{e_2}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.67\textwidth]{./figures/ks_Spotential_e2}
+	\caption{$I_2$}\label{I2}
+\end{figure}
 \ben
-\hskip-1cm I_3(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_3(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}]\nabla_z\times[\T_D(x_r,z)^T\overline{u^s_{e_2}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/kp_Spotential_e2}
+	\caption{$I_3$}\label{I3}
+\end{figure}
 \ben
-\hskip-1cm I_4(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_4(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}]\nabla_z\cdot[\T_D(x_r,z)^T\overline{u^s_{e_2}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/ks_Ppotential_e2}
+	\caption{$I_4$}\label{I4}
+\end{figure}
 \ben
-\hskip-1cm I_5(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_5(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}]\nabla_z\cdot[\T_D(x_r,z)^T\overline{u^s_{e_2}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/kp_Ppotential_e2}
+	\caption{$I_5$}\label{I5}
+\end{figure}
 \ben
-\hskip-1cm I_6(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_6(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}]\nabla_z\times[\T_D(x_r,z)^T\overline{u^s_{e_1}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/ks_Spotential_e1}
+	\caption{$I_6$}\label{I6}
+\end{figure}
 \ben
-\hskip-1cm I_7(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_7(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}]\nabla_z\times[\T_D(x_r,z)^T\overline{u^s_{e_1}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/kp_Spotential_e1}
+	\caption{$I_7$}\label{I7}
+\end{figure}
 \ben
-\hskip-1cm I_8(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_8(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}+\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}]\nabla_z\cdot[\T_D(x_r,z)^T\overline{u^s_{e_2}(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/ks_add_kp_Spotential_e1}
+	\caption{$I_8$}\label{I8}
+\end{figure}
 \ben
-\hskip-1cm I_9(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\hskip-1cm I_9(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
 \i[\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}+\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}]\nabla_z\times[\T_D(x_r,z)^T\overline{u^s_{e_1}(x_r,x_s)}]\,ds(x_r)ds(x_s).
+\een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.7\textwidth]{./figures/ks_add_kp_Ppotential_e2}
+	\caption{$I_9$}\label{I9}
+\end{figure}
+\ben
+\hskip-1cm
+I_{10}(z)=\frac{c_s}{k_s}I_8(z)+\frac{c_p}{k_p}I_9(z)
+\een
+\begin{figure}[!h]
+	\centering
+	\includegraphics[width=0.72\textwidth]{./figures/ks_add_kp_Spotential_e1_add_Ppotential_e2}
+	\caption{$I_{10}$}\label{I10}
+\end{figure}
+\ben
+\hskip-1cm I_{11}(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}\frac{\pa \Phi^p(x_r,z)}{\pa x_2(x_r)}[\overline{u^s_{e_2}(x_r,x_s)}\cdot e_2]\,ds(x_r)ds(x_s).
+\een
+\ben
+\hskip-1cm I_{12}(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}\frac{\pa \Phi^s(x_r,z)}{\pa x_2(x_r)}[\overline{u^s_{e_1}(x_r,x_s)}\cdot e_1]\,ds(x_r)ds(x_s).
+\een
+\ben
+\hskip -2cm
+ I_{13}(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+[\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}+\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}][\frac{\pa \Phi^p(x_r,z)}{\pa x_2(x_r)}+\frac{\pa \Phi^s(x_r,z)}{\pa x_2(x_r)}][\overline{u^s_{e_2}(x_r,x_s)}\cdot e_2]\,ds(x_r)ds(x_s).
+\een
+\ben
+\hskip -2cm
+I_{14}(z)=\Im\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+[\frac{\pa \Phi^p(x_s,z)}{\pa x_2(x_s)}+\frac{\pa \Phi^s(x_s,z)}{\pa x_2(x_s)}][\frac{\pa \Phi^p(x_r,z)}{\pa x_2(x_r)}+\frac{\pa \Phi^s(x_r,z)}{\pa x_2(x_r)}][\overline{u^s_{e_1}(x_r,x_s)}\cdot e_1]\,ds(x_r)ds(x_s).
 \een
 \end{document}
