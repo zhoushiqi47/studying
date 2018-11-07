@@ -504,9 +504,9 @@ where $v_k(z,x_s)$ satisfy the following scattering elastic equation:
 v_k(z,x_s)=\frac{|\Ga_0^d|}{N_r}\sum_{r=1}^{N_r}\overline{u^s_k(x_r,x_s)}\delta_{x_r}(z) \ \ \ \ \mbox{\rm on}  \ \ \Ga_0
 \een
 By letting $N_s,N_r\to\infty$, we know that (\ref{cor1}) can be viewed as an approximation of the following continuous integral:
-\ben\hspace{-0.8cm}
-\hat{I}_d(z)=\Im\sum_{k=1}^{2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\sum_{i=1}^{2}[\sigma_{x_s}(\D(x_s,z)e_i)e_2\cdot e_k]
-[\sigma_{x_r}(\D(x_r,z)e_i)e_2\cdot\overline{u^s_k(x_r,x_s)}]ds(x_r)ds(x_s)
+\ben
+\hat{I}_d(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
+[\T_D(x_s,z)^Tq][\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\,ds(x_r)ds(x_s).
 \een
 where $z\in\Om$.
 \end{frame}
@@ -616,7 +616,7 @@ Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this
 
 \section{Numerical Test}
 \begin{frame}
-\frametitle{Numerical Test Different Boundary Condition}
+\frametitle{Numerical Test: Different Boundary Condition}
  \begin{figure}
  	\centering
  	\includegraphics[width=0.24\textwidth]{./graphic/peanut_3pi.eps}
@@ -631,7 +631,7 @@ Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this
  \end{figure}
 \end{frame}
 \begin{frame}
-\frametitle{Numerical Test Different Sharp}
+\frametitle{Numerical Test: Different Sharp}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.32\textwidth]{./graphic/circle_3pi.eps}
@@ -647,7 +647,7 @@ Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this
 \end{frame}
 
 \begin{frame}
-\frametitle{Numerical Test Different Sharp}
+\frametitle{Numerical Test: Different Sharp}
 \begin{figure}[h]
     \centering
 	\includegraphics[width=0.32\textwidth]{./graphic/p_leaf_3pi.eps}
@@ -663,7 +663,7 @@ Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this
 
 
 \begin{frame}
-\frametitle{Numerical Test Two Obstacles}
+\frametitle{Numerical Test: Two Obstacles}
 \begin{figure}[h]
 	
 	\includegraphics[width=0.32\textwidth,height=0.31\textheight]{./graphic/bi_circle_profile.eps}
@@ -679,7 +679,7 @@ Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this
 \end{frame}
 
 \begin{frame}
-\frametitle{Numerical Test additive Gaussian noise}
+\frametitle{Numerical Test: additive Gaussian noise}
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.32\textwidth]{./graphic/bi_circle_4pi_error2.eps}
