@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.21)  20 DEC 2018 11:01
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.21)  25 DEC 2018 16:04
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -246,14 +246,33 @@ df>
 (epstopdf)                    size: 12400 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_1-ep
 s-converted-to.pdf ./figure_rough/square_1.eps>
-(epstopdf)             \includegraphics on input line 224.
+(epstopdf)             \includegraphics on input line 225.
 Package epstopdf Info: Output file is already uptodate.
 <./figure_rough/square_1-eps-converted-to.pdf, id=7, 421.575pt x 317.185pt>
 File: ./figure_rough/square_1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/square_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/square_1-eps-converted-to.pdf  used on 
-input line 224.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+input line 225.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/square_1_real.eps>
+(epstopdf)                    date: 2018-12-20 19:57:01
+(epstopdf)                    size: 36624 bytes
+(epstopdf)             Output file: <./figure_rough/square_1_real-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:54:46
+(epstopdf)                    size: 13453 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_1_re
+al-eps-converted-to.pdf ./figure_rough/square_1_real.eps>
+(epstopdf)             \includegraphics on input line 226.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/square_1_real-eps-converted-to.pdf, id=8, 421.575pt x 317.185pt
+>
+File: ./figure_rough/square_1_real-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figure_rough/square_1_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/square_1_real-eps-converted-to.pdf  use
+d on input line 226.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/square_1point5.eps>
 (epstopdf)                    date: 2018-12-19 10:42:07
 (epstopdf)                    size: 36557 bytes
@@ -263,16 +282,35 @@ d-to.pdf>
 (epstopdf)                    size: 13662 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_1poi
 nt5-eps-converted-to.pdf ./figure_rough/square_1point5.eps>
-(epstopdf)             \includegraphics on input line 229.
+(epstopdf)             \includegraphics on input line 231.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/square_1point5-eps-converted-to.pdf, id=8, 421.575pt x 317.185p
+<./figure_rough/square_1point5-eps-converted-to.pdf, id=9, 421.575pt x 317.185p
 t>
 File: ./figure_rough/square_1point5-eps-converted-to.pdf Graphic file (type pdf
 )
 <use ./figure_rough/square_1point5-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/square_1point5-eps-converted-to.pdf  us
-ed on input line 229.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+ed on input line 231.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/square_1point5_real.eps>
+(epstopdf)                    date: 2018-12-20 19:56:41
+(epstopdf)                    size: 36542 bytes
+(epstopdf)             Output file: <./figure_rough/square_1point5_real-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:55:20
+(epstopdf)                    size: 13899 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_1poi
+nt5_real-eps-converted-to.pdf ./figure_rough/square_1point5_real.eps>
+(epstopdf)             \includegraphics on input line 232.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/square_1point5_real-eps-converted-to.pdf, id=10, 421.575pt x 31
+7.185pt>
+File: ./figure_rough/square_1point5_real-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_rough/square_1point5_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/square_1point5_real-eps-converted-to.pd
+f  used on input line 232.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/square_2.eps>
 (epstopdf)                    date: 2018-12-19 10:42:20
 (epstopdf)                    size: 36460 bytes
@@ -282,14 +320,33 @@ df>
 (epstopdf)                    size: 14425 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_2-ep
 s-converted-to.pdf ./figure_rough/square_2.eps>
-(epstopdf)             \includegraphics on input line 234.
+(epstopdf)             \includegraphics on input line 237.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/square_2-eps-converted-to.pdf, id=9, 421.575pt x 317.185pt>
+<./figure_rough/square_2-eps-converted-to.pdf, id=11, 421.575pt x 317.185pt>
 File: ./figure_rough/square_2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/square_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/square_2-eps-converted-to.pdf  used on 
-input line 234.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+input line 237.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/square_2_real.eps>
+(epstopdf)                    date: 2018-12-20 19:56:22
+(epstopdf)                    size: 36398 bytes
+(epstopdf)             Output file: <./figure_rough/square_2_real-eps-converted
+-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:55:47
+(epstopdf)                    size: 14575 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_2_re
+al-eps-converted-to.pdf ./figure_rough/square_2_real.eps>
+(epstopdf)             \includegraphics on input line 238.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/square_2_real-eps-converted-to.pdf, id=12, 421.575pt x 317.185p
+t>
+File: ./figure_rough/square_2_real-eps-converted-to.pdf Graphic file (type pdf)
+
+<use ./figure_rough/square_2_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/square_2_real-eps-converted-to.pdf  use
+d on input line 238.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/square_multi.eps>
 (epstopdf)                    date: 2018-12-19 10:42:32
 (epstopdf)                    size: 34342 bytes
@@ -299,15 +356,34 @@ to.pdf>
 (epstopdf)                    size: 13207 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_mult
 i-eps-converted-to.pdf ./figure_rough/square_multi.eps>
-(epstopdf)             \includegraphics on input line 239.
+(epstopdf)             \includegraphics on input line 243.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/square_multi-eps-converted-to.pdf, id=10, 421.575pt x 317.185pt
+<./figure_rough/square_multi-eps-converted-to.pdf, id=13, 421.575pt x 317.185pt
 >
 File: ./figure_rough/square_multi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/square_multi-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/square_multi-eps-converted-to.pdf  used
- on input line 239.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+ on input line 243.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/square_multi_real.eps>
+(epstopdf)                    date: 2018-12-20 19:56:04
+(epstopdf)                    size: 34449 bytes
+(epstopdf)             Output file: <./figure_rough/square_multi_real-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:56:36
+(epstopdf)                    size: 13557 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/square_mult
+i_real-eps-converted-to.pdf ./figure_rough/square_multi_real.eps>
+(epstopdf)             \includegraphics on input line 244.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/square_multi_real-eps-converted-to.pdf, id=14, 421.575pt x 317.
+185pt>
+File: ./figure_rough/square_multi_real-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_rough/square_multi_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/square_multi_real-eps-converted-to.pdf 
+ used on input line 244.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/hemicircle_1.eps>
 (epstopdf)                    date: 2018-12-19 10:56:54
 (epstopdf)                    size: 33045 bytes
@@ -317,15 +393,34 @@ to.pdf>
 (epstopdf)                    size: 12391 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
 1-eps-converted-to.pdf ./figure_rough/hemicircle_1.eps>
-(epstopdf)             \includegraphics on input line 244.
+(epstopdf)             \includegraphics on input line 249.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/hemicircle_1-eps-converted-to.pdf, id=11, 421.575pt x 317.185pt
+<./figure_rough/hemicircle_1-eps-converted-to.pdf, id=15, 421.575pt x 317.185pt
 >
 File: ./figure_rough/hemicircle_1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/hemicircle_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/hemicircle_1-eps-converted-to.pdf  used
- on input line 244.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+ on input line 249.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/hemicircle_1_real.eps>
+(epstopdf)                    date: 2018-12-20 19:23:29
+(epstopdf)                    size: 35500 bytes
+(epstopdf)             Output file: <./figure_rough/hemicircle_1_real-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:56:38
+(epstopdf)                    size: 12908 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
+1_real-eps-converted-to.pdf ./figure_rough/hemicircle_1_real.eps>
+(epstopdf)             \includegraphics on input line 250.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/hemicircle_1_real-eps-converted-to.pdf, id=16, 421.575pt x 317.
+185pt>
+File: ./figure_rough/hemicircle_1_real-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_rough/hemicircle_1_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/hemicircle_1_real-eps-converted-to.pdf 
+ used on input line 250.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/hemicircle_1point5.eps>
 (epstopdf)                    date: 2018-12-19 10:43:35
 (epstopdf)                    size: 35331 bytes
@@ -335,16 +430,36 @@ erted-to.pdf>
 (epstopdf)                    size: 13557 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
 1point5-eps-converted-to.pdf ./figure_rough/hemicircle_1point5.eps>
-(epstopdf)             \includegraphics on input line 249.
+(epstopdf)             \includegraphics on input line 255.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/hemicircle_1point5-eps-converted-to.pdf, id=12, 421.575pt x 317
+<./figure_rough/hemicircle_1point5-eps-converted-to.pdf, id=17, 421.575pt x 317
 .185pt>
 File: ./figure_rough/hemicircle_1point5-eps-converted-to.pdf Graphic file (type
  pdf)
 <use ./figure_rough/hemicircle_1point5-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/hemicircle_1point5-eps-converted-to.pdf
-  used on input line 249.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+  used on input line 255.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/hemicircle_1point5_real.eps
+>
+(epstopdf)                    date: 2018-12-20 19:23:04
+(epstopdf)                    size: 35818 bytes
+(epstopdf)             Output file: <./figure_rough/hemicircle_1point5_real-eps
+-converted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:56:41
+(epstopdf)                    size: 13741 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
+1point5_real-eps-converted-to.pdf ./figure_rough/hemicircle_1point5_real.eps>
+(epstopdf)             \includegraphics on input line 256.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/hemicircle_1point5_real-eps-converted-to.pdf, id=18, 421.575pt 
+x 317.185pt>
+File: ./figure_rough/hemicircle_1point5_real-eps-converted-to.pdf Graphic file 
+(type pdf)
+<use ./figure_rough/hemicircle_1point5_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/hemicircle_1point5_real-eps-converted-t
+o.pdf  used on input line 256.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/hemicircle_2.eps>
 (epstopdf)                    date: 2018-12-19 10:43:57
 (epstopdf)                    size: 36371 bytes
@@ -354,15 +469,34 @@ to.pdf>
 (epstopdf)                    size: 14482 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
 2-eps-converted-to.pdf ./figure_rough/hemicircle_2.eps>
-(epstopdf)             \includegraphics on input line 254.
+(epstopdf)             \includegraphics on input line 261.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/hemicircle_2-eps-converted-to.pdf, id=13, 421.575pt x 317.185pt
+<./figure_rough/hemicircle_2-eps-converted-to.pdf, id=19, 421.575pt x 317.185pt
 >
 File: ./figure_rough/hemicircle_2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/hemicircle_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/hemicircle_2-eps-converted-to.pdf  used
- on input line 254.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+ on input line 261.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/hemicircle_2_real.eps>
+(epstopdf)                    date: 2018-12-20 19:22:48
+(epstopdf)                    size: 36357 bytes
+(epstopdf)             Output file: <./figure_rough/hemicircle_2_real-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:58:02
+(epstopdf)                    size: 14815 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
+2_real-eps-converted-to.pdf ./figure_rough/hemicircle_2_real.eps>
+(epstopdf)             \includegraphics on input line 262.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/hemicircle_2_real-eps-converted-to.pdf, id=20, 421.575pt x 317.
+185pt>
+File: ./figure_rough/hemicircle_2_real-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_rough/hemicircle_2_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/hemicircle_2_real-eps-converted-to.pdf 
+ used on input line 262.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/hemicircle_multi.eps>
 (epstopdf)                    date: 2018-12-19 10:44:12
 (epstopdf)                    size: 32294 bytes
@@ -372,16 +506,35 @@ ted-to.pdf>
 (epstopdf)                    size: 12852 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
 multi-eps-converted-to.pdf ./figure_rough/hemicircle_multi.eps>
-(epstopdf)             \includegraphics on input line 259.
+(epstopdf)             \includegraphics on input line 267.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/hemicircle_multi-eps-converted-to.pdf, id=14, 421.575pt x 317.1
+<./figure_rough/hemicircle_multi-eps-converted-to.pdf, id=21, 421.575pt x 317.1
 85pt>
 File: ./figure_rough/hemicircle_multi-eps-converted-to.pdf Graphic file (type p
 df)
 <use ./figure_rough/hemicircle_multi-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/hemicircle_multi-eps-converted-to.pdf  
-used on input line 259.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+used on input line 267.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/hemicircle_multi_real.eps>
+(epstopdf)                    date: 2018-12-20 19:22:33
+(epstopdf)                    size: 33265 bytes
+(epstopdf)             Output file: <./figure_rough/hemicircle_multi_real-eps-c
+onverted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:58:05
+(epstopdf)                    size: 13400 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/hemicircle_
+multi_real-eps-converted-to.pdf ./figure_rough/hemicircle_multi_real.eps>
+(epstopdf)             \includegraphics on input line 268.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/hemicircle_multi_real-eps-converted-to.pdf, id=22, 421.575pt x 
+317.185pt>
+File: ./figure_rough/hemicircle_multi_real-eps-converted-to.pdf Graphic file (t
+ype pdf)
+<use ./figure_rough/hemicircle_multi_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/hemicircle_multi_real-eps-converted-to.
+pdf  used on input line 268.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/Bisq_1.eps>
 (epstopdf)                    date: 2018-12-20 10:59:19
 (epstopdf)                    size: 34110 bytes
@@ -391,36 +544,69 @@ Package epstopdf Info: Source file: <./figure_rough/Bisq_1.eps>
 (epstopdf)                    size: 12584 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_1-eps-
 converted-to.pdf ./figure_rough/Bisq_1.eps>
-(epstopdf)             \includegraphics on input line 264.
+(epstopdf)             \includegraphics on input line 273.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/Bisq_1-eps-converted-to.pdf, id=15, 421.575pt x 317.185pt>
+<./figure_rough/Bisq_1-eps-converted-to.pdf, id=23, 421.575pt x 317.185pt>
 File: ./figure_rough/Bisq_1-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/Bisq_1-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/Bisq_1-eps-converted-to.pdf  used on in
-put line 264.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+put line 273.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/Bisq_1_real.eps>
+(epstopdf)                    date: 2018-12-20 19:12:13
+(epstopdf)                    size: 35802 bytes
+(epstopdf)             Output file: <./figure_rough/Bisq_1_real-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-12-25 15:58:07
+(epstopdf)                    size: 13040 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_1_real
+-eps-converted-to.pdf ./figure_rough/Bisq_1_real.eps>
+(epstopdf)             \includegraphics on input line 274.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/Bisq_1_real-eps-converted-to.pdf, id=24, 421.575pt x 317.185pt>
+
+File: ./figure_rough/Bisq_1_real-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_rough/Bisq_1_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/Bisq_1_real-eps-converted-to.pdf  used 
+on input line 274.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/Bisq_1point5.eps>
 (epstopdf)                    date: 2018-12-20 10:59:48
 (epstopdf)                    size: 36557 bytes
 (epstopdf)             Output file: <./figure_rough/Bisq_1point5-eps-converted-
 to.pdf>
+(epstopdf)                    date: 2018-12-20 11:01:48
+(epstopdf)                    size: 13908 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_1point
 5-eps-converted-to.pdf ./figure_rough/Bisq_1point5.eps>
-(epstopdf)             \includegraphics on input line 269.
-runsystem(repstopdf --outfile=./figure_rough/Bisq_1point5-eps-converted-to.pdf 
-./figure_rough/Bisq_1point5.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <./figure_rough/Bisq_1point5-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2018-12-20 11:01:48
-(epstopdf)                    size: 13908 bytes.
-<./figure_rough/Bisq_1point5-eps-converted-to.pdf, id=16, 421.575pt x 317.185pt
+(epstopdf)             \includegraphics on input line 279.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/Bisq_1point5-eps-converted-to.pdf, id=25, 421.575pt x 317.185pt
 >
 File: ./figure_rough/Bisq_1point5-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/Bisq_1point5-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/Bisq_1point5-eps-converted-to.pdf  used
- on input line 269.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+ on input line 279.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/Bisq_1point5_real.eps>
+(epstopdf)                    date: 2018-12-20 19:12:01
+(epstopdf)                    size: 36743 bytes
+(epstopdf)             Output file: <./figure_rough/Bisq_1point5_real-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:58:10
+(epstopdf)                    size: 14293 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_1point
+5_real-eps-converted-to.pdf ./figure_rough/Bisq_1point5_real.eps>
+(epstopdf)             \includegraphics on input line 280.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/Bisq_1point5_real-eps-converted-to.pdf, id=26, 421.575pt x 317.
+185pt>
+File: ./figure_rough/Bisq_1point5_real-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_rough/Bisq_1point5_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/Bisq_1point5_real-eps-converted-to.pdf 
+ used on input line 280.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/Bisq_2.eps>
 (epstopdf)                    date: 2018-12-20 11:00:11
 (epstopdf)                    size: 36507 bytes
@@ -430,14 +616,32 @@ Package epstopdf Info: Source file: <./figure_rough/Bisq_2.eps>
 (epstopdf)                    size: 14757 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_2-eps-
 converted-to.pdf ./figure_rough/Bisq_2.eps>
-(epstopdf)             \includegraphics on input line 274.
+(epstopdf)             \includegraphics on input line 285.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/Bisq_2-eps-converted-to.pdf, id=17, 421.575pt x 317.185pt>
+<./figure_rough/Bisq_2-eps-converted-to.pdf, id=27, 421.575pt x 317.185pt>
 File: ./figure_rough/Bisq_2-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/Bisq_2-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/Bisq_2-eps-converted-to.pdf  used on in
-put line 274.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
+put line 285.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/Bisq_2_real.eps>
+(epstopdf)                    date: 2018-12-20 19:11:47
+(epstopdf)                    size: 36762 bytes
+(epstopdf)             Output file: <./figure_rough/Bisq_2_real-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2018-12-25 15:58:12
+(epstopdf)                    size: 14814 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_2_real
+-eps-converted-to.pdf ./figure_rough/Bisq_2_real.eps>
+(epstopdf)             \includegraphics on input line 286.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/Bisq_2_real-eps-converted-to.pdf, id=28, 421.575pt x 317.185pt>
+
+File: ./figure_rough/Bisq_2_real-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_rough/Bisq_2_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/Bisq_2_real-eps-converted-to.pdf  used 
+on input line 286.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
 Package epstopdf Info: Source file: <./figure_rough/Bisq_multi.eps>
 (epstopdf)                    date: 2018-12-20 10:59:33
 (epstopdf)                    size: 34762 bytes
@@ -447,35 +651,62 @@ Package epstopdf Info: Source file: <./figure_rough/Bisq_multi.eps>
 (epstopdf)                    size: 13612 bytes
 (epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_multi-
 eps-converted-to.pdf ./figure_rough/Bisq_multi.eps>
-(epstopdf)             \includegraphics on input line 279.
+(epstopdf)             \includegraphics on input line 291.
 Package epstopdf Info: Output file is already uptodate.
-<./figure_rough/Bisq_multi-eps-converted-to.pdf, id=18, 421.575pt x 317.185pt>
+<./figure_rough/Bisq_multi-eps-converted-to.pdf, id=29, 421.575pt x 317.185pt>
 File: ./figure_rough/Bisq_multi-eps-converted-to.pdf Graphic file (type pdf)
 <use ./figure_rough/Bisq_multi-eps-converted-to.pdf>
 Package pdftex.def Info: ./figure_rough/Bisq_multi-eps-converted-to.pdf  used o
-n input line 279.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
- [2] [3 <./figure_rough/square_1-eps-converted-to.pdf>] [4 <./figure_rough/squa
-re_1point5-eps-converted-to.pdf> <./figure_rough/square_2-eps-converted-to.pdf>
-] [5 <./figure_rough/square_multi-eps-converted-to.pdf> <./figure_rough/hemicir
-cle_1-eps-converted-to.pdf>] [6 <./figure_rough/hemicircle_1point5-eps-converte
-d-to.pdf> <./figure_rough/hemicircle_2-eps-converted-to.pdf>] [7 <./figure_roug
-h/hemicircle_multi-eps-converted-to.pdf> <./figure_rough/Bisq_1-eps-converted-t
-o.pdf>] [8 <./figure_rough/Bisq_1point5-eps-converted-to.pdf> <./figure_rough/B
-isq_2-eps-converted-to.pdf>]
+n input line 291.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+Package epstopdf Info: Source file: <./figure_rough/Bisq_multi_real.eps>
+(epstopdf)                    date: 2018-12-20 19:11:32
+(epstopdf)                    size: 34946 bytes
+(epstopdf)             Output file: <./figure_rough/Bisq_multi_real-eps-convert
+ed-to.pdf>
+(epstopdf)                    date: 2018-12-25 15:58:51
+(epstopdf)                    size: 14144 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_rough/Bisq_multi_
+real-eps-converted-to.pdf ./figure_rough/Bisq_multi_real.eps>
+(epstopdf)             \includegraphics on input line 292.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_rough/Bisq_multi_real-eps-converted-to.pdf, id=30, 421.575pt x 317.18
+5pt>
+File: ./figure_rough/Bisq_multi_real-eps-converted-to.pdf Graphic file (type pd
+f)
+<use ./figure_rough/Bisq_multi_real-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_rough/Bisq_multi_real-eps-converted-to.pdf  u
+sed on input line 292.
+(pdftex.def)             Requested size: 200.87862pt x 151.13873pt.
+ [2] [3 <./figure_rough/square_1-eps-converted-to.pdf> <./figure_rough/square_1
+_real-eps-converted-to.pdf> <./figure_rough/square_1point5-eps-converted-to.pdf
+> <./figure_rough/square_1point5_real-eps-converted-to.pdf>] [4 <./figure_rough
+/square_2-eps-converted-to.pdf> <./figure_rough/square_2_real-eps-converted-to.
+pdf> <./figure_rough/square_multi-eps-converted-to.pdf> <./figure_rough/square_
+multi_real-eps-converted-to.pdf> <./figure_rough/hemicircle_1-eps-converted-to.
+pdf> <./figure_rough/hemicircle_1_real-eps-converted-to.pdf>] [5 <./figure_roug
+h/hemicircle_1point5-eps-converted-to.pdf> <./figure_rough/hemicircle_1point5_r
+eal-eps-converted-to.pdf> <./figure_rough/hemicircle_2-eps-converted-to.pdf> <.
+/figure_rough/hemicircle_2_real-eps-converted-to.pdf> <./figure_rough/hemicircl
+e_multi-eps-converted-to.pdf> <./figure_rough/hemicircle_multi_real-eps-convert
+ed-to.pdf>] [6 <./figure_rough/Bisq_1-eps-converted-to.pdf> <./figure_rough/Bis
+q_1_real-eps-converted-to.pdf> <./figure_rough/Bisq_1point5-eps-converted-to.pd
+f> <./figure_rough/Bisq_1point5_real-eps-converted-to.pdf> <./figure_rough/Bisq
+_2-eps-converted-to.pdf> <./figure_rough/Bisq_2_real-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [9 <./figure_rough/Bisq_multi-eps-converted-to.pdf>]
-(./RTM for Locally Perturbed Two-layers Media.aux)
+ [7 <./figure_rough/Bisq_multi-eps-converted-to.pdf> <./figure_rough/Bisq_multi
+_real-eps-converted-to.pdf>] (./RTM for Locally Perturbed Two-layers Media.aux)
+
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 2366 strings out of 492649
- 31176 string characters out of 6133383
- 101406 words of memory out of 5000000
- 6184 multiletter control sequences out of 15000+600000
+ 2426 strings out of 492649
+ 34438 string characters out of 6133383
+ 102406 words of memory out of 5000000
+ 6232 multiletter control sequences out of 15000+600000
  10792 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,13n,27p,311b,349s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -485,18 +716,17 @@ live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018
 t/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/t
 ype1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmmi6.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10
-.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb><c:/t
-exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/texlive/2018
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/ty
-pe1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public
-/amsfonts/symbols/msbm10.pfb>
-Output written on "RTM for Locally Perturbed Two-layers Media.pdf" (9 pages, 24
-6140 bytes).
+s/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb><c:/te
+xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb><c:/texlive/2018/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "RTM for Locally Perturbed Two-layers Media.pdf" (7 pages, 35
+3244 bytes).
 PDF statistics:
- 211 PDF objects out of 1000 (max. 8388607)
- 148 compressed objects within 2 object streams
+ 322 PDF objects out of 1000 (max. 8388607)
+ 225 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 61 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 121 words of extra memory for PDF output out of 10000 (max. 10000000)
 
