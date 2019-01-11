@@ -1,0 +1,576 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.21)  11 JAN 2019 17:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**"Scattering Coefficient.tex"
+(./Scattering Coefficient.tex
+LaTeX2e <2018-04-01> patch level 2
+Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
+(./iopart.cls
+Document Class: iopart 1996/06/10 v0.0 IOP Journals LaTeX article class
+(./iopart12.clo
+File: iopart12.clo 1997/01/15 v1.0 LaTeX2e file (size option)
+)
+\c@jnl=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\indentedwidth=\skip43
+\mathindent=\dimen102
+\c@eqnval=\count88
+) (./iopams.sty
+Package: iopams 1997/02/13 v1.0
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks14
+\ex@=\dimen103
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+)
+(c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen104
+))
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 99.
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2018/01/08 v1.0l Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen105
+\Gin@req@width=\dimen106
+)
+\epsfxsize=\dimen107
+\epsfysize=\dimen108
+)
+(c:/texlive/2018/texmf-dist/tex/latex/base/latexsym.sty
+Package: latexsym 1998/08/17 v2.2e Standard LaTeX package (lasy symbols)
+\symlasy=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `lasy' in version `bold'
+(Font)                  U/lasy/m/n --> U/lasy/b/n on input line 52.
+)
+(c:/texlive/2018/texmf-dist/tex/latex/graphics/color.sty
+Package: color 2016/07/10 v1.1e Standard LaTeX Color (DPC)
+
+(c:/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package color Info: Driver file: pdftex.def on input line 147.
+)
+(./Scattering Coefficient.aux
+
+LaTeX Warning: Label `circle' multiply defined.
+
+)
+\openout1 = `"Scattering Coefficient.aux"'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+ (c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count89
+\scratchdimen=\dimen109
+\scratchbox=\box26
+\nofMPsegments=\count90
+\nofMParguments=\count91
+\everyMPshowfont=\toks16
+\MPscratchCnt=\count92
+\MPscratchDim=\dimen110
+\MPnumerator=\count93
+\makeMPintoPDFobject=\count94
+\everyMPtoPDFconversion=\toks17
+) (c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+)
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+)))
+(c:/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(c:/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+38.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPE
+G,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(c:/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+)) [1
+
+{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+\c@lem=\count95
+\c@prop=\count96
+\c@cor=\count97
+\c@thm=\count98
+\c@rem=\count99
+\c@alg=\count100
+\c@assum=\count101
+\c@definition=\count102
+\c@RomanNumber=\count103
+LaTeX Font Info:    Try loading font information for U+msa on input line 168.
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 168.
+
+(c:/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Try loading font information for U+lasy on input line 168.
+
+(c:/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
+File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
+)
+Package epstopdf Info: Source file: <./figure_sc/circle.eps>
+(epstopdf)                    date: 2019-01-11 17:10:23
+(epstopdf)                    size: 10450 bytes
+(epstopdf)             Output file: <./figure_sc/circle-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 17:12:41
+(epstopdf)                    size: 6082 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/circle-eps-con
+verted-to.pdf ./figure_sc/circle.eps>
+(epstopdf)             \includegraphics on input line 190.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/circle-eps-converted-to.pdf, id=7, 421.575pt x 317.185pt>
+File: ./figure_sc/circle-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_sc/circle-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/circle-eps-converted-to.pdf  used on input
+ line 190.
+(pdftex.def)             Requested size: 107.13844pt x 80.60764pt.
+Package epstopdf Info: Source file: <./figure_sc/pear.eps>
+(epstopdf)                    date: 2019-01-11 17:10:34
+(epstopdf)                    size: 10103 bytes
+(epstopdf)             Output file: <./figure_sc/pear-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 17:12:43
+(epstopdf)                    size: 5761 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/pear-eps-conve
+rted-to.pdf ./figure_sc/pear.eps>
+(epstopdf)             \includegraphics on input line 191.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/pear-eps-converted-to.pdf, id=8, 421.575pt x 317.185pt>
+File: ./figure_sc/pear-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_sc/pear-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/pear-eps-converted-to.pdf  used on input l
+ine 191.
+(pdftex.def)             Requested size: 107.13844pt x 80.60764pt.
+Package epstopdf Info: Source file: <./figure_sc/rectangle.eps>
+(epstopdf)                    date: 2019-01-11 17:10:50
+(epstopdf)                    size: 10480 bytes
+(epstopdf)             Output file: <./figure_sc/rectangle-eps-converted-to.pdf
+>
+(epstopdf)                    date: 2019-01-11 17:12:47
+(epstopdf)                    size: 6472 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/rectangle-eps-
+converted-to.pdf ./figure_sc/rectangle.eps>
+(epstopdf)             \includegraphics on input line 192.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/rectangle-eps-converted-to.pdf, id=9, 421.575pt x 317.185pt>
+File: ./figure_sc/rectangle-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_sc/rectangle-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/rectangle-eps-converted-to.pdf  used on in
+put line 192.
+(pdftex.def)             Requested size: 107.13844pt x 80.60764pt.
+Package epstopdf Info: Source file: <./figure_sc/kite.eps>
+(epstopdf)                    date: 2019-01-11 17:11:10
+(epstopdf)                    size: 10226 bytes
+(epstopdf)             Output file: <./figure_sc/kite-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 17:12:49
+(epstopdf)                    size: 5546 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/kite-eps-conve
+rted-to.pdf ./figure_sc/kite.eps>
+(epstopdf)             \includegraphics on input line 193.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/kite-eps-converted-to.pdf, id=10, 421.575pt x 317.185pt>
+File: ./figure_sc/kite-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_sc/kite-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/kite-eps-converted-to.pdf  used on input l
+ine 193.
+(pdftex.def)             Requested size: 107.13844pt x 80.60764pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_circle_
+1.eps>
+(epstopdf)                    date: 2019-01-11 16:54:38
+(epstopdf)                    size: 139015 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_circle_
+1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:56:03
+(epstopdf)                    size: 57859 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_circle_1-eps-converted-to.pdf ./figure_sc/scattering_coefficient_circl
+e_1.eps>
+(epstopdf)             \includegraphics on input line 198.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_circle_1-eps-converted-to.pdf, id=11, 421.5
+75pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_circle_1-eps-converted-to.pdf Graphic 
+file (type pdf)
+<use ./figure_sc/scattering_coefficient_circle_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_circle_1-eps-conver
+ted-to.pdf  used on input line 198.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_circle_
+4.eps>
+(epstopdf)                    date: 2018-12-28 16:31:34
+(epstopdf)                    size: 135432 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_circle_
+4-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:43:54
+(epstopdf)                    size: 57358 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_circle_4-eps-converted-to.pdf ./figure_sc/scattering_coefficient_circl
+e_4.eps>
+(epstopdf)             \includegraphics on input line 199.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_circle_4-eps-converted-to.pdf, id=12, 421.5
+75pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_circle_4-eps-converted-to.pdf Graphic 
+file (type pdf)
+<use ./figure_sc/scattering_coefficient_circle_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_circle_4-eps-conver
+ted-to.pdf  used on input line 199.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_circle_
+16.eps>
+(epstopdf)                    date: 2018-12-28 16:32:08
+(epstopdf)                    size: 234471 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_circle_
+16-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:45:27
+(epstopdf)                    size: 98482 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_circle_16-eps-converted-to.pdf ./figure_sc/scattering_coefficient_circ
+le_16.eps>
+(epstopdf)             \includegraphics on input line 200.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_circle_16-eps-converted-to.pdf, id=13, 421.
+575pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_circle_16-eps-converted-to.pdf Graphic
+ file (type pdf)
+<use ./figure_sc/scattering_coefficient_circle_16-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_circle_16-eps-conve
+rted-to.pdf  used on input line 200.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_pear_1.
+eps>
+(epstopdf)                    date: 2018-12-28 16:42:49
+(epstopdf)                    size: 134240 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_pear_1-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:51:38
+(epstopdf)                    size: 68703 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_pear_1-eps-converted-to.pdf ./figure_sc/scattering_coefficient_pear_1.
+eps>
+(epstopdf)             \includegraphics on input line 205.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_pear_1-eps-converted-to.pdf, id=14, 421.575
+pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_pear_1-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use ./figure_sc/scattering_coefficient_pear_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_pear_1-eps-converte
+d-to.pdf  used on input line 205.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_pear_4.
+eps>
+(epstopdf)                    date: 2018-12-28 16:43:42
+(epstopdf)                    size: 132065 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_pear_4-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:50:23
+(epstopdf)                    size: 68019 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_pear_4-eps-converted-to.pdf ./figure_sc/scattering_coefficient_pear_4.
+eps>
+(epstopdf)             \includegraphics on input line 206.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_pear_4-eps-converted-to.pdf, id=15, 421.575
+pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_pear_4-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use ./figure_sc/scattering_coefficient_pear_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_pear_4-eps-converte
+d-to.pdf  used on input line 206.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_pear_16
+.eps>
+(epstopdf)                    date: 2018-12-28 16:44:18
+(epstopdf)                    size: 128446 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_pear_16
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:50:26
+(epstopdf)                    size: 66411 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_pear_16-eps-converted-to.pdf ./figure_sc/scattering_coefficient_pear_1
+6.eps>
+(epstopdf)             \includegraphics on input line 207.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_pear_16-eps-converted-to.pdf, id=16, 421.57
+5pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_pear_16-eps-converted-to.pdf Graphic f
+ile (type pdf)
+<use ./figure_sc/scattering_coefficient_pear_16-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_pear_16-eps-convert
+ed-to.pdf  used on input line 207.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_rctangl
+e_1.eps>
+(epstopdf)                    date: 2018-12-28 16:39:04
+(epstopdf)                    size: 125553 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_rctangl
+e_1-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:58:37
+(epstopdf)                    size: 60740 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_rctangle_1-eps-converted-to.pdf ./figure_sc/scattering_coefficient_rct
+angle_1.eps>
+(epstopdf)             \includegraphics on input line 212.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_rctangle_1-eps-converted-to.pdf, id=17, 421
+.575pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_rctangle_1-eps-converted-to.pdf Graphi
+c file (type pdf)
+<use ./figure_sc/scattering_coefficient_rctangle_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_rctangle_1-eps-conv
+erted-to.pdf  used on input line 212.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_rctangl
+e_4.eps>
+(epstopdf)                    date: 2018-12-28 16:39:39
+(epstopdf)                    size: 122930 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_rctangl
+e_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:58:40
+(epstopdf)                    size: 60793 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_rctangle_4-eps-converted-to.pdf ./figure_sc/scattering_coefficient_rct
+angle_4.eps>
+(epstopdf)             \includegraphics on input line 213.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_rctangle_4-eps-converted-to.pdf, id=18, 421
+.575pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_rctangle_4-eps-converted-to.pdf Graphi
+c file (type pdf)
+<use ./figure_sc/scattering_coefficient_rctangle_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_rctangle_4-eps-conv
+erted-to.pdf  used on input line 213.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_rctangl
+e_16.eps>
+(epstopdf)                    date: 2018-12-28 16:40:39
+(epstopdf)                    size: 208976 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_rctangl
+e_16-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:58:43
+(epstopdf)                    size: 101797 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_rctangle_16-eps-converted-to.pdf ./figure_sc/scattering_coefficient_rc
+tangle_16.eps>
+(epstopdf)             \includegraphics on input line 214.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_rctangle_16-eps-converted-to.pdf, id=19, 42
+1.575pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_rctangle_16-eps-converted-to.pdf Graph
+ic file (type pdf)
+<use ./figure_sc/scattering_coefficient_rctangle_16-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_rctangle_16-eps-con
+verted-to.pdf  used on input line 214.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_kite_1.
+eps>
+(epstopdf)                    date: 2018-12-28 16:26:26
+(epstopdf)                    size: 131517 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_kite_1-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:56:51
+(epstopdf)                    size: 68746 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_kite_1-eps-converted-to.pdf ./figure_sc/scattering_coefficient_kite_1.
+eps>
+(epstopdf)             \includegraphics on input line 219.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_kite_1-eps-converted-to.pdf, id=20, 421.575
+pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_kite_1-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use ./figure_sc/scattering_coefficient_kite_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_kite_1-eps-converte
+d-to.pdf  used on input line 219.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_kite_4.
+eps>
+(epstopdf)                    date: 2018-12-28 16:27:05
+(epstopdf)                    size: 132125 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_kite_4-
+eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:56:55
+(epstopdf)                    size: 68889 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_kite_4-eps-converted-to.pdf ./figure_sc/scattering_coefficient_kite_4.
+eps>
+(epstopdf)             \includegraphics on input line 220.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_kite_4-eps-converted-to.pdf, id=21, 421.575
+pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_kite_4-eps-converted-to.pdf Graphic fi
+le (type pdf)
+<use ./figure_sc/scattering_coefficient_kite_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_kite_4-eps-converte
+d-to.pdf  used on input line 220.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+Package epstopdf Info: Source file: <./figure_sc/scattering_coefficient_kite_16
+.eps>
+(epstopdf)                    date: 2018-12-28 16:27:50
+(epstopdf)                    size: 217095 bytes
+(epstopdf)             Output file: <./figure_sc/scattering_coefficient_kite_16
+-eps-converted-to.pdf>
+(epstopdf)                    date: 2019-01-11 16:56:58
+(epstopdf)                    size: 113049 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc/scattering_coe
+fficient_kite_16-eps-converted-to.pdf ./figure_sc/scattering_coefficient_kite_1
+6.eps>
+(epstopdf)             \includegraphics on input line 221.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc/scattering_coefficient_kite_16-eps-converted-to.pdf, id=22, 421.57
+5pt x 317.185pt>
+File: ./figure_sc/scattering_coefficient_kite_16-eps-converted-to.pdf Graphic f
+ile (type pdf)
+<use ./figure_sc/scattering_coefficient_kite_16-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc/scattering_coefficient_kite_16-eps-convert
+ed-to.pdf  used on input line 221.
+(pdftex.def)             Requested size: 267.8427pt x 201.52153pt.
+ [2 <./figure_sc/circle-eps-converted-to.pdf> <./figure_sc/pear-eps-converted-t
+o.pdf> <./figure_sc/rectangle-eps-converted-to.pdf> <./figure_sc/kite-eps-conve
+rted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [3 <./figure_sc/scattering_coefficient_circle_1-eps-converted-to.pdf> <./figur
+e_sc/scattering_coefficient_circle_4-eps-converted-to.pdf> <./figure_sc/scatter
+ing_coefficient_circle_16-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./figure_sc/scattering_coefficient_pear_1-eps-converted-to.pdf> <./figure_
+sc/scattering_coefficient_pear_4-eps-converted-to.pdf> <./figure_sc/scattering_
+coefficient_pear_16-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [5 <./figure_sc/scattering_coefficient_rctangle_1-eps-converted-to.pdf> <./fig
+ure_sc/scattering_coefficient_rctangle_4-eps-converted-to.pdf> <./figure_sc/sca
+ttering_coefficient_rctangle_16-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [6 <./figure_sc/scattering_coefficient_kite_1-eps-converted-to.pdf> <./figure_
+sc/scattering_coefficient_kite_4-eps-converted-to.pdf> <./figure_sc/scattering_
+coefficient_kite_16-eps-converted-to.pdf>] (./Scattering Coefficient.aux)
+
+LaTeX Warning: There were multiply-defined labels.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 2377 strings out of 492649
+ 32839 string characters out of 6133383
+ 95425 words of memory out of 5000000
+ 6204 multiletter control sequences out of 15000+600000
+ 10792 words of font info for 42 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 41i,12n,27p,317b,346s stack positions out of 5000i,500n,10000p,200000b,80000s
+<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb><c:/tex
+live/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb><c:/texlive/2018
+/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb><c:/texlive/2018/texmf-dis
+t/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmmi12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmmi8.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmr12.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.
+pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/t
+exlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb><c:/texlive/201
+8/texmf-dist/fonts/type1/public/amsfonts/cm/cmti12.pfb><c:/texlive/2018/texmf-d
+ist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
+Output written on "Scattering Coefficient.pdf" (6 pages, 975327 bytes).
+PDF statistics:
+ 220 PDF objects out of 1000 (max. 8388607)
+ 142 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 81 words of extra memory for PDF output out of 10000 (max. 10000000)
+
