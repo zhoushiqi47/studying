@@ -118,11 +118,11 @@ subplot(2,2,1);imagesc(t/pi,theta/pi,Rhp1');colorbar;
 colormap('jet');title(['Kirchhoff Approximation,k=', num2str(f),'pi']);
 xlabel('Polar Coordinates of the Boundary, (Pi)'); ylabel('Incident Angle, (Pi)');
 
-subplot(2,2,2);imagesc(t/pi,theta/pi,Rp1'); colorbar;
+subplot(2,2,3);imagesc(t/pi,theta/pi,Rp1'); colorbar;
 colormap('jet');title(['Real Scattering coefficient,k=', num2str(f),'pi']);
 xlabel('Polar Coordinates of the Boundary, (Pi)'); ylabel('Incident Angle, (Pi)');
 
-subplot(2,2,3);
+subplot(2,2,2);
 plot(t/pi,Rhp1(:,1),'-ob',t/pi,Rp1(:,1),'-*r'); 
 legend('Kirchhoff','Real',4);
 title('Incident Angle=0');
