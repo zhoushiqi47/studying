@@ -21,8 +21,8 @@ else if bctype==2
     [x1,x2]=Penut(t,1);   
     [dx1,dx2]=Penut(t,2);
     else if bctype==3
-            [x1,x2]=p_leaf(t,1);   
-            [dx1,dx2]=p_leaf(t,2);
+            [x1,x2]=Pear(t,1);   
+            [dx1,dx2]=Pear(t,2);
         else
             [x1,x2]=myrectangle(t,1);   
             [dx1,dx2]=myrectangle(t,2);
@@ -55,8 +55,8 @@ distance = sqrt( dx1.*dx1+dx2.*dx2 );
     H{k}=zeros(2*n);
     end
 
-    %% 计算矩阵green tensor
-    % 将矩阵拉开成向量
+    %% ????????green tensor
+    % ????????????????
     xl = repmat([x1,x2]',1,2*n);
     yl = reshape( repmat([x1,x2]',2*n,1),2,4*n*n);
     %rGG  = Elastic_GreenTensor_Thalf_SIP_NY(omega,kp,ks,yl,xl);
@@ -114,7 +114,7 @@ distance = sqrt( dx1.*dx1+dx2.*dx2 );
 
 
 
-    %% 构造线性系统，方程左端的矩阵 %%
+    %% ???????????????????????????? %%
     
     A = zeros(4*n,4*n);
 

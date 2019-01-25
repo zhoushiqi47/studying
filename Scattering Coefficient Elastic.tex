@@ -160,8 +160,9 @@
 \newcommand{\ben}{\begin{eqnarray*}}
 	\newcommand{\een}{\end{eqnarray*}}
 \newcommand{\nn}{\nonumber}
-
-\section{Reflection of Plane Wave}
+\section{Reflection of Plane wave (Reflected by $x_2$ axis)}
+We assume that a plane P-wave  $u_p$(or S-wave $u_s$) with incident direction $d_0=(\sin)t_0, \cos t_0$ at a plane $\Gamma := {x \in \R^2 :
+	x _0 = 0}$.
 \subsection{P-wave}
 We denote incident P-wave \cite[p172]{achenbach1980} as
 \be
@@ -212,78 +213,197 @@ t_2=t_0  \ \ \ \ \ \ \mbox{and} \ \ \ \ \frac{\sin t_1}{\sin t_0}=\frac{k_s}{k_p
 A_0=\cos(t_0-t_1) \ \ \ \ \ A_1=\sin 2t_0 \ \ \ \ \ \ A_2=\cos(t_0+t_1)
 \een
 
-\section{Scattering Coefficient of Elastic Wave}
-The solution for the scattering of a plane P-wave  $u_p$(or S-wave $u_s$) with incident direction $d_0$ at a plane $\Gamma := {x \in \R^2 :
+\section{Reflection of Plane wave (General Case )}
+Thus, for the general case, the solution for the scattering of a plane P-wave  $u_p$(or S-wave $u_s$) with incident direction $d_0$ at a plane $\Gamma := {x \in \R^2 :
 	x \cdot \nu = 0}$ through the origin with normal vector $\nu$ is described by
 \be
-u=u_p + u_{p,p}+u_{p,s}=A_0d_0 e^{\i kp x\cdot d}+A_1 d_1 e^{\i kp x\cdot d_1}+A _2d_2^\perp d_0^{\i ks x\cdot d_2}\\
-u=u_s + u_{s,p}+u_{s,s}=A_0d_0^\perp e^{\i ks x\cdot d}+A_1 d_1 e^{\i kp x\cdot d_1}+A_2 d_2^\perp d^{\i ks x\cdot d_2}
+u=u_p + u_{p,p}+u_{p,s}=A_0d_0 e^{\i kp x\cdot d_0}+A_1 d_1 e^{\i kp x\cdot d_1}+A _2d_2^\perp e^{\i ks x\cdot d_2}\\
+u=u_s + u_{s,p}+u_{s,s}=A_0d_0^\perp e^{\i ks x\cdot d_0}+A_1 d_1 e^{\i kp x\cdot d_1}+A_2 d_2^\perp e^{\i ks x\cdot d_2}
 \ee
-where $d_i=(d_i^1,d_i^2)^T$ are unit vectors, $d_i^\perp=(d_i^2,-d_i^1)^T$ and $A_i$ are corresponding amplitude. For fixed boundary, we have $u=0$ for $x\in\Gamma$. After a standard computation, we get
+where $d_i=(d_i^1,d_i^2)^T$ are unit vectors, $d_i^\perp=(d_i^2,-d_i^1)^T$ and $A_i$ are corresponding amplitude. For fixed boundary, we have $u=0$ for $x\in\Gamma$. Let $d_0 = (\sin t_0,\cos t_0)$ and $\nu = (\sin\phi,\cos\phi)^T$, and taking a rotation transformation such that 
+\ben
+\hat x= S x \ \ \  \mbox{and}  \ \ \ x = S^T \hat x\ \ \ 
+\een
+where 
+\ben
+S= \Big[ \begin{array}{ll}
+\cos\phi& -\sin\phi \\
+\sin\phi & \cos\phi
+\end{array}\Big]
+\een
+Then we have
+\ben
+\hat d_i = S d_i, \ \  \hat{\nu}= S\nu=(0,1)^T \\
+\hat u_p(\hat x):=Su_p(S^T x)=A_0(\sin(\theta-\phi),\cos(\theta-\phi))^T
+e^{\i k_p \hat x_1\sin(\theta-\phi)+\hat x_2\cos(\theta-\phi)}
+\een
+Using results in section 1, we have
+\ben
+\hat d_1 =(\sin(\theta-\phi),-\cos(\theta-\phi))^T  \ \ \ \
+\hat d_2 = (\sin t_2,-\cos t_2)^T \\
+A_0=\cos(\theta-\phi-t_2)=\hat d_1 \cdot \hat d_2=d_1 \cdot d_2\\ A_1=\cos(\theta-\phi+t_2)=\hat d_0 \cdot \hat d_2=d_0\cdot d_2 \\ A_2=-\sin 2(\theta-\phi)=2(\hat d_0,\hat{a}\nu)(\hat d_0,\hat\nu^\perp)=2(d_0,\nu)(d_0,\nu^\perp)
+\een
+where $\sin t_2 =\kappa \sin(\theta-\phi)$.
+ After a standard computation, we get
 for P-wave:
 \be
-d_1= d_0- 2\alpha\nu\\
-d_2= \kappa d_0- \beta\nu\\
-A_0=\kappa(d,\nu)^2-\kappa(d,\nu^\perp)^2-\beta(d,\nu)\\
-A_1=\kappa-\beta(d,\nu)\\
-A_2=-2(d,\nu)(d,\nu^\perp)
+d_1=S^T \hat d_1= d_0- 2\alpha\nu\\
+d_2= S^T \hat d_2=\kappa d_0- \beta\nu\\
+A_0=-\kappa(d_0,\nu)^2+\kappa(d,\nu^\perp)^2+\beta(d_0,\nu)\\
+A_1=-\kappa+\beta(d,\nu)\\
+A_2=-2(d_0,\nu)(d_0,\nu^\perp)
 \ee
-where $\alpha=(d,\nu)$, $\beta=\kappa\alpha-\sqrt{\kappa^2\alpha^2-\kappa^2+1}$ and $\kappa=k_p/k_s$. For S-wave:
+where $\alpha=(d_0,\nu)$, $\beta=\kappa\alpha-\sqrt{\kappa^2\alpha^2-\kappa^2+1}$ and $\kappa=k_p/k_s$. Similarly, for S-wave, we have
 \be
 d_1 =\kappa_1 d_0- \gamma\nu \\
 d_2 =d_0- 2\alpha\nu\\
-A_0=\kappa_1(d,\nu)^2-\kappa_1(d,\nu^\perp)^2-\gamma(d,\nu)\\
-A_1=2(d,\nu)(d,\nu^\perp)\\
-A_2=\kappa_1-\gamma(d,\nu)
+A_0=-\kappa_1(d_0,\nu)^2+\kappa_1(d,\nu^\perp)^2+\gamma(d,\nu)\\
+A_1=2(d_0,\nu)(d_0,\nu^\perp)\\
+A_2=-\kappa_1+\gamma(d_0,\nu)
 \ee
+
+
 where $\gamma=\kappa_1\alpha-\sqrt{\kappa_1^2\alpha^2-\kappa_1^2+1}$ and $\kappa_1=1/\kappa$. Thus the traction of $u(x)$ on the plane $\Gamma$ can be obtained. For P-wave
-\ben
-\sigma(u)\cdot\nu=[\i k_p A_0 (\lambda\nu+2\mu(d_0,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_p x\cdot d}:=\i k_p \hat R_p(x,d,\nu) e^{\i k_p x\cdot d}
-\een For S-wave
-\ben
-\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d}:=\i k_s \hat R_s(x,d,\nu) e^{\i k_s x\cdot d}
-\een
+\be\label{kir_p}\nn
+\sigma(u)\cdot\nu=[\i k_p A_0 (\lambda\nu+2\mu(d_0,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_p x\cdot d}:=\i k_p A_0 \hat \mathbf{R}_p(x,d,\nu) e^{\i k_p x\cdot d}
+\ee For S-wave
+\be\label{kir_s}\nn
+\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d}:=\i k_s A_0\hat \mathbf{R}_s(x,d,\nu) e^{\i k_s x\cdot d}
+\ee
 \begin{definition}
 	For any unit vector $d\in \R^2$, let $u^i_p =d e^{\i k_p x\cdot d}$ or $u^i_s= d^\perp e^{\i k_s x\cdot d}$ be the incident wave and $u^s_\alpha = u^s_\alpha(x;d)$ be the radiation solution of the Navier equation:
 	\be
 	u^s_\alpha + \om^2u^s_\alpha = 0\ \ \mbox{in} \ \  \R^2\bks\bar{D} \\
-	u^s_\alpha =-u^i_\alpha \ \ \mbox{on} \ \ \pa D 
+\Delta_e	u^s_\alpha =-u^i_\alpha \ \ \mbox{on} \ \ \pa D 
 	\ee
-	The scattering coecient R(x;d) for $x\in\pa D$ is defined by the relation
+	The scattering coefficient $\mathbf{R}_\alpha(x;d)$ for $x\in\pa D$ is defined by the relation
 	\ben
-	\sigma(u^s_\alpha+u^i_\alpha)\cdot \nu= \i k_\alpha R_\alpha(x;d)e^{\i k_\alpha x\cdot d}  \ \ \ \mbox{on}\ \ \pa D
+	\sigma(u^s_\alpha+u^i_\alpha)\cdot \nu= \i k_\alpha \mathbf{R}_\alpha(x;d)e^{\i k_\alpha x\cdot d}  \ \ \ \mbox{on}\ \ \pa D
 	\een
 	where $\alpha=p,s$.
 \end{definition}
-A convex object $D$ locally may be cosidered at each point $x$ as a plane with normal $\nu(x)$. Then the scattering coefficient can be approximated by
+A convex object $D$ locally may be cosidered at each point $x$ as a plane with normal $\nu(x)$. Then the scattering coefficient can be approximated(Kirchhoff approximation) by
 \ben
-R_\alpha(x;d)\approx\left\{ \begin{array}{ll}
-	\hat R_\alpha(x;d,\nu)    \ \  \  \mbox{if} \ \ x \in \pa D^{-}_d=\{x\in \pa D, \nu(x)\cdot d<0\},\\ 
-	0 \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \ \mbox{if} \ \ x \in \pa D^{-}_d=\{x\in \pa D, \nu(x)\cdot d\geq0\}.
+\mathbf{R}_\alpha(x;d)\approx\left\{ \begin{array}{ll}
+	\hat \mathbf{R}_\alpha(x;d,\nu(x))    \ \  \  \mbox{if} \ \ x \in \pa D^{-}_d=\{x\in \pa D, \nu(x)\cdot d<0\},\\ 
+	0 \ \ \ \ \ \ \ \  \ \ \ \ \ \ \ \ \mbox{if} \ \ x \in \pa D^{-}_d=\{x\in \pa D, \nu(x)\cdot d\geq0\}.
 \end{array} \right.
 \een
+
+\section{Numerical examples}
+In this section we present several numerical examples to show the effectiveness of Kirchhoff approximation. To synthesize the real scattering coefficient we compute the solution $\sigma(u^s_\alpha+u^i_\alpha)\cdot \nu$ of
+the scattering problems by representing the ansatz solution as the single layer potential
+with the Green tensor $\G(x,y)$ as the kernel
+\ben\hspace{-2cm}
+u^s(x)=\int_{\Ga_D} - \G(y,x)^T\sigma(u^s(y)+u^i(y))\nu ds(y)=-u^i(x) \ \ \ \  \mbox{on} \ \ x\in \Ga_D
+\een and discretizing the integral equation by
+standard Nystr\"{o}m methods \cite{colton-kress}. Let $\mathbf{R}_\alpha(x;d)=(\mathbf{R}_\alpha^1(x;d),\mathbf{R}_\alpha^2(x;d))^T$, then we have
+\be
+\mathbf{R}_\alpha^j(x;d)=\frac{\sigma(u^s(y)+u^i(y))\nu\cdot e_j}{\i k_\alpha e^{\i k_\alpha x\cdot d} }
+\ee
+and we can compute $\hat \mathbf{R}_\alpha(x;d)=(\hat \mathbf{R}_\alpha^1(x;d),\hat \mathbf{R}_\alpha^2(x;d))^T$ by (\ref{kir_p}) and (\ref{kir_s}).
+In all our numerical examples we choose {Lam\'{e}} constant $\lambda=1/2$, $\mu=1/4$ and 
+\ben
+u^i_p=(\cos t,\sin t )^T e^{\i k_p(x_1 \cos t +x_2\sin t)} \\
+u^i_s=(\sin t,-\cos t)^T e^{\i k_s(x_1 \cos t +x_2\sin t)}
+\een where
+$t\in[0,2\pi]$.. 
+The boundaries
+of the obstacles used in our numerical experiments are parameterized as follows, 
+\ben
+\mbox{Circle:}\ \ \ \ x_1=\cos(\theta),\ \ x_2=\sin(\theta);\ \  \\
+\mbox{Pear:}\ \ \ \rho = 0.5(2+0.3\cos(3\theta)),x_1=\sin \frac{\pi}{4}\rho(\cos\theta-\sin\theta),x_2=\sin \frac{\pi}{4}\rho(\cos\theta+\sin\theta)
+\een
+where
+$\theta\in[0,2\pi]$
+and depicted as figure \ref{shape}. 
+
+In the following examples, figure \ref{figure_2}-\ref{figure_9}, the angular frequency $\omega= \pi,2\pi,4\pi,8\pi$.
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{./graphic/pwave_kirchhoffpi0.eps}
-	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoffpi0.eps}	
-	\caption{$\theta=0\pi$}\label{figure_1}
+	\includegraphics[width=0.24\textwidth]{./figure_sc_elastic/circle.eps}
+	\includegraphics[width=0.24\textwidth]{./figure_sc_elastic/pear.eps}
+	\caption{}\label{shape}
 \end{figure}
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{./graphic/pwave_kirchhoff.eps}
-	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoff.eps}	
-	\caption{$\theta=pi/4$}\label{figure_2}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_circle_8.eps}		
+	\caption{$\mathbf{R}_p^1$ and $\hat \mathbf{R}_p^1$ for circle}\label{figure_2}
 \end{figure}
+
 \begin{figure}
 	\centering
-	\includegraphics[width=0.8\textwidth]{./graphic/pwave_kirchhoffpi3.eps}
-	\includegraphics[width=0.8\textwidth]{./graphic/swave_kirchhoffpi3.eps}	
-	\caption{$\theta=\pi/3$}\label{figure_3}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_circle_8.eps}		
+	\caption{$\mathbf{R}_p^2$ and $\hat \mathbf{R}_p^2$ for circle}\label{figure_3}
 \end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_circle_8.eps}		
+	\caption{$\mathbf{R}_s^1$ and $\hat \mathbf{R}_s^1$ for circle}\label{figure_4}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_circle_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_circle_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_circle_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_circle_8.eps}		
+	\caption{$\mathbf{R}_s^2$ and $\hat \mathbf{R}_s^2$ for circle}\label{figure_5}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p1_pear_8.eps}		
+	\caption{$\mathbf{R}_p^1$ and $\hat \mathbf{R}_p^1$ for pear}\label{figure_6}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_p2_pear_8.eps}		
+	\caption{$\mathbf{R}_p^2$ and $\hat \mathbf{R}_p^2$ for pear}\label{figure_7}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s1_pear_8.eps}		
+	\caption{$\mathbf{R}_s^1$ and $\hat \mathbf{R}_s^1$ for pear}\label{figure_8}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_pear_1.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_pear_2.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_pear_4.eps}
+	\includegraphics[width=0.48\textwidth]{./figure_sc_elastic/sc_s2_pear_8.eps}		
+	\caption{$\mathbf{R}_s^2$ and $\hat \mathbf{R}_s^2$ for pear}\label{figure_9}
+\end{figure}
+
 \section*{References}
 \begin{thebibliography}{99}
 	\bibitem{achenbach1980}
 	Achenbach J 1980 {\em Wave Propagation in Elastic Solids }(North-Holland)
+	\bibitem{colton-kress}
+	Colton D  and   Kress R 1998 {\em Inverse Acoustic and Electromagnetic Scattering Problems } (Heidelberg: Springer)
+	
 	
 \end{thebibliography}
 \end{document}

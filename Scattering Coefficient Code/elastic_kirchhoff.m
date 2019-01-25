@@ -9,7 +9,7 @@ kp=omega/sqrt(lamda+2*mu);
 kappa = kp/ks;
 lambda= lamda;
 kappa1 = ks/kp;
-n = 256;
+n = 128;
 node = 0:2*n-1;
 t = pi*node(:)/n;
 
@@ -50,7 +50,7 @@ n_x =[n_x1, n_x2];
 R1=zeros(2,2*n);
 R2=zeros(2,2*n);
 
-theta=0;
+theta=pi/4;
 p0 = [sin(theta);cos(theta)];
 pn0 = [cos(theta);-sin(theta)];
 %% compute traction of total field in plane

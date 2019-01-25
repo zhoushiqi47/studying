@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.8)  18 JAN 2019 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018) (preloaded format=pdflatex 2019.1.8)  25 JAN 2019 16:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -187,172 +187,739 @@ e
 \c@assum=\count101
 \c@definition=\count102
 \c@RomanNumber=\count103
-LaTeX Font Info:    Try loading font information for U+msa on input line 167.
+LaTeX Font Info:    Try loading font information for U+msa on input line 163.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 167.
+LaTeX Font Info:    Try loading font information for U+msb on input line 163.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 167.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 163.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ulasy.fd
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ) [2] [3]
-Package epstopdf Info: Source file: <./graphic/pwave_kirchhoffpi0.eps>
-(epstopdf)                    date: 2017-12-28 18:50:28
-(epstopdf)                    size: 39470 bytes
-(epstopdf)             Output file: <./graphic/pwave_kirchhoffpi0-eps-converted
--to.pdf>
-(epstopdf)                    date: 2018-01-02 11:10:26
-(epstopdf)                    size: 19880 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphic/pwave_kirchhoffp
-i0-eps-converted-to.pdf ./graphic/pwave_kirchhoffpi0.eps>
-(epstopdf)             \includegraphics on input line 267.
-Package epstopdf Info: Output file is already uptodate.
-<./graphic/pwave_kirchhoffpi0-eps-converted-to.pdf, id=25, 421.575pt x 317.185p
-t>
-File: ./graphic/pwave_kirchhoffpi0-eps-converted-to.pdf Graphic file (type pdf)
+Overfull \hbox (51.7722pt too wide) in alignment at lines 313--316
+ [] [] [] [] 
+ []
 
-<use ./graphic/pwave_kirchhoffpi0-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphic/pwave_kirchhoffpi0-eps-converted-to.pdf  use
-d on input line 267.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
-Package epstopdf Info: Source file: <./graphic/swave_kirchhoffpi0.eps>
-(epstopdf)                    date: 2017-12-28 18:50:28
-(epstopdf)                    size: 39100 bytes
-(epstopdf)             Output file: <./graphic/swave_kirchhoffpi0-eps-converted
--to.pdf>
-(epstopdf)                    date: 2018-01-02 11:10:26
-(epstopdf)                    size: 19433 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphic/swave_kirchhoffp
-i0-eps-converted-to.pdf ./graphic/swave_kirchhoffpi0.eps>
-(epstopdf)             \includegraphics on input line 268.
+[4]
+Package epstopdf Info: Source file: <./figure_sc_elastic/circle.eps>
+(epstopdf)                    date: 2019-01-22 09:36:34
+(epstopdf)                    size: 24777 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/circle-eps-converted-t
+o.pdf>
+(epstopdf)                    date: 2019-01-22 10:54:14
+(epstopdf)                    size: 7676 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/circle
+-eps-converted-to.pdf ./figure_sc_elastic/circle.eps>
+(epstopdf)             \includegraphics on input line 324.
 Package epstopdf Info: Output file is already uptodate.
-<./graphic/swave_kirchhoffpi0-eps-converted-to.pdf, id=26, 421.575pt x 317.185p
-t>
-File: ./graphic/swave_kirchhoffpi0-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./graphic/swave_kirchhoffpi0-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphic/swave_kirchhoffpi0-eps-converted-to.pdf  use
-d on input line 268.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
-Package epstopdf Info: Source file: <./graphic/pwave_kirchhoff.eps>
-(epstopdf)                    date: 2017-12-28 18:50:28
-(epstopdf)                    size: 61252 bytes
-(epstopdf)             Output file: <./graphic/pwave_kirchhoff-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2018-01-02 11:10:25
-(epstopdf)                    size: 29304 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphic/pwave_kirchhoff-
-eps-converted-to.pdf ./graphic/pwave_kirchhoff.eps>
-(epstopdf)             \includegraphics on input line 273.
+<./figure_sc_elastic/circle-eps-converted-to.pdf, id=28, 562.1pt x 421.575pt>
+File: ./figure_sc_elastic/circle-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_sc_elastic/circle-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/circle-eps-converted-to.pdf  used 
+on input line 324.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/pear.eps>
+(epstopdf)                    date: 2019-01-22 09:42:41
+(epstopdf)                    size: 22336 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/pear-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2019-01-22 10:54:15
+(epstopdf)                    size: 7896 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/pear-e
+ps-converted-to.pdf ./figure_sc_elastic/pear.eps>
+(epstopdf)             \includegraphics on input line 325.
 Package epstopdf Info: Output file is already uptodate.
-<./graphic/pwave_kirchhoff-eps-converted-to.pdf, id=27, 421.575pt x 317.185pt>
-File: ./graphic/pwave_kirchhoff-eps-converted-to.pdf Graphic file (type pdf)
-<use ./graphic/pwave_kirchhoff-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphic/pwave_kirchhoff-eps-converted-to.pdf  used o
-n input line 273.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
-Package epstopdf Info: Source file: <./graphic/swave_kirchhoff.eps>
-(epstopdf)                    date: 2017-12-28 18:50:28
-(epstopdf)                    size: 62127 bytes
-(epstopdf)             Output file: <./graphic/swave_kirchhoff-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2018-01-02 11:10:26
-(epstopdf)                    size: 31985 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphic/swave_kirchhoff-
-eps-converted-to.pdf ./graphic/swave_kirchhoff.eps>
-(epstopdf)             \includegraphics on input line 274.
+<./figure_sc_elastic/pear-eps-converted-to.pdf, id=29, 562.1pt x 421.575pt>
+File: ./figure_sc_elastic/pear-eps-converted-to.pdf Graphic file (type pdf)
+<use ./figure_sc_elastic/pear-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/pear-eps-converted-to.pdf  used on
+ input line 325.
+(pdftex.def)             Requested size: 107.13844pt x 80.35095pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_circle_1.eps>
+(epstopdf)                    date: 2019-01-21 17:19:12
+(epstopdf)                    size: 696277 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_circle_1-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-22 10:22:12
+(epstopdf)                    size: 51310 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+circle_1-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_circle_1.eps>
+(epstopdf)             \includegraphics on input line 330.
 Package epstopdf Info: Output file is already uptodate.
-<./graphic/swave_kirchhoff-eps-converted-to.pdf, id=28, 421.575pt x 317.185pt>
-File: ./graphic/swave_kirchhoff-eps-converted-to.pdf Graphic file (type pdf)
-<use ./graphic/swave_kirchhoff-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphic/swave_kirchhoff-eps-converted-to.pdf  used o
-n input line 274.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
-Package epstopdf Info: Source file: <./graphic/pwave_kirchhoffpi3.eps>
-(epstopdf)                    date: 2017-12-28 19:02:21
-(epstopdf)                    size: 39353 bytes
-(epstopdf)             Output file: <./graphic/pwave_kirchhoffpi3-eps-converted
--to.pdf>
-(epstopdf)                    date: 2018-01-02 11:11:40
-(epstopdf)                    size: 20301 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphic/pwave_kirchhoffp
-i3-eps-converted-to.pdf ./graphic/pwave_kirchhoffpi3.eps>
-(epstopdf)             \includegraphics on input line 279.
+<./figure_sc_elastic/sc_p1_circle_1-eps-converted-to.pdf, id=30, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p1_circle_1-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p1_circle_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_circle_1-eps-converted-to.pd
+f  used on input line 330.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_circle_2.eps>
+(epstopdf)                    date: 2019-01-21 17:18:30
+(epstopdf)                    size: 696287 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_circle_2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-22 10:22:13
+(epstopdf)                    size: 51118 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+circle_2-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_circle_2.eps>
+(epstopdf)             \includegraphics on input line 331.
 Package epstopdf Info: Output file is already uptodate.
-<./graphic/pwave_kirchhoffpi3-eps-converted-to.pdf, id=29, 421.575pt x 317.185p
-t>
-File: ./graphic/pwave_kirchhoffpi3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./graphic/pwave_kirchhoffpi3-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphic/pwave_kirchhoffpi3-eps-converted-to.pdf  use
-d on input line 279.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
-Package epstopdf Info: Source file: <./graphic/swave_kirchhoffpi3.eps>
-(epstopdf)                    date: 2017-12-28 19:02:21
-(epstopdf)                    size: 39377 bytes
-(epstopdf)             Output file: <./graphic/swave_kirchhoffpi3-eps-converted
--to.pdf>
-(epstopdf)                    date: 2018-01-02 11:11:40
-(epstopdf)                    size: 20224 bytes
-(epstopdf)             Command: <repstopdf --outfile=./graphic/swave_kirchhoffp
-i3-eps-converted-to.pdf ./graphic/swave_kirchhoffpi3.eps>
-(epstopdf)             \includegraphics on input line 280.
+<./figure_sc_elastic/sc_p1_circle_2-eps-converted-to.pdf, id=31, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p1_circle_2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p1_circle_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_circle_2-eps-converted-to.pd
+f  used on input line 331.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_circle_4.eps>
+(epstopdf)                    date: 2019-01-21 17:19:03
+(epstopdf)                    size: 696295 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_circle_4-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:56:37
+(epstopdf)                    size: 50905 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+circle_4-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_circle_4.eps>
+(epstopdf)             \includegraphics on input line 332.
 Package epstopdf Info: Output file is already uptodate.
-<./graphic/swave_kirchhoffpi3-eps-converted-to.pdf, id=30, 421.575pt x 317.185p
-t>
-File: ./graphic/swave_kirchhoffpi3-eps-converted-to.pdf Graphic file (type pdf)
-
-<use ./graphic/swave_kirchhoffpi3-eps-converted-to.pdf>
-Package pdftex.def Info: ./graphic/swave_kirchhoffpi3-eps-converted-to.pdf  use
-d on input line 280.
-(pdftex.def)             Requested size: 357.12132pt x 268.69377pt.
- [4 <./graphic/pwave_kirchhoffpi0-eps-converted-to.pdf> <./graphic/swave_kirchh
-offpi0-eps-converted-to.pdf>]
+<./figure_sc_elastic/sc_p1_circle_4-eps-converted-to.pdf, id=32, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p1_circle_4-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p1_circle_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_circle_4-eps-converted-to.pd
+f  used on input line 332.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_circle_8.eps>
+(epstopdf)                    date: 2019-01-21 17:18:12
+(epstopdf)                    size: 696272 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_circle_8-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-22 11:01:27
+(epstopdf)                    size: 50805 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+circle_8-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_circle_8.eps>
+(epstopdf)             \includegraphics on input line 333.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p1_circle_8-eps-converted-to.pdf, id=33, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p1_circle_8-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p1_circle_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_circle_8-eps-converted-to.pd
+f  used on input line 333.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_circle_1.eps>
+(epstopdf)                    date: 2019-01-21 17:25:21
+(epstopdf)                    size: 695802 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_circle_1-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:57:15
+(epstopdf)                    size: 51239 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+circle_1-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_circle_1.eps>
+(epstopdf)             \includegraphics on input line 339.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_circle_1-eps-converted-to.pdf, id=34, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p2_circle_1-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p2_circle_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_circle_1-eps-converted-to.pd
+f  used on input line 339.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_circle_2.eps>
+(epstopdf)                    date: 2019-01-21 17:24:33
+(epstopdf)                    size: 695788 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_circle_2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:57:16
+(epstopdf)                    size: 51084 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+circle_2-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_circle_2.eps>
+(epstopdf)             \includegraphics on input line 340.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_circle_2-eps-converted-to.pdf, id=35, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p2_circle_2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p2_circle_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_circle_2-eps-converted-to.pd
+f  used on input line 340.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_circle_4.eps>
+(epstopdf)                    date: 2019-01-21 17:23:42
+(epstopdf)                    size: 695786 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_circle_4-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:57:17
+(epstopdf)                    size: 51018 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+circle_4-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_circle_4.eps>
+(epstopdf)             \includegraphics on input line 341.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_circle_4-eps-converted-to.pdf, id=36, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p2_circle_4-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p2_circle_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_circle_4-eps-converted-to.pd
+f  used on input line 341.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_circle_8.eps>
+(epstopdf)                    date: 2019-01-21 17:22:09
+(epstopdf)                    size: 695793 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_circle_8-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:57:17
+(epstopdf)                    size: 50890 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+circle_8-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_circle_8.eps>
+(epstopdf)             \includegraphics on input line 342.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_circle_8-eps-converted-to.pdf, id=37, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_p2_circle_8-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_p2_circle_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_circle_8-eps-converted-to.pd
+f  used on input line 342.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_circle_1.eps>
+(epstopdf)                    date: 2019-01-22 09:32:22
+(epstopdf)                    size: 696421 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_circle_1-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:01
+(epstopdf)                    size: 51048 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+circle_1-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_circle_1.eps>
+(epstopdf)             \includegraphics on input line 348.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_circle_1-eps-converted-to.pdf, id=38, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s1_circle_1-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s1_circle_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_circle_1-eps-converted-to.pd
+f  used on input line 348.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_circle_2.eps>
+(epstopdf)                    date: 2019-01-22 09:33:05
+(epstopdf)                    size: 696429 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_circle_2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:01
+(epstopdf)                    size: 51518 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+circle_2-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_circle_2.eps>
+(epstopdf)             \includegraphics on input line 349.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_circle_2-eps-converted-to.pdf, id=39, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s1_circle_2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s1_circle_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_circle_2-eps-converted-to.pd
+f  used on input line 349.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_circle_4.eps>
+(epstopdf)                    date: 2019-01-22 09:33:34
+(epstopdf)                    size: 696422 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_circle_4-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:02
+(epstopdf)                    size: 52557 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+circle_4-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_circle_4.eps>
+(epstopdf)             \includegraphics on input line 350.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_circle_4-eps-converted-to.pdf, id=40, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s1_circle_4-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s1_circle_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_circle_4-eps-converted-to.pd
+f  used on input line 350.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_circle_8.eps>
+(epstopdf)                    date: 2019-01-22 09:34:13
+(epstopdf)                    size: 696418 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_circle_8-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:02
+(epstopdf)                    size: 53287 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+circle_8-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_circle_8.eps>
+(epstopdf)             \includegraphics on input line 351.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_circle_8-eps-converted-to.pdf, id=41, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s1_circle_8-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s1_circle_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_circle_8-eps-converted-to.pd
+f  used on input line 351.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_circle_1.eps>
+(epstopdf)                    date: 2019-01-22 09:31:34
+(epstopdf)                    size: 1186900 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_circle_1-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:47
+(epstopdf)                    size: 70161 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+circle_1-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_circle_1.eps>
+(epstopdf)             \includegraphics on input line 357.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_circle_1-eps-converted-to.pdf, id=42, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s2_circle_1-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s2_circle_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_circle_1-eps-converted-to.pd
+f  used on input line 357.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_circle_2.eps>
+(epstopdf)                    date: 2019-01-22 09:30:30
+(epstopdf)                    size: 1186910 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_circle_2-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:48
+(epstopdf)                    size: 68915 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+circle_2-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_circle_2.eps>
+(epstopdf)             \includegraphics on input line 358.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_circle_2-eps-converted-to.pdf, id=43, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s2_circle_2-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s2_circle_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_circle_2-eps-converted-to.pd
+f  used on input line 358.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_circle_4.eps>
+(epstopdf)                    date: 2019-01-22 09:29:30
+(epstopdf)                    size: 1186930 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_circle_4-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:49
+(epstopdf)                    size: 70623 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+circle_4-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_circle_4.eps>
+(epstopdf)             \includegraphics on input line 359.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_circle_4-eps-converted-to.pdf, id=44, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s2_circle_4-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s2_circle_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_circle_4-eps-converted-to.pd
+f  used on input line 359.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_circle_8.eps>
+(epstopdf)                    date: 2019-01-22 09:28:44
+(epstopdf)                    size: 1186929 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_circle_8-eps-con
+verted-to.pdf>
+(epstopdf)                    date: 2019-01-23 11:58:49
+(epstopdf)                    size: 71184 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+circle_8-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_circle_8.eps>
+(epstopdf)             \includegraphics on input line 360.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_circle_8-eps-converted-to.pdf, id=45, 562.1pt x 421.
+575pt>
+File: ./figure_sc_elastic/sc_s2_circle_8-eps-converted-to.pdf Graphic file (typ
+e pdf)
+<use ./figure_sc_elastic/sc_s2_circle_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_circle_8-eps-converted-to.pd
+f  used on input line 360.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_pear_1.eps>
+(epstopdf)                    date: 2019-01-22 09:47:35
+(epstopdf)                    size: 1186253 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_pear_1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:45
+(epstopdf)                    size: 69739 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+pear_1-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_pear_1.eps>
+(epstopdf)             \includegraphics on input line 366.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p1_pear_1-eps-converted-to.pdf, id=46, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p1_pear_1-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p1_pear_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_pear_1-eps-converted-to.pdf 
+ used on input line 366.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_pear_2.eps>
+(epstopdf)                    date: 2019-01-22 09:46:52
+(epstopdf)                    size: 1186245 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_pear_2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:46
+(epstopdf)                    size: 69846 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+pear_2-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_pear_2.eps>
+(epstopdf)             \includegraphics on input line 367.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p1_pear_2-eps-converted-to.pdf, id=47, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p1_pear_2-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p1_pear_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_pear_2-eps-converted-to.pdf 
+ used on input line 367.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_pear_4.eps>
+(epstopdf)                    date: 2019-01-22 09:46:13
+(epstopdf)                    size: 1185174 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_pear_4-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:46
+(epstopdf)                    size: 69947 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+pear_4-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_pear_4.eps>
+(epstopdf)             \includegraphics on input line 368.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p1_pear_4-eps-converted-to.pdf, id=48, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p1_pear_4-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p1_pear_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_pear_4-eps-converted-to.pdf 
+ used on input line 368.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p1_pear_8.eps>
+(epstopdf)                    date: 2019-01-22 09:43:57
+(epstopdf)                    size: 1185196 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p1_pear_8-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:47
+(epstopdf)                    size: 70081 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p1_
+pear_8-eps-converted-to.pdf ./figure_sc_elastic/sc_p1_pear_8.eps>
+(epstopdf)             \includegraphics on input line 369.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p1_pear_8-eps-converted-to.pdf, id=49, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p1_pear_8-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p1_pear_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p1_pear_8-eps-converted-to.pdf 
+ used on input line 369.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_pear_1.eps>
+(epstopdf)                    date: 2019-01-22 09:48:57
+(epstopdf)                    size: 1184872 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_pear_1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:56
+(epstopdf)                    size: 69214 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+pear_1-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_pear_1.eps>
+(epstopdf)             \includegraphics on input line 375.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_pear_1-eps-converted-to.pdf, id=50, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p2_pear_1-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p2_pear_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_pear_1-eps-converted-to.pdf 
+ used on input line 375.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_pear_2.eps>
+(epstopdf)                    date: 2019-01-22 09:49:31
+(epstopdf)                    size: 1184864 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_pear_2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:56
+(epstopdf)                    size: 69132 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+pear_2-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_pear_2.eps>
+(epstopdf)             \includegraphics on input line 376.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_pear_2-eps-converted-to.pdf, id=51, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p2_pear_2-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p2_pear_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_pear_2-eps-converted-to.pdf 
+ used on input line 376.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_pear_4.eps>
+(epstopdf)                    date: 2019-01-22 09:50:12
+(epstopdf)                    size: 1184689 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_pear_4-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:57
+(epstopdf)                    size: 69358 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+pear_4-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_pear_4.eps>
+(epstopdf)             \includegraphics on input line 377.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_pear_4-eps-converted-to.pdf, id=52, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p2_pear_4-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p2_pear_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_pear_4-eps-converted-to.pdf 
+ used on input line 377.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_p2_pear_8.eps>
+(epstopdf)                    date: 2019-01-22 09:50:58
+(epstopdf)                    size: 1184671 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_p2_pear_8-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:02:57
+(epstopdf)                    size: 69792 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_p2_
+pear_8-eps-converted-to.pdf ./figure_sc_elastic/sc_p2_pear_8.eps>
+(epstopdf)             \includegraphics on input line 378.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_p2_pear_8-eps-converted-to.pdf, id=53, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_p2_pear_8-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_p2_pear_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_p2_pear_8-eps-converted-to.pdf 
+ used on input line 378.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_pear_1.eps>
+(epstopdf)                    date: 2019-01-22 09:56:52
+(epstopdf)                    size: 697311 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_pear_1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:11
+(epstopdf)                    size: 52338 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+pear_1-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_pear_1.eps>
+(epstopdf)             \includegraphics on input line 384.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_pear_1-eps-converted-to.pdf, id=54, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s1_pear_1-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s1_pear_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_pear_1-eps-converted-to.pdf 
+ used on input line 384.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_pear_2.eps>
+(epstopdf)                    date: 2019-01-22 09:57:39
+(epstopdf)                    size: 697320 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_pear_2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:12
+(epstopdf)                    size: 52817 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+pear_2-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_pear_2.eps>
+(epstopdf)             \includegraphics on input line 385.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_pear_2-eps-converted-to.pdf, id=55, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s1_pear_2-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s1_pear_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_pear_2-eps-converted-to.pdf 
+ used on input line 385.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_pear_4.eps>
+(epstopdf)                    date: 2019-01-22 09:58:11
+(epstopdf)                    size: 697890 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_pear_4-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:12
+(epstopdf)                    size: 52874 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+pear_4-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_pear_4.eps>
+(epstopdf)             \includegraphics on input line 386.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_pear_4-eps-converted-to.pdf, id=56, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s1_pear_4-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s1_pear_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_pear_4-eps-converted-to.pdf 
+ used on input line 386.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s1_pear_8.eps>
+(epstopdf)                    date: 2019-01-22 09:58:41
+(epstopdf)                    size: 698086 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s1_pear_8-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:13
+(epstopdf)                    size: 53568 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s1_
+pear_8-eps-converted-to.pdf ./figure_sc_elastic/sc_s1_pear_8.eps>
+(epstopdf)             \includegraphics on input line 387.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s1_pear_8-eps-converted-to.pdf, id=57, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s1_pear_8-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s1_pear_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s1_pear_8-eps-converted-to.pdf 
+ used on input line 387.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_pear_1.eps>
+(epstopdf)                    date: 2019-01-22 09:56:12
+(epstopdf)                    size: 697312 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_pear_1-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:13
+(epstopdf)                    size: 55160 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+pear_1-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_pear_1.eps>
+(epstopdf)             \includegraphics on input line 393.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_pear_1-eps-converted-to.pdf, id=58, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s2_pear_1-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s2_pear_1-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_pear_1-eps-converted-to.pdf 
+ used on input line 393.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_pear_2.eps>
+(epstopdf)                    date: 2019-01-22 09:55:40
+(epstopdf)                    size: 697309 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_pear_2-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:14
+(epstopdf)                    size: 54999 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+pear_2-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_pear_2.eps>
+(epstopdf)             \includegraphics on input line 394.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_pear_2-eps-converted-to.pdf, id=59, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s2_pear_2-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s2_pear_2-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_pear_2-eps-converted-to.pdf 
+ used on input line 394.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_pear_4.eps>
+(epstopdf)                    date: 2019-01-22 09:55:13
+(epstopdf)                    size: 697874 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_pear_4-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:14
+(epstopdf)                    size: 54657 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+pear_4-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_pear_4.eps>
+(epstopdf)             \includegraphics on input line 395.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_pear_4-eps-converted-to.pdf, id=60, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s2_pear_4-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s2_pear_4-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_pear_4-eps-converted-to.pdf 
+ used on input line 395.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+Package epstopdf Info: Source file: <./figure_sc_elastic/sc_s2_pear_8.eps>
+(epstopdf)                    date: 2019-01-22 09:54:34
+(epstopdf)                    size: 698054 bytes
+(epstopdf)             Output file: <./figure_sc_elastic/sc_s2_pear_8-eps-conve
+rted-to.pdf>
+(epstopdf)                    date: 2019-01-23 12:03:15
+(epstopdf)                    size: 54961 bytes
+(epstopdf)             Command: <repstopdf --outfile=./figure_sc_elastic/sc_s2_
+pear_8-eps-converted-to.pdf ./figure_sc_elastic/sc_s2_pear_8.eps>
+(epstopdf)             \includegraphics on input line 396.
+Package epstopdf Info: Output file is already uptodate.
+<./figure_sc_elastic/sc_s2_pear_8-eps-converted-to.pdf, id=61, 562.1pt x 421.57
+5pt>
+File: ./figure_sc_elastic/sc_s2_pear_8-eps-converted-to.pdf Graphic file (type 
+pdf)
+<use ./figure_sc_elastic/sc_s2_pear_8-eps-converted-to.pdf>
+Package pdftex.def Info: ./figure_sc_elastic/sc_s2_pear_8-eps-converted-to.pdf 
+ used on input line 396.
+(pdftex.def)             Requested size: 214.27007pt x 160.7019pt.
+ [5 <./figure_sc_elastic/circle-eps-converted-to.pdf> <./figure_sc_elastic/pear
+-eps-converted-to.pdf> <./figure_sc_elastic/sc_p1_circle_1-eps-converted-to.pdf
+> <./figure_sc_elastic/sc_p1_circle_2-eps-converted-to.pdf> <./figure_sc_elasti
+c/sc_p1_circle_4-eps-converted-to.pdf> <./figure_sc_elastic/sc_p1_circle_8-eps-
+converted-to.pdf>] [6 <./figure_sc_elastic/sc_p2_circle_1-eps-converted-to.pdf>
+ <./figure_sc_elastic/sc_p2_circle_2-eps-converted-to.pdf> <./figure_sc_elastic
+/sc_p2_circle_4-eps-converted-to.pdf> <./figure_sc_elastic/sc_p2_circle_8-eps-c
+onverted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [5 <./graphic/pwave_kirchhoff-eps-converted-to.pdf> <./graphic/swave_kirchhoff
--eps-converted-to.pdf>]
+ [7 <./figure_sc_elastic/sc_s1_circle_1-eps-converted-to.pdf> <./figure_sc_elas
+tic/sc_s1_circle_2-eps-converted-to.pdf> <./figure_sc_elastic/sc_s1_circle_4-ep
+s-converted-to.pdf> <./figure_sc_elastic/sc_s1_circle_8-eps-converted-to.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [6 <./graphic/pwave_kirchhoffpi3-eps-converted-to.pdf> <./graphic/swave_kirchh
-offpi3-eps-converted-to.pdf>] [7] (./Scattering Coefficient Elastic.aux) ) 
+ [8 <./figure_sc_elastic/sc_s2_circle_1-eps-converted-to.pdf> <./figure_sc_elas
+tic/sc_s2_circle_2-eps-converted-to.pdf> <./figure_sc_elastic/sc_s2_circle_4-ep
+s-converted-to.pdf> <./figure_sc_elastic/sc_s2_circle_8-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [9 <./figure_sc_elastic/sc_p1_pear_1-eps-converted-to.pdf> <./figure_sc_elasti
+c/sc_p1_pear_2-eps-converted-to.pdf> <./figure_sc_elastic/sc_p1_pear_4-eps-conv
+erted-to.pdf> <./figure_sc_elastic/sc_p1_pear_8-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [10 <./figure_sc_elastic/sc_p2_pear_1-eps-converted-to.pdf> <./figure_sc_elast
+ic/sc_p2_pear_2-eps-converted-to.pdf> <./figure_sc_elastic/sc_p2_pear_4-eps-con
+verted-to.pdf> <./figure_sc_elastic/sc_p2_pear_8-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [11 <./figure_sc_elastic/sc_s1_pear_1-eps-converted-to.pdf> <./figure_sc_elast
+ic/sc_s1_pear_2-eps-converted-to.pdf> <./figure_sc_elastic/sc_s1_pear_4-eps-con
+verted-to.pdf> <./figure_sc_elastic/sc_s1_pear_8-eps-converted-to.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [12 <./figure_sc_elastic/sc_s2_pear_1-eps-converted-to.pdf> <./figure_sc_elast
+ic/sc_s2_pear_2-eps-converted-to.pdf> <./figure_sc_elastic/sc_s2_pear_4-eps-con
+verted-to.pdf> <./figure_sc_elastic/sc_s2_pear_8-eps-converted-to.pdf>]
+(./Scattering Coefficient Elastic.aux) ) 
 Here is how much of TeX's memory you used:
- 2347 strings out of 492649
- 30369 string characters out of 6129623
- 100371 words of memory out of 5000000
- 6176 multiletter control sequences out of 15000+600000
+ 2497 strings out of 492649
+ 38242 string characters out of 6129623
+ 101455 words of memory out of 5000000
+ 6299 multiletter control sequences out of 15000+600000
  13774 words of font info for 56 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,12n,27p,299b,362s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr
-/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/
-local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/l
-ocal/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx8.pfb></usr/loc
-al/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/loca
-l/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local
-/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/local/
-texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/te
-xlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/local/texl
-ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texliv
-e/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/
-2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/201
-8/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2018/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2018/te
-xmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2018/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb></usr/local/texlive/2018/texmf
--dist/fonts/type1/public/amsfonts/cm/cmti12.pfb></usr/local/texlive/2018/texmf-
-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on "Scattering Coefficient Elastic.pdf" (7 pages, 303019 bytes).
-
+ 41i,12n,27p,319b,360s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2018/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2018/texmf-dist/font
+s/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2018/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmbx8.pfb></usr/local/texlive/2018/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2018/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmmi12.pfb></usr/local/texlive/2018/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmmi8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmr12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr7.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmr8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmsy10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy8.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmti10.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mti12.pfb></usr/local/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/symbo
+ls/msbm10.pfb>
+Output written on "Scattering Coefficient Elastic.pdf" (12 pages, 1989173 bytes
+).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 99 compressed objects within 1 object stream
+ 513 PDF objects out of 1000 (max. 8388607)
+ 282 compressed objects within 3 object streams
  0 named destinations out of 1000 (max. 500000)
- 31 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 171 words of extra memory for PDF output out of 10000 (max. 10000000)
 
