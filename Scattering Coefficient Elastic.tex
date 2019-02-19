@@ -160,7 +160,7 @@
 \newcommand{\ben}{\begin{eqnarray*}}
 	\newcommand{\een}{\end{eqnarray*}}
 \newcommand{\nn}{\nonumber}
-\section{Reflection of Plane wave (Reflected by $x_2$ axis)}
+\section{Reflection of Plane wave (Reflected by $x_1$ axis)}
 We assume that a plane P-wave  $u_p$(or S-wave $u_s$) with incident direction $d_0=(\sin)t_0, \cos t_0$ at a plane $\Gamma := {x \in \R^2 :
 	x _0 = 0}$.
 \subsection{P-wave}
@@ -175,7 +175,7 @@ and its stress as
 The reflected P-wave is represented as
 \ben
 u^1=A_1(\sin t_1,-\cos t_1)^Te^{\i k_p(x_1\sin t_1-x_2 \cos t_1)}\\
-\sigma(u^1)=\i k_p A_1(-2\mu \sin t_1\cos t_1,\lambda+2\mu \cos^2 t_1)^Te^{\i k_p(x_1\sin t_1+x_2 \cos t_1)}
+\sigma(u^1)=\i k_p A_1(-2\mu \sin t_1\cos t_1,\lambda+2\mu \cos^2 t_1)^Te^{\i k_p(x_1\sin t_1-x_2 \cos t_1)}
 \een
 and reflected S-wave as
 \ben
@@ -229,19 +229,45 @@ where
 S= \Big[ \begin{array}{ll}
 \cos\phi& -\sin\phi \\
 \sin\phi & \cos\phi
+\end{array}\Big]=\Big[ \begin{array}{l}
+(\nu^\perp)^T \\
+\nu^T
 \end{array}\Big]
 \een
-Then we have
+Before proceeding, we give a theorem concerning axis transformation.
+\begin{thm}
+	Let $u(x)\in \C^2$ and
+	\ben
+		\Delta_e^x := \Big(\begin{array}{ll}
+		(\lambda +2\mu)\frac{\pa^2 }{\pa x_1^2}+(\lambda +\mu) \frac{\pa^2}{\pa x_1\pa x_2} +\mu \frac{\pa^2}{\pa x_2^2}\\
+		\mu \frac{\pa^2}{\pa x_1^2}+(\lambda +\mu) \frac{\pa^2}{\pa x_1\pa x_2}+(\lambda +2\mu)\frac{\pa^2 }{\pa x_12^2}
+		\end{array}\Big)
+	\een
+	. Assume that u(x) satisfies $\Delta_e^x u(x)+\omega^2 u(x)=0$, then  we have $\Delta_e^{\hat x} \hat u(\hat x)+\omega^2 \hat u(\hat x)=0$ where $\hat u(\hat x):= S u(S^T\hat x)$.
+\end{thm}
+\debproof
+since
+\ben
+\frac{\pa^2}{\pa \hat x_1^2}=\cos^2\phi \frac{\pa^2}{\pa  x_1^2}-2\cos\phi\sin\phi \frac{\pa^2}{\pa  x_1\pa x_2}+\sin^2\phi \frac{\pa^2}{\pa  x_2^2} \\
+\frac{\pa^2}{\pa \hat x_2^2}=\sin^2\phi \frac{\pa^2}{\pa  x_1^2}+2\cos\phi\sin\phi \frac{\pa^2}{\pa  x_1\pa x_2}+\cos^2\phi \frac{\pa^2}{\pa  x_2^2} \\
+\frac{\pa^2}{\pa \hat x_1 \pa\hat x_2}=\cos\phi\sin\phi\frac{\pa^2}{\pa  x_1^2}+(\cos^2\phi-\sin^2\phi) \frac{\pa^2}{\pa  x_1\pa x_2}-\cos\phi\sin\phi\frac{\pa^2}{\pa  x_2^2}
+\een
+This completes proof after substituting above equation into $\Delta_e^{\hat x} \hat u(\hat x)$.
+\finproof
+
+
+Let
 \ben
 \hat d_i = S d_i, \ \  \hat{\nu}= S\nu=(0,1)^T \\
+\hat d_0 = (\sin(\theta-\phi),\cos(\theta-\phi))^T=((d_0,\nu^\perp),(d_0,\nu ))^T\\
 \hat u_p(\hat x):=Su_p(S^T x)=A_0(\sin(\theta-\phi),\cos(\theta-\phi))^T
 e^{\i k_p \hat x_1\sin(\theta-\phi)+\hat x_2\cos(\theta-\phi)}
 \een
 Using results in section 1, we have
 \ben
-\hat d_1 =(\sin(\theta-\phi),-\cos(\theta-\phi))^T  \ \ \ \
-\hat d_2 = (\sin t_2,-\cos t_2)^T \\
-A_0=\cos(\theta-\phi-t_2)=\hat d_1 \cdot \hat d_2=d_1 \cdot d_2\\ A_1=\cos(\theta-\phi+t_2)=\hat d_0 \cdot \hat d_2=d_0\cdot d_2 \\ A_2=-\sin 2(\theta-\phi)=2(\hat d_0,\hat{a}\nu)(\hat d_0,\hat\nu^\perp)=2(d_0,\nu)(d_0,\nu^\perp)
+\hat d_1 =(\sin(\theta-\phi),-\cos(\theta-\phi))^T=((d_0,\nu^\perp),(d_0,\nu ))^T\\  
+\hat d_2 = (\sin t_2,-\cos t_2)^T=(\kappa (d_0,\nu^\perp),-sgn((d_0,\nu ))\sqrt{1-\kappa^2(d_0,\nu^\perp)^2})^T \\
+A_0=\cos(\theta-\phi-t_2)=-\hat d_1 \cdot \hat d_2=-d_1 \cdot d_2\\ A_1=\cos(\theta-\phi+t_2)=\hat d_0 \cdot \hat d_2=d_0\cdot d_2 \\ A_2=-\sin 2(\theta-\phi)=2(\hat d_0,\hat\nu)(\hat d_0,\hat\nu^\perp)=-2(d_0,\nu)(d_0,\nu^\perp)
 \een
 where $\sin t_2 =\kappa \sin(\theta-\phi)$.
  After a standard computation, we get
@@ -249,11 +275,11 @@ for P-wave:
 \be
 d_1=S^T \hat d_1= d_0- 2\alpha\nu\\
 d_2= S^T \hat d_2=\kappa d_0- \beta\nu\\
-A_0=-\kappa(d_0,\nu)^2+\kappa(d,\nu^\perp)^2+\beta(d_0,\nu)\\
-A_1=-\kappa+\beta(d,\nu)\\
+A_0=-\kappa(d_0,\nu)^2+\kappa(d_0,\nu^\perp)^2+\beta(d_0,\nu)\\
+A_1=-\kappa+\beta(d_0,\nu)\\
 A_2=-2(d_0,\nu)(d_0,\nu^\perp)
 \ee
-where $\alpha=(d_0,\nu)$, $\beta=\kappa\alpha-\sqrt{\kappa^2\alpha^2-\kappa^2+1}$ and $\kappa=k_p/k_s$. Similarly, for S-wave, we have
+where $\alpha=(d_0,\nu)$, $\beta=\kappa\alpha+sgn(\alpha)\sqrt{\kappa^2\alpha^2-\kappa^2+1}$ and $\kappa=k_p/k_s$. Similarly, for S-wave, we have
 \be
 d_1 =\kappa_1 d_0- \gamma\nu \\
 d_2 =d_0- 2\alpha\nu\\
@@ -263,12 +289,12 @@ A_2=-\kappa_1+\gamma(d_0,\nu)
 \ee
 
 
-where $\gamma=\kappa_1\alpha-\sqrt{\kappa_1^2\alpha^2-\kappa_1^2+1}$ and $\kappa_1=1/\kappa$. Thus the traction of $u(x)$ on the plane $\Gamma$ can be obtained. For P-wave
+where $\gamma=\kappa_1\alpha+sgn(\alpha)\sqrt{\kappa_1^2\alpha^2-\kappa_1^2+1}$ and $\kappa_1=1/\kappa$. Thus the traction of $u(x)$ on the plane $\Gamma$ can be obtained. For P-wave
 \be\label{kir_p}\nn
-\sigma(u)\cdot\nu=[\i k_p A_0 (\lambda\nu+2\mu(d_0,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_p x\cdot d}:=\i k_p A_0 \hat \mathbf{R}_p(x,d,\nu) e^{\i k_p x\cdot d}
+\sigma(u)\cdot\nu=[\i k_p A_0 (\lambda\nu+2\mu(d_0,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_p x\cdot d_0}:=\i k_p A_0 \hat \mathbf{R}_p(x,d_0,\nu) e^{\i k_p x\cdot d_0}
 \ee For S-wave
 \be\label{kir_s}\nn
-\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d}:=\i k_s A_0\hat \mathbf{R}_s(x,d,\nu) e^{\i k_s x\cdot d}
+\sigma(u)\cdot\nu=[\i k_s A_0 \mu((d_0,\nu)d_0^\perp+(d_0^\perp,\nu)d_0)+\i k_p A_1 (\lambda\nu+2\mu(d_1,\nu)d_1)\\+\i k_s A_2\mu((d_2,\nu)d_2^\perp+(d_2^\perp,\nu)d_2)]e^{\i k_s x\cdot d_0}:=\i k_s A_0\hat \mathbf{R}_s(x,d_0,\nu) e^{\i k_s x\cdot d_0}
 \ee
 \begin{definition}
 	For any unit vector $d\in \R^2$, let $u^i_p =d e^{\i k_p x\cdot d}$ or $u^i_s= d^\perp e^{\i k_s x\cdot d}$ be the incident wave and $u^s_\alpha = u^s_\alpha(x;d)$ be the radiation solution of the Navier equation:
