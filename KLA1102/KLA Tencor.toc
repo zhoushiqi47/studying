@@ -1,5 +1,4 @@
-\beamer@endinputifotherversion {3.36pt}
-\beamer@sectionintoc {1}{Motivation and Problem Formulation}{3}{0}{1}
-\beamer@sectionintoc {2}{Reverse Time Migration}{13}{0}{2}
-\beamer@sectionintoc {3}{Resolution Analysis}{16}{0}{3}
-\beamer@sectionintoc {4}{Numerical Test}{22}{0}{4}
+\beamer@sectionintoc {1}{Motivation and Problem Formulation}{4}{0}{1}
+\beamer@sectionintoc {2}{Reverse Time Migration}{14}{0}{2}
+\beamer@sectionintoc {3}{Resolution Analysis}{17}{0}{3}
+\beamer@sectionintoc {4}{Numerical Test}{23}{0}{4}
