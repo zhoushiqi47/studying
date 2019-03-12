@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.21)  12 MAR 2019 17:36
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2018.11.21)  12 MAR 2019 17:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**"KLA Tencor.tex"
-(./KLA Tencor.tex
+**zhuhai.tex
+(./zhuhai.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (c:/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
@@ -930,12 +930,12 @@ LaTeX Info: Redefining \selectfont on input line 755.
 \c@remark=\count168
 \c@question=\count169
 \c@RomanNumber=\count170
- (./KLA Tencor.aux
+ (./zhuhai.aux
 
 LaTeX Warning: Label `eq_d1' multiply defined.
 
 )
-\openout1 = `"KLA Tencor.aux"'.
+\openout1 = `zhuhai.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
 LaTeX Font Info:    ... okay on input line 166.
@@ -1086,9 +1086,9 @@ LaTeX Info: Redefining \ref on input line 166.
 LaTeX Info: Redefining \pageref on input line 166.
 LaTeX Info: Redefining \nameref on input line 166.
 
-(./KLA Tencor.out) (./KLA Tencor.out)
+(./zhuhai.out) (./zhuhai.out)
 \@outlinefile=\write5
-\openout5 = `"KLA Tencor.out"'.
+\openout5 = `zhuhai.out'.
 
 
 (c:/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dictionary-En
@@ -1114,7 +1114,7 @@ Dictionary: translator-numbers-dictionary, Language: English
 (c:/texlive/2018/texmf-dist/tex/latex/translator/translator-theorem-dictionary-
 English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./KLA Tencor.nav)
+) (./zhuhai.nav)
 (c:/texlive/2018/texmf-dist/tex/latex/cjk/texinput/standard.bdg
 File: standard.bdg 2015/04/18 4.8.4
 )
@@ -1130,8 +1130,7 @@ Package hyperref Warning: Option `pdfauthor' has already been used,
 
 [1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
-]
-(./KLA Tencor.toc) [2
+] (./zhuhai.toc) [2
 
 ]
 <./figure/seismic.png, id=103, 761.84625pt x 453.94594pt>
@@ -1893,22 +1892,22 @@ Overfull \hbox (9.84062pt too wide) in alignment at lines 706--706
 
 ] [28
 
-] (./KLA Tencor.bbl)
+] (./zhuhai.bbl)
 \tf@nav=\write6
-\openout6 = `"KLA Tencor.nav"'.
+\openout6 = `zhuhai.nav'.
 
 \tf@toc=\write7
-\openout7 = `"KLA Tencor.toc"'.
+\openout7 = `zhuhai.toc'.
 
 \tf@snm=\write8
-\openout8 = `"KLA Tencor.snm"'.
+\openout8 = `zhuhai.snm'.
 
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 734.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 734.
- (./KLA Tencor.aux)
+ (./zhuhai.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 734.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 734.
-Package rerunfilecheck Info: File `"KLA Tencor".out' has not changed.
+Package rerunfilecheck Info: File `zhuhai.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
@@ -1917,12 +1916,12 @@ LaTeX Warning: There were multiply-defined labels.
  ) 
 Here is how much of TeX's memory you used:
  19331 strings out of 492649
- 357453 string characters out of 6133383
+ 357375 string characters out of 6133383
  463315 words of memory out of 5000000
  22604 multiletter control sequences out of 15000+600000
  18035 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 56i,19n,61p,779b,1237s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,61p,773b,1237s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/texlive/2018/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t1.enc}<c:/texl
 ive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx5.pfb><c:/texlive/2018/t
 exmf-dist/fonts/type1/public/amsfonts/cm/cmbx6.pfb><c:/texlive/2018/texmf-dist/
@@ -1951,7 +1950,7 @@ ve/2018/texmf-dist/fonts/type1/public/cm-super/sfss0800.pfb><c:/texlive/2018/te
 xmf-dist/fonts/type1/public/cm-super/sfss1095.pfb><c:/texlive/2018/texmf-dist/f
 onts/type1/public/cm-super/sfss1200.pfb><c:/texlive/2018/texmf-dist/fonts/type1
 /public/cm-super/sfsx0800.pfb>
-Output written on "KLA Tencor.pdf" (28 pages, 1800818 bytes).
+Output written on zhuhai.pdf (28 pages, 1800818 bytes).
 PDF statistics:
  1298 PDF objects out of 1440 (max. 8388607)
  1134 compressed objects within 12 object streams
