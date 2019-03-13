@@ -1,11 +1,10 @@
-\beamer@endinputifotherversion {3.36pt}
 \headcommand {\slideentry {0}{0}{1}{1/1}{}{0}}
 \headcommand {\beamer@framepages {1}{1}}
 \headcommand {\slideentry {0}{0}{2}{2/2}{}{0}}
 \headcommand {\beamer@framepages {2}{2}}
-\headcommand {\sectionentry {1}{Motivation and Problem Formulation}{3}{Motivation and Problem Formulation}{0}}
 \headcommand {\beamer@sectionpages {1}{2}}
 \headcommand {\beamer@subsectionpages {1}{2}}
+\headcommand {\sectionentry {1}{Motivation and Problem Formulation}{3}{Motivation and Problem Formulation}{0}}
 \headcommand {\slideentry {1}{0}{1}{3/3}{}{0}}
 \headcommand {\beamer@framepages {3}{3}}
 \headcommand {\slideentry {1}{0}{2}{4/4}{}{0}}
@@ -26,18 +25,18 @@
 \headcommand {\beamer@framepages {11}{11}}
 \headcommand {\slideentry {1}{0}{10}{12/12}{}{0}}
 \headcommand {\beamer@framepages {12}{12}}
-\headcommand {\sectionentry {2}{Reverse Time Migration}{13}{Reverse Time Migration}{0}}
 \headcommand {\beamer@sectionpages {3}{12}}
 \headcommand {\beamer@subsectionpages {3}{12}}
+\headcommand {\sectionentry {2}{Reverse Time Migration}{13}{Reverse Time Migration}{0}}
 \headcommand {\slideentry {2}{0}{1}{13/13}{}{0}}
 \headcommand {\beamer@framepages {13}{13}}
 \headcommand {\slideentry {2}{0}{2}{14/14}{}{0}}
 \headcommand {\beamer@framepages {14}{14}}
 \headcommand {\slideentry {2}{0}{3}{15/15}{}{0}}
 \headcommand {\beamer@framepages {15}{15}}
-\headcommand {\sectionentry {3}{Resolution Analysis}{16}{Resolution Analysis}{0}}
 \headcommand {\beamer@sectionpages {13}{15}}
 \headcommand {\beamer@subsectionpages {13}{15}}
+\headcommand {\sectionentry {3}{Resolution Analysis}{16}{Resolution Analysis}{0}}
 \headcommand {\slideentry {3}{0}{1}{16/16}{}{0}}
 \headcommand {\beamer@framepages {16}{16}}
 \headcommand {\slideentry {3}{0}{2}{17/17}{}{0}}
@@ -50,9 +49,9 @@
 \headcommand {\beamer@framepages {20}{20}}
 \headcommand {\slideentry {3}{0}{6}{21/21}{}{0}}
 \headcommand {\beamer@framepages {21}{21}}
-\headcommand {\sectionentry {4}{Numerical Test}{22}{Numerical Test}{0}}
 \headcommand {\beamer@sectionpages {16}{21}}
 \headcommand {\beamer@subsectionpages {16}{21}}
+\headcommand {\sectionentry {4}{Numerical Test}{22}{Numerical Test}{0}}
 \headcommand {\slideentry {4}{0}{1}{22/22}{}{0}}
 \headcommand {\beamer@framepages {22}{22}}
 \headcommand {\slideentry {4}{0}{2}{23/23}{}{0}}
@@ -71,4 +70,4 @@
 \headcommand {\beamer@subsectionpages {1}{28}}
 \headcommand {\beamer@sectionpages {1}{28}}
 \headcommand {\beamer@documentpages {28}}
-\headcommand {\def \inserttotalframenumber {28}}
+\headcommand {\gdef \inserttotalframenumber {28}}
