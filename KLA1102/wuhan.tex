@@ -118,7 +118,7 @@
 \renewcommand{\r}{\mathbf{r}}
 \newcommand{\gR}{{\mathbb{R}}}
 \newcommand{\Z}{{\mathbb{Z}}}
-\newcommand{\C}{{\mathbb{C}}}
+\renewcommand{\C}{{\mathbb{C}}}
 
 \renewcommand{\Re}{\mathrm{Re}\,}
 \renewcommand{\Im}{\mathrm{Im}\,}
@@ -142,9 +142,10 @@
 \newcommand{\T}{\mathbb{T}}
 \newcommand{\A}{\mathbb{A}}
 \newcommand{\B}{\mathbb{B}}
-\newcommand{\G}{\mathbb{G}}
+\renewcommand{\G}{\mathbb{G}}
 \newcommand{\F}{\mathbb{F}}
 
+\renewcommand{\U}{\mathbb{U}}
 \newcommand{\W}{\mathbb{W}}
 \newcommand{\V}{\mathbb{V}}
 \newcommand{\J}{\mathbb{J}}
@@ -166,10 +167,12 @@
 \begin{document}
 \begin{CJK*}{GBK}{kai}
 \CJKtilde
-\title[]{Inverse Elastic Scattering Problem}
+\title[]{RTM for Inverse Elastic Scattering Problem}
 
-\author[]{Shiqi Zhou}
-\institute[]{Chinese Academy of Science, Academy of Mathematics and System Science}
+\author[]{Shiqi Zhou ,\\
+joint work with Zhiming Chen}
+\institute[]{
+	Academy of Mathematics and System Science,\\ Chinese Academy of Science }
 \date[]{2019.03.23 Wu Han}
 
 % , ¡§¡ã "%"
@@ -369,7 +372,21 @@ where
 \end{block}
 \end{small}
 \end{frame}
-
+\begin{frame}
+\frametitle{Asymptotic Behavior of Green Tensor }
+\begin{block}{Theorem 1}\label{thm:2.1}
+	Let $x\in\Gamma_0$, $y\in\R_+^2$ satisfy $|x_1-y_1|/|x-y|\ge(1+\kappa)/2$ and $k_sy_2\ge 1$. There exists a constant $C$ depending only on $\kappa$ such that
+	\ben
+	|\N(x,y)|+k_s^{-1}|\na_y\N(x,y)|\leq \frac{C}{\mu}\left(\frac{k_sy_2}{(k_s|x-y|)^{3/2}}+e^{-\sqrt{k_R^2-k_s^2}y_2}\right).
+	\een
+\end{block}
+\begin{block}{Theorem 2}\label{thm:2.2}
+	Let $x\in\Gamma_0$, $y\in\R_+^2$ satisfy $|x_1-y_1|/|x-y|\ge (1+\kappa)/2$ and $k_s y_2\ge 1$. There exists a constant $C$ depending only on $\kappa$ such that
+	\ben
+	|\T_D(x,y)|+k_s^{-1}|\na_y\T_D(x,y)|\leq C\frac{k_s^2 y_2}{(k_s|x-y|)^{3/2}}.
+	\een
+\end{block}
+\end{frame}
 
 \begin{frame}
 \frametitle{Inverse Scarttering Problem}
@@ -406,6 +423,24 @@ To determine the location, size, sharp of the obstacle by the measured field $u^
 \end{block}
 \end{frame}
 
+\begin{frame}
+\frametitle{Direct Scattering Problem}
+We recall the classical argument of limiting absorption principle to define the scattering solution for the exterior elastic scattering problem in the half space:
+\be
+& &\Delta_e u + \omega^2 u =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp1}\\
+& &u= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \sigma(u)e_2=0 \ \ \mbox{\rm on } \Ga_0,  \label{pp2}
+\ee
+where $g \in H^{1/2}(\Ga_D)$. Let $\eps>0$ and $u_\eps$ be the solution of the problem
+\be
+\Delta_e u_\eps + [\omega(1+\i\eps)]^2 u_\eps =0 \ \ \mbox{\rm in } \R^2_+\bks \bar{D}, \label{pp3}\\
+u_\eps= g \ \ \mbox{\rm on } \Ga_D, \ \ \ \ \sigma(u_\eps)e_2=0 \ \ \mbox{\rm on } \Ga_0.  \label{pp4}
+\ee
+\begin{block}{Theorem 3}
+	Let $g \in H^{1/2}(\Ga_D)$. The half-space elastic scattering problem (\ref{pp1})-(\ref{pp2})
+	admits a unique solution $u\in H^{1}_{\rm loc}(\R^2_+ \backslash \bar D)$. Moreover, for any bounded open set $\mathcal O\subset \R^2_+\bks\bar D$ there exists a constant $C>0$ such that
+	$\|u\|_{H^{1}(\mathcal O)}\le C\|g\|_{H^{1/2}(\Ga_D)}$.
+\end{block}
+\end{frame}
 
 \begin{frame}
 \frametitle{Algorithms of inverse obstacle problem}
@@ -454,7 +489,7 @@ approximation can be used.
 
 
 \begin{frame}
-\frametitle{Reverse Time MigrationMathematics Framework}
+\frametitle{Reverse Time Migration: Mathematics Framework}
 \begin{small}
 \begin{block}{Acoustic, electromagnetic, elastic wave in the Full space}
 \begin{enumerate}
@@ -494,21 +529,34 @@ approximation can be used.
 \end{frame}
 \begin{frame}
 \frametitle{RTM Algorithm}
-Given the data $u_k^s(x_r,x_s)$, $k=1,2$ which is the measurement of the scattered field at $x_r$ when the source is emitted at $x_s$ along the  polarized direction $e_k$, $s=1,\dots, N_s$ and $r=1,\dots,N_r$.
-\be\label{cor1}
-I_d(z)=\Im\sum_{k=1}^{2}\left\{\frac{|\Gamma_0^d|}{N_s}\sum^{N_s}_{s=1}\sum_{i=1}^{2}[\sigma_{x_s}(\D(x_s,z)e_i)e_2\cdot e_k][v_k(z,x_s)\cdot e_i]\right\}. \ \ z\in \Omega
-\ee
-where $v_k(z,x_s)$ satisfy the following scattering elastic equation:
+Given the data $u_k^s(x_r,x_s)$, $k=1,2$ which is the measurement of the scattered field at $x_r$ when the source is emitted at $x_s$ along the  polarized direction $e_k$, $s=1,\dots, N_s$ and $r=1,\dots,N_r$\\
+$1^\circ$ Back-propagation: Compute $v_q(x,x_s)$ as the scattering solution of the following half-space elastic scattering problem:
 \ben
-\Delta_e v_k(z,x_s) + \omega^2 v_k(z,x_s) =0 \qquad\mbox{\rm in } \R^2_+ \\
-v_k(z,x_s)=\frac{|\Ga_0^d|}{N_r}\sum_{r=1}^{N_r}\overline{u^s_k(x_r,x_s)}\delta_{x_r}(z) \ \ \ \ \mbox{\rm on}  \ \ \Ga_0
+\Delta_e v_q(x,x_s) + \omega^2 v_q(x,x_s) =0 \ \ \mbox{\rm in } \R^2_+, \\
+v_q(x,x_s)=\frac{|\Ga_0^d|}{N_r}\sum_{r=1}^{N_r}\overline{u_q^s(x_r,x_s)}\delta_{x_r}(x) \ \ \mbox{\rm on } \Ga_0.
 \een
+$2^\circ$ Cross-correlation: For each $z\in\Om$, compute the imaging function
+\be\label{cor1} 
+I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|}{N_s}\sum^{N_s}_{s=1} u^i_q(z,x_s)\cdot v_q(z,x_s)\right\}. 
+\ee
+\end{frame}
+\begin{frame}
+\frametitle{RTM Algorithm}
+By the integral representation formula, we know that
+\ben
+v_q(x,x_s)\cdot e_j=\frac{|\Ga_0^d|}{N_r}\sum_{r=1}^{N_r}\T_D(x_r,x)e_j\cdot\overline{u_q^s(x_r,x_s)},
+\een
+which yields
+\ben\label{cor}
+I_d(z)=\Im\sum_{q=e_1,e_2}\left\{\frac{|\Gamma_0^d|^2}{N_sN_r}\sum^{N_s}_{s=1}\sum^{N_r}_{r=1}
+[\T_D(x_s,z)^Tq]\cdot[\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\right\}.
+\een
+This is the formula will be used in our numerical examples in section 6.
 By letting $N_s,N_r\to\infty$, we know that (\ref{cor1}) can be viewed as an approximation of the following continuous integral:
 \ben
 \hat{I}_d(z)=\Im\sum_{q=e_1,e_2}\int_{\Gamma_0^d}\int_{\Gamma_0^d}\,
-[\T_D(x_s,z)^Tq][\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\,ds(x_r)ds(x_s).
+[\T_D(x_s,z)^Tq]\cdot[\T_D(x_r,z)^T\overline{u^s_q(x_r,x_s)}]\,ds(x_r)ds(x_s).\label{cor2}
 \een
-where $z\in\Om$.
 \end{frame}
 
 
@@ -517,8 +565,8 @@ where $z\in\Om$.
 \frametitle{Point Spread Function}
 The point spread function measures the resolution to find a point source. Given the $\N(x,y)$ on $\Gamma_0^d=\{(x_1,x_2)^T\in\Gamma_0, \  x_1\in(-d,d)\}$ with the source $y\in \R_+^2$, we define the PSF as the back-propagated field $\J_d(x,y)$.
 \ben
-\De_e \J_d(x,y) + \omega^2 \J_d(x,y) = -\mathbf{\de}_y(x) \mathbb{I}  \ \ \ in \ \  \R^2_+ , \label{eq_d1} \ \ \
-  \J_d(x,y) = \N(x,y)\chi_{(-d,d)} \ \ \ \ \ \ on \ \ \ \Gamma_0
+& &\De_e \J_d(x,y) + \omega^2 \J_d(x,y) = 0 \ \ \ \mbox{in} \ \  \R^2_+ , \label{eq_d1} \ \ \ \\
+& & \J_d(x,y) = \overline{\N(x,y)}\chi_{(-d,d)} \ \ \ \ \ \ \mbox{on} \ \ \ \Gamma_0
 \een
 By integral representation
 \ben
@@ -546,7 +594,7 @@ h<d, \ \ |x_1|\leq c_1 d , \ \ |x_1-y_1|\leq c_2 h , \ \
 |x_2|\leq c_3 h    \ \ \ \forall x,y \in \Omega
 \een
 \end{block}
-\begin{block}{Theorem 1}
+\begin{block}{Lemma 3}
 	Let $k_s h>1$. For any $z,y\in\Om$, PSF can be reprsented by  $J_d(z,y)=\F(z,y)+\R(z,y)$ and it satisfy that
 	\ben
 	|\R_{ij}(z,y)|+k_s^{-1}|\na_y \R_{ij}(z,y)|\leq \frac{C}{\mu}(\frac{1}{(k_s h)^{\frac{1}{2n^*}}}
@@ -559,7 +607,7 @@ h<d, \ \ |x_1|\leq c_1 d , \ \ |x_1-y_1|\leq c_2 h , \ \
 \begin{frame}
 \frametitle{Main Term of PSF}
 Based on the above argument, we know that $\R(z,y)$ becomes small when z,y move away from $\Gamma_0$ and $d\gg h$. Our goal is to show $\F(z,y)$ has the similar decay to the elastic fundamental solution $\Im\Phi(z,y)$ as $|z-y|\to\infty$.
-\begin{block}{Theorem 2}
+\begin{block}{Theorem 4}
 	For any $z,y\in \R_+^2$, when $z=y$
 	\ben
 	|\Im \F_{ii}(z,y)| \geq \frac{1}{4(\lambda+2\mu)} \ , \ i =1 ,2 \\
@@ -574,7 +622,7 @@ Based on the above argument, we know that $\R(z,y)$ becomes small when z,y move 
 \end{frame}
 \begin{frame}
 Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this, we first show the difference between the half space scattering solution and the full space scattered solution is small if the scatterer is far away from the boundary $\Ga_0$.
-\begin{block}{Theorem 3}
+\begin{block}{Theorem 5}
 	Let $g\in H^{1/2}(\Ga_D)$ and $\u_1,\u_2$ be the scattering solution of following problems:
 	\ben\label{elas_r1}
 	\Delta_e \u_1 + \omega^2 \u_1=0 \qquad\mbox{\rm in } \R^2_+\bks \bar{D}\\
@@ -600,17 +648,17 @@ Now, We turn to  study the resolution of the function $\hat{I}_d(z)$. To do this
 
 \begin{frame}
 \frametitle{Resolution Analysis}
-\begin{block}{Theorem 4}
-	For any $z\in\Omega$, let $\Psi(y,z)\in\C^{2\times2}$ be the radiation solution of the problem:
+\begin{block}{Theorem 6}
+	For any $z\in\Omega$, let $\U(z,x)\in\C^{2\times2}$ such that $\U(z,x)e_j$, $j=1,2$, is the scattering solution of the problem:
 	\ben
-	& & \Delta_e \Psi(y,z)e_i + \omega^2\Psi e_i= 0 \ \ \ \ \mbox{in }\R_+^2\bks \bar{D} \ \ \ i=1,2 \\
-	& &\Psi(y,z)= -\overline{\F(z,y)} \ \ \ \ \ \ \ \mbox{on} \ \Ga_D  \\
+	\Delta_e [\U(z,x)e_j]+ \omega^2[\U(z,x)e_j]= 0 \ \ \mbox{in }\R^2\bks \bar{D},\ \ \ \ 
+	\U(z,x)e_j= -\overline{\F(z,x)}e_j \ \ \mbox{on }\Ga_D.  
 	\een
 	Then, we have
-	\be\hspace{-1cm}
-	\hat{I}_d(z)=\Im\int_{\Gamma_D}\sum_{i=1}^2[\sigma_y (\overline{(\F(z,y)}+\Psi(y,z))e_i)\cdot \overline{\F(z,y)}e_i]ds(y)+\W_{\hat{I}}(z)
+	\be
+	\hat{I}_d(z)=\Im\sum_{j=1}^2\int_{\Gamma_D}[\sigma(\U(z,x)e_j+\overline{\F(z,x)}e_j)\nu]\cdot [\overline{\F(z,x)}e_j]ds(x)+R_d(z),\label{id}
 	\ee
-	where $|\W_{\hat{I}}(z)|\leq \frac{C}{\mu}(1+\|T_f\|)(1+\|T_h\|)(1+k_s d_D)^4(\epsilon_1(k_s h)+\epsilon_2(k_s h,h/d))$ uniformly for z in $\Om$.
+	where $|R_d(z)|\leq C\mu^{-2}(1+\|T_1\|)(1+\|T_2\|)(1+k_s d_D)^3\left[\left(\frac hd\right)^{2}+(k_sh)^{-1/4}\right]$ for some constant $C$ depending only on $\kappa$ but independent of $k_s,k_p, h, d, d_D$.
 \end{block}
 \end{frame}
 
@@ -707,7 +755,7 @@ Now for z in the part of $\Ga_D$ which is back to $\Ga_0$, ie $\nu(z)\cdot\eta_\
 
 
 \begin{frame}
-Our work:
+\frametitle{Conclusion}
 \begin{itemize}
 \item New form and asymptotic analysis of Green tensor in the half space..
 \item Regularity estimate of direction elastic wave equation in the Half-space.

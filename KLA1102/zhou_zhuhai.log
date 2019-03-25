@@ -1,9 +1,9 @@
-This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  23 MAR 2019 14:51
+This is XeTeX, Version 3.14159265-2.6-0.99999 (TeX Live 2018) (preloaded format=xelatex 2019.1.8)  16 MAR 2019 15:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**wuhan.tex
-(./wuhan.tex
+**zhou_zhuhai.tex
+(./zhou_zhuhai.tex
 LaTeX2e <2018-04-01> patch level 2
 Babel <3.18> and hyphenation patterns for 84 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamer.cls
@@ -483,8 +483,6 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 File: se-ascii-print.def 2016/05/16 v1.11 stringenc: Printable ASCII characters
 
 )
-Package hyperref Info: Option `CJKbookmarks' set `true' on input line 357.
-
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamerbaserequires.sty
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamerbasecompatibility.st
 y) (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamerbasefont.sty
@@ -813,18 +811,7 @@ y)
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamercolorthemewhale.sty)
 )
 (/usr/local/texlive/2018/texmf-dist/tex/latex/beamer/beamerfontthemeprofessiona
-lfonts.sty) (/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.sty
-Package: CJK 2015/04/18 4.8.4
-
-(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/mule/MULEenc.sty
-Package: MULEenc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/CJK.enc
-File: CJK.enc 2015/04/18 4.8.4
-)
-LaTeX Info: Redefining \selectfont on input line 755.
-\CJK@indent=\box54
-)
+lfonts.sty)
 \c@algorithm=\count167
 \c@lem=\count168
 \c@them=\count169
@@ -832,103 +819,35 @@ LaTeX Info: Redefining \selectfont on input line 755.
 \c@remark=\count171
 \c@question=\count172
 \c@RomanNumber=\count173
+ (./zhou_zhuhai.aux)
+\openout1 = `zhou_zhuhai.aux'.
 
-(./wuhan.aux
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for U/clock/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
+LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 166.
 
-LaTeX Warning: Label `eq_d1' multiply defined.
 
-)
-\openout1 = `wuhan.aux'.
-
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for U/clock/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 167.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 167.
-
- (/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C00/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C05/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C09/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C10/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C20/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C19/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C40/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C42/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C43/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C50/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C52/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C49/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C60/mj/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C61/mj/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C63/mj/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C64/mj/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C65/mj/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C70/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C31/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C32/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C33/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C34/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C35/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C36/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C37/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C80/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C81/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C01/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C11/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C21/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C41/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
-LaTeX Font Info:    Checking defaults for C62/song/m/n on input line 167.
-LaTeX Font Info:    ... okay on input line 167.
+LaTeX Font Info:    ... okay on input line 166.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
@@ -965,8 +884,8 @@ LaTeX Font Info:    ... okay on input line 167.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box55
-Package hyperref Info: Link coloring OFF on input line 167.
+\AtBeginShipoutBox=\box54
+Package hyperref Info: Link coloring OFF on input line 166.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -976,13 +895,13 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
 \c@section@level=\count174
 )
-LaTeX Info: Redefining \ref on input line 167.
-LaTeX Info: Redefining \pageref on input line 167.
-LaTeX Info: Redefining \nameref on input line 167.
+LaTeX Info: Redefining \ref on input line 166.
+LaTeX Info: Redefining \pageref on input line 166.
+LaTeX Info: Redefining \nameref on input line 166.
 
-(./wuhan.out) (./wuhan.out)
+(./zhou_zhuhai.out) (./zhou_zhuhai.out)
 \@outlinefile=\write5
-\openout5 = `wuhan.out'.
+\openout5 = `zhou_zhuhai.out'.
 
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dicti
@@ -1008,312 +927,295 @@ Dictionary: translator-numbers-dictionary, Language: English
 (/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-theorem-dic
 tionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
-) (./wuhan.nav)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/standard.bdg
-File: standard.bdg 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/extended.enc
-File: extended.enc 2015/04/18 4.8.4
-)
-(/usr/local/texlive/2018/texmf-dist/tex/latex/cjk/texinput/extended.chr
-File: extended.chr 2015/04/18 4.8.4
-)
+) (./zhou_zhuhai.nav)
 
 Package hyperref Warning: Option `pdfauthor' has already been used,
-(hyperref)                setting the option has no effect on input line 173.
+(hyperref)                setting the option has no effect on input line 171.
 
+Missing character: There is no 周 in font ec-lmss12!
+Missing character: There is no 世 in font ec-lmss12!
+Missing character: There is no 奇 in font ec-lmss12!
 [1
 
-] (./wuhan.toc) [2
+] [2
+
+] (./zhou_zhuhai.toc) [3
 
 ]
 File: ./figure/seismic.png Graphic file (type bmp)
 <./figure/seismic.png>
- [3
+ [4
 
 ]
-LaTeX Font Info:    Try loading font information for U+msa on input line 228.
+LaTeX Font Info:    Try loading font information for U+msa on input line 247.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 228.
+LaTeX Font Info:    Try loading font information for U+msb on input line 247.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+rsfs on input line 228.
+LaTeX Font Info:    Try loading font information for U+rsfs on input line 247.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
-) [4
+) [5
 
 ]
 File: ./figure/half_forward.jpg Graphic file (type bmp)
 <./figure/half_forward.jpg>
 
-Overfull \hbox (34.1353pt too wide) in paragraph at lines 235--235
+Overfull \hbox (34.1353pt too wide) in paragraph at lines 254--254
  [] 
  []
 
 
-Overfull \vbox (12.5516pt too high) detected at line 235
+Overfull \vbox (12.5516pt too high) detected at line 254
  []
 
-[5
-
-] [6
+[6
 
 ] [7
 
 ] [8
 
+] [9
+
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <8> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 337.
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 356.
 
-Overfull \hbox (24.16965pt too wide) in alignment at lines 337--337
+Overfull \hbox (24.16965pt too wide) in alignment at lines 356--356
  [][][] []
  []
 
-[9
+[10
 
 ]
 LaTeX Font Info:    Font shape `T1/lmss/m/it' in size <7> not available
-(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 374.
- [10
-
-] [11
+(Font)              Font shape `T1/lmss/m/sl' tried instead on input line 393.
+ [11
 
 ]
-Overfull \hbox (33.3263pt too wide) in alignment at lines 424--424
+Overfull \hbox (33.3263pt too wide) in alignment at lines 429--429
  [][][] []
  []
 
 File: ./figure/half_forward.jpg Graphic file (type bmp)
 <./figure/half_forward.jpg>
 
-Overfull \hbox (17.06766pt too wide) in paragraph at lines 424--424
+Overfull \hbox (17.06766pt too wide) in paragraph at lines 429--429
  [] 
  []
 
 [12
 
-]
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 443.
- (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
-File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
-) [13
-
-] [14
+] [13
 
 ]
-Overfull \vbox (3.63614pt too high) detected at line 522
+Overfull \vbox (3.63614pt too high) detected at line 509
  []
 
-[15
+[14
 
 ]
 File: ./figure/half_forward.jpg Graphic file (type bmp)
 <./figure/half_forward.jpg>
 
-Overfull \hbox (34.1353pt too wide) in paragraph at lines 529--529
+Overfull \hbox (34.1353pt too wide) in paragraph at lines 516--516
  [] 
  []
 
 
-Overfull \vbox (12.5516pt too high) detected at line 529
+Overfull \vbox (12.5516pt too high) detected at line 516
  []
 
-[16
-
-] [17
+[15
 
 ]
-Overfull \hbox (5.59178pt too wide) in alignment at lines 560--560
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 534.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/lm/t1lmr.fd
+File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+) [16
+
+]
+Overfull \hbox (23.45445pt too wide) in alignment at lines 551--551
  [][][] []
+ []
+
+[17
+
+]
+Invalid UTF-8 byte or sequence at line 560 replaced by U+FFFD.
+File: ./psf/J.eps Graphic file (type eps)
+<./psf/J.eps>
+
+Overfull \vbox (1.1315pt too high) detected at line 560
  []
 
 [18
 
 ] [19
 
-]
-Invalid UTF-8 byte or sequence at line 586 replaced by U+FFFD.
-File: ./psf/J.eps Graphic file (type eps)
-<./psf/J.eps>
+] [20
 
-Overfull \vbox (1.1315pt too high) detected at line 586
+]
+Overfull \hbox (15.76778pt too wide) in alignment at lines 621--621
+ [][][] []
  []
 
-[20
-
-] [21
+[21
 
 ] [22
 
 ]
-Overfull \hbox (15.76778pt too wide) in alignment at lines 647--647
- [][][] []
- []
-
-[23
-
-]
-Overfull \hbox (1.37987pt too wide) in alignment at lines 663--663
- [][][] []
- []
-
-[24
-
-]
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/peanut_3pi.eps Graphic file (type eps)
 <./graphic/peanut_3pi.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/peanut_3pi_neumann.eps Graphic file (type eps)
 <./graphic/peanut_3pi_neumann.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/peanut_3pi_impedance_1.eps Graphic file (type eps)
 <./graphic/peanut_3pi_impedance_1.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/peanut_3pi_transmission.eps Graphic file (type eps)
 <./graphic/peanut_3pi_transmission.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/rectangle_3pi.eps Graphic file (type eps)
 <./graphic/rectangle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/rectangle_3pi_neumann.eps Graphic file (type eps)
 <./graphic/rectangle_3pi_neumann.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/rectangle_3pi_impedance_1.eps Graphic file (type eps)
 <./graphic/rectangle_3pi_impedance_1.eps>
-Invalid UTF-8 byte or sequence at line 680 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 654 replaced by U+FFFD.
 File: ./graphic/rectangle_3pi_transmission.eps Graphic file (type eps)
 <./graphic/rectangle_3pi_transmission.eps>
- [25
+ [23
 
 ]
-Invalid UTF-8 byte or sequence at line 695 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 669 replaced by U+FFFD.
 File: ./graphic/circle_3pi.eps Graphic file (type eps)
 <./graphic/circle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 695 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 669 replaced by U+FFFD.
 File: ./graphic/circle_5pi.eps Graphic file (type eps)
 <./graphic/circle_5pi.eps>
-Invalid UTF-8 byte or sequence at line 695 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 669 replaced by U+FFFD.
 File: ./graphic/circle.eps Graphic file (type eps)
 <./graphic/circle.eps>
 File: ./graphic/peanut_3pi.eps Graphic file (type eps)
 <./graphic/peanut_3pi.eps>
-Invalid UTF-8 byte or sequence at line 695 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 669 replaced by U+FFFD.
 File: ./graphic/peanut_5pi.eps Graphic file (type eps)
 <./graphic/peanut_5pi.eps>
-Invalid UTF-8 byte or sequence at line 695 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 669 replaced by U+FFFD.
 File: ./graphic/peanut.eps Graphic file (type eps)
 <./graphic/peanut.eps>
- [26
+ [24
 
 ]
-Invalid UTF-8 byte or sequence at line 710 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 684 replaced by U+FFFD.
 File: ./graphic/p_leaf_3pi.eps Graphic file (type eps)
 <./graphic/p_leaf_3pi.eps>
-Invalid UTF-8 byte or sequence at line 710 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 684 replaced by U+FFFD.
 File: ./graphic/p_leaf_5pi.eps Graphic file (type eps)
 <./graphic/p_leaf_5pi.eps>
-Invalid UTF-8 byte or sequence at line 710 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 684 replaced by U+FFFD.
 File: ./graphic/p_leaf.eps Graphic file (type eps)
 <./graphic/p_leaf.eps>
 File: ./graphic/rectangle_3pi.eps Graphic file (type eps)
 <./graphic/rectangle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 710 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 684 replaced by U+FFFD.
 File: ./graphic/rectangle_5pi.eps Graphic file (type eps)
 <./graphic/rectangle_5pi.eps>
-Invalid UTF-8 byte or sequence at line 710 replaced by U+FFFD.
+Invalid UTF-8 byte or sequence at line 684 replaced by U+FFFD.
 File: ./graphic/rectangle.eps Graphic file (type eps)
 <./graphic/rectangle.eps>
+ [25
+
+]
+Invalid UTF-8 byte or sequence at line 701 replaced by U+FFFD.
+File: ./graphic/bi_circle_profile.eps Graphic file (type eps)
+<./graphic/bi_circle_profile.eps>
+Invalid UTF-8 byte or sequence at line 701 replaced by U+FFFD.
+File: ./graphic/bi_circle_3pi.eps Graphic file (type eps)
+<./graphic/bi_circle_3pi.eps>
+Invalid UTF-8 byte or sequence at line 701 replaced by U+FFFD.
+File: ./graphic/bi_circle.eps Graphic file (type eps)
+<./graphic/bi_circle.eps>
+Invalid UTF-8 byte or sequence at line 701 replaced by U+FFFD.
+File: ./graphic/circle_0_4_peanut_1_profile.eps Graphic file (type eps)
+<./graphic/circle_0_4_peanut_1_profile.eps>
+Invalid UTF-8 byte or sequence at line 701 replaced by U+FFFD.
+File: ./graphic/circle_0_4_peanut_1_3pi_1.eps Graphic file (type eps)
+<./graphic/circle_0_4_peanut_1_3pi_1.eps>
+Invalid UTF-8 byte or sequence at line 701 replaced by U+FFFD.
+File: ./graphic/circle_0_4_peanut_1_multi_1.eps Graphic file (type eps)
+<./graphic/circle_0_4_peanut_1_multi_1.eps>
+ [26
+
+]
+Invalid UTF-8 byte or sequence at line 718 replaced by U+FFFD.
+File: ./graphic/bi_circle_4pi_error2.eps Graphic file (type eps)
+<./graphic/bi_circle_4pi_error2.eps>
+Invalid UTF-8 byte or sequence at line 718 replaced by U+FFFD.
+File: ./graphic/bi_circle_4pi_error4.eps Graphic file (type eps)
+<./graphic/bi_circle_4pi_error4.eps>
+Invalid UTF-8 byte or sequence at line 718 replaced by U+FFFD.
+File: ./graphic/bi_circle_4pi_error6.eps Graphic file (type eps)
+<./graphic/bi_circle_4pi_error6.eps>
+Invalid UTF-8 byte or sequence at line 718 replaced by U+FFFD.
+File: ./graphic/bi_circle_multi_2_8_error2.eps Graphic file (type eps)
+<./graphic/bi_circle_multi_2_8_error2.eps>
+Invalid UTF-8 byte or sequence at line 718 replaced by U+FFFD.
+File: ./graphic/bi_circle_multi_2_8_error4.eps Graphic file (type eps)
+<./graphic/bi_circle_multi_2_8_error4.eps>
+Invalid UTF-8 byte or sequence at line 718 replaced by U+FFFD.
+File: ./graphic/bi_circle_multi_2_8_error6.eps Graphic file (type eps)
+<./graphic/bi_circle_multi_2_8_error6.eps>
  [27
 
 ]
-Invalid UTF-8 byte or sequence at line 727 replaced by U+FFFD.
-File: ./graphic/bi_circle_profile.eps Graphic file (type eps)
-<./graphic/bi_circle_profile.eps>
-Invalid UTF-8 byte or sequence at line 727 replaced by U+FFFD.
-File: ./graphic/bi_circle_3pi.eps Graphic file (type eps)
-<./graphic/bi_circle_3pi.eps>
-Invalid UTF-8 byte or sequence at line 727 replaced by U+FFFD.
-File: ./graphic/bi_circle.eps Graphic file (type eps)
-<./graphic/bi_circle.eps>
-Invalid UTF-8 byte or sequence at line 727 replaced by U+FFFD.
-File: ./graphic/circle_0_4_peanut_1_profile.eps Graphic file (type eps)
-<./graphic/circle_0_4_peanut_1_profile.eps>
-Invalid UTF-8 byte or sequence at line 727 replaced by U+FFFD.
-File: ./graphic/circle_0_4_peanut_1_3pi_1.eps Graphic file (type eps)
-<./graphic/circle_0_4_peanut_1_3pi_1.eps>
-Invalid UTF-8 byte or sequence at line 727 replaced by U+FFFD.
-File: ./graphic/circle_0_4_peanut_1_multi_1.eps Graphic file (type eps)
-<./graphic/circle_0_4_peanut_1_multi_1.eps>
- [28
-
-]
-Invalid UTF-8 byte or sequence at line 744 replaced by U+FFFD.
-File: ./graphic/bi_circle_4pi_error2.eps Graphic file (type eps)
-<./graphic/bi_circle_4pi_error2.eps>
-Invalid UTF-8 byte or sequence at line 744 replaced by U+FFFD.
-File: ./graphic/bi_circle_4pi_error4.eps Graphic file (type eps)
-<./graphic/bi_circle_4pi_error4.eps>
-Invalid UTF-8 byte or sequence at line 744 replaced by U+FFFD.
-File: ./graphic/bi_circle_4pi_error6.eps Graphic file (type eps)
-<./graphic/bi_circle_4pi_error6.eps>
-Invalid UTF-8 byte or sequence at line 744 replaced by U+FFFD.
-File: ./graphic/bi_circle_multi_2_8_error2.eps Graphic file (type eps)
-<./graphic/bi_circle_multi_2_8_error2.eps>
-Invalid UTF-8 byte or sequence at line 744 replaced by U+FFFD.
-File: ./graphic/bi_circle_multi_2_8_error4.eps Graphic file (type eps)
-<./graphic/bi_circle_multi_2_8_error4.eps>
-Invalid UTF-8 byte or sequence at line 744 replaced by U+FFFD.
-File: ./graphic/bi_circle_multi_2_8_error6.eps Graphic file (type eps)
-<./graphic/bi_circle_multi_2_8_error6.eps>
- [29
-
-]
-Overfull \hbox (9.84062pt too wide) in alignment at lines 754--754
+Overfull \hbox (9.84062pt too wide) in alignment at lines 728--728
  [][][] []
  []
 
-[30
+[28
 
-] [31
+] [29
 
-] (./wuhan.bbl)
+] [30
+
+] (./zhou_zhuhai.bbl)
 \tf@nav=\write6
-\openout6 = `wuhan.nav'.
+\openout6 = `zhou_zhuhai.nav'.
 
 \tf@toc=\write7
-\openout7 = `wuhan.toc'.
+\openout7 = `zhou_zhuhai.toc'.
 
 \tf@snm=\write8
-\openout8 = `wuhan.snm'.
+\openout8 = `zhou_zhuhai.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 775.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 775.
- (./wuhan.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 775.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 775.
-Package rerunfilecheck Info: File `wuhan.out' has not changed.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 764.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 764.
+ (./zhou_zhuhai.aux)
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 764.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 764.
+Package rerunfilecheck Info: File `zhou_zhuhai.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
  )
 (\end occurred when \ifx on line 161 was incomplete) 
 Here is how much of TeX's memory you used:
- 22036 strings out of 492970
- 393143 string characters out of 6133939
- 519573 words of memory out of 5000000
- 25530 multiletter control sequences out of 15000+600000
+ 21014 strings out of 492970
+ 382777 string characters out of 6133939
+ 495624 words of memory out of 5000000
+ 24530 multiletter control sequences out of 15000+600000
  38312 words of font info for 53 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 56i,19n,61p,772b,1237s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 56i,19n,61p,778b,918s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on wuhan.pdf (31 pages).
+Output written on zhou_zhuhai.pdf (30 pages).

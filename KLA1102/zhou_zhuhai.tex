@@ -1,5 +1,5 @@
 
-\documentclass[cjk,8pt]{beamer}
+\documentclass[utf-8,8pt]{beamer}
 
 \usepackage{amsmath,amssymb,amsfonts}
 \usepackage{mathrsfs}
@@ -18,7 +18,7 @@
 }
 % beamer
 \usefonttheme{professionalfonts}
-\usepackage{CJK}
+%\usepackage{CJK}
 \usepackage{color}
 \usepackage{xcolor}
 
@@ -118,7 +118,7 @@
 \renewcommand{\r}{\mathbf{r}}
 \newcommand{\gR}{{\mathbb{R}}}
 \newcommand{\Z}{{\mathbb{Z}}}
-\newcommand{\C}{{\mathbb{C}}}
+\renewcommand{\C}{{\mathbb{C}}}
 
 \renewcommand{\Re}{\mathrm{Re}\,}
 \renewcommand{\Im}{\mathrm{Im}\,}
@@ -142,7 +142,7 @@
 \newcommand{\T}{\mathbb{T}}
 \newcommand{\A}{\mathbb{A}}
 \newcommand{\B}{\mathbb{B}}
-\newcommand{\G}{\mathbb{G}}
+\renewcommand{\G}{\mathbb{G}}
 \newcommand{\F}{\mathbb{F}}
 
 \newcommand{\W}{\mathbb{W}}
@@ -164,13 +164,13 @@
 \def\debproof{\noindent {\bf ¨¨.} }
 \def\finproof{\hfill {\small $\Box$} \\}
 \begin{document}
-\begin{CJK*}{GBK}{kai}
-\CJKtilde
-\title[]{RTM for Inverse Elastic Scattering Problem}
+%\begin{CJK*}{GBK}{kai}
+%\CJKtilde
+\title[]{RTM Method for Inverse Elastic Scattering Problem}
 
 \author[]{Shiqi Zhou}
 \institute[]{Chinese Academy of Science, Academy of Mathematics and System Science}
-\date[]{2019.03.16 Zhu Hai}
+\date[]{2019.03.16 Zhuhai}
 
 % , ¡§¡ã "%"
 
@@ -184,6 +184,27 @@
 
 % ¡§ "%" ¡§, ¡§¡§¡è¡è¡§
 %\beamerdefaultoverlayspecification{<+->}
+\begin{frame}
+\frametitle{CV}
+\begin{flushleft}
+	\LARGE \textcolor[rgb]{0.00,0.00,1.00}{Shiqi Zhou 周世奇}
+\end{flushleft}
+\begin{itemize}
+	\item Reseach Interests  \\
+	\ \ \ \   Inverse obstacle scattering problems. \\
+	\ \ \ \   Elastic equations.\\
+	\ \ \ \   Reverse Time Migration Method.
+\end{itemize}
+\begin{itemize}
+	\item Education \\
+	\ \ \ \   Ph.D. Candidate, under the supervision of Zhiming Chen\\
+	\ \ \ \ \ \ -Academy of Mathematics and Systems Science, CAS (2014-).\\
+	\ \ \ \  B.Sc. \\
+	\ \ \ \ \ \ -University of Electronic Science and Technology of China (2010-2014)
+\end{itemize}
+\end{frame}
+
+
 
 \begin{frame}
   \titlepage
@@ -518,7 +539,7 @@ where $z\in\Om$.
 \frametitle{Point Spread Function}
 The point spread function measures the resolution to find a point source. Given the $\N(x,y)$ on $\Gamma_0^d=\{(x_1,x_2)^T\in\Gamma_0, \  x_1\in(-d,d)\}$ with the source $y\in \R_+^2$, we define the PSF as the back-propagated field $\J_d(x,y)$.
 \ben
-\De_e \J_d(x,y) + \omega^2 \J_d(x,y) = -\mathbf{\de}_y(x) \mathbb{I}  \ \ \ in \ \  \R^2_+ , \label{eq_d1} \ \ \
+\De_e \J_d(x,y) + \omega^2 \J_d(x,y) = -\mathbf{\de}_y(x) \mathbb{I}  \ \ \ in \ \  \R^2_+ , \label{eq_d3} \ \ \
   \J_d(x,y) = \N(x,y)\chi_{(-d,d)} \ \ \ \ \ \ on \ \ \ \Gamma_0
 \een
 By integral representation
@@ -729,7 +750,15 @@ Publication:
 \end{flushright}
 \end{frame}
 
-\end{CJK*}
+\begin{frame}
+\frametitle{Future Plan}
+\begin{itemize}
+\item Direct and inverse elastic obstacle scattering problem in Muti-layers space or Half-space.
+\item RTM for inverse rough surface problems using elastic waves.
+\item RTM for invese scattering problems with phaseless data.
+\end{itemize}
+\end{frame}
+%\end{CJK*}
 
 \bibliography{./Thesis_Report}%
 \end{document}
